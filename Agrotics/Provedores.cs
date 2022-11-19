@@ -129,7 +129,7 @@ namespace Agrotics
                 string buscar = txtBusquedaPro.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT Nombre, Domicilio, , Telefono, Laboratorio, RFC, Correo FROM proveedores WHERE nombre LIKE '" + txtBusquedaPro + "' LIMIT 1";
+                string sql = "SELECT Nombre, Domicilio, , Telefono, Laboratorio, RFC, Correo FROM proveedores WHERE Nombre LIKE '" + txtBusquedaPro + "' LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
