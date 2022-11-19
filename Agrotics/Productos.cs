@@ -16,5 +16,10 @@ namespace Agrotics
         {
             InitializeComponent();
         }
+
+        private void lblcaducidad_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

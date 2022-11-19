@@ -43,6 +43,8 @@ namespace Agrotics
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,7 +124,7 @@ namespace Agrotics
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(12, 200);
+            this.lblprecio.Location = new System.Drawing.Point(12, 240);
             this.lblprecio.Name = "lblprecio";
             this.lblprecio.Size = new System.Drawing.Size(37, 13);
             this.lblprecio.TabIndex = 8;
@@ -131,11 +133,12 @@ namespace Agrotics
             // lblcaducidad
             // 
             this.lblcaducidad.AutoSize = true;
-            this.lblcaducidad.Location = new System.Drawing.Point(12, 243);
+            this.lblcaducidad.Location = new System.Drawing.Point(12, 291);
             this.lblcaducidad.Name = "lblcaducidad";
             this.lblcaducidad.Size = new System.Drawing.Size(58, 13);
             this.lblcaducidad.TabIndex = 9;
             this.lblcaducidad.Text = "Caducidad";
+            this.lblcaducidad.Click += new System.EventHandler(this.lblcaducidad_Click);
             // 
             // textBox2
             // 
@@ -165,11 +168,29 @@ namespace Agrotics
             this.textBox5.Size = new System.Drawing.Size(168, 20);
             this.textBox5.TabIndex = 13;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 200);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Laboratorio";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(124, 288);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(168, 20);
+            this.textBox6.TabIndex = 15;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -208,5 +229,7 @@ namespace Agrotics
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
