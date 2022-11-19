@@ -165,5 +165,10 @@ namespace Agrotics
                 }
             }
         }
+
+        private void bttbusqueda_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
      
