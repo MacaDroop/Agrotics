@@ -114,4 +114,55 @@ namespace Agrotics
                 conexionBD.Close();
             }
         }
-}
+
+        private void bttbusqueda_Click(object sender, EventArgs e)
+        {
+            if (txtBusquedaPro.Text.Length == 0)
+            {
+                MessageBox.Show("El campo de busqueda esta vacio");
+            }
+            else
+            {
+                string buscar = txtBusquedaPro.Text;
+                MySqlDataReader reader = null;
+
+                string sql = "SELECT n_control, nombre, apellido_paterno, apellido_materno, edad, localidad, sexo, semestre FROM alumnos WHERE n_control LIKE '" + buscar + "' LIMIT 1";
+                MySqlConnection conexionBD = Conexion2.conexion();
+                conexionBD.Open();
+
+                try
+                {
+                    MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                    reader = comando.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                           
+                            txtNombre.Text = reader.GetString(0);
+                            txtDomicilio.Text = reader.GetString(1);
+                            txtTelefono.Text = reader.GetString(2);
+                            txtLaboratorio.Text = reader.GetString(3);
+                            txtRFC.Text = reader.GetString(4);
+                            txtCorreo.Text = reader.GetString(5);
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontraron los registros");
+                    }
+
+
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Erro al buscar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionBD.Close();
+                }
+            }
+        }
+    }
