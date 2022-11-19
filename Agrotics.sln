@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agrotics", "Agrotics\Agrotics.csproj", "{87DAB2C9-915D-42E6-B514-99392D0F21EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86AC2F06-B9D9-4776-A9A2-19263BF79623}"
+	ProjectSection(SolutionItems) = preProject
+		Conexion.cs = Conexion.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DAB2C9-915D-42E6-B514-99392D0F21EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DAB2C9-915D-42E6-B514-99392D0F21EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DAB2C9-915D-42E6-B514-99392D0F21EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DAB2C9-915D-42E6-B514-99392D0F21EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {650F8E79-9042-43E3-83AE-5C47F25376F5}
+	EndGlobalSection
+EndGlobal
