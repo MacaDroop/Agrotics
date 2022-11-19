@@ -11,12 +11,13 @@ namespace Agrotics
     {
         public static MySqlConnection conexion()
         {
+            //PRUEBA
             string Servidor = "localhost";
             string Puerto = "3306";
             string Usuario = "root";
             Form1 mensajero = new Form1();
 
-
+            
             string cadenaConexion = "Database=agrotics" + "; Data Source=" + Servidor + "; User Id=" + Usuario + ";";
             MySqlConnection Conexion = new MySqlConnection(cadenaConexion);
 
