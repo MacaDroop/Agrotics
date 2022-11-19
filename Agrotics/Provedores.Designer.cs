@@ -115,8 +115,7 @@ namespace Agrotics
             this.bttbusqueda.TabIndex = 1;
             this.bttbusqueda.Text = "Busqueda";
             this.bttbusqueda.UseVisualStyleBackColor = false;
-            this.bttbusqueda.Click += new System.EventHandler(this.bttbusqueda_Click);
-            // 
+           
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(79, 140);
