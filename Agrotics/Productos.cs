@@ -26,5 +26,10 @@ namespace Agrotics
         {
 
         }
+
+        private void Productos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
