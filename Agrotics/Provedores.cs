@@ -182,6 +182,7 @@ namespace Agrotics
                 
 
                 MessageBox.Show("Registro Eliminado");
+                todosprovedores();
                 
             }
             catch (MySqlException ex)
