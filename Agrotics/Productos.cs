@@ -21,5 +21,10 @@ namespace Agrotics
         {
 
         }
+
+        private void bttBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
