@@ -60,7 +60,7 @@ namespace Agrotics
             else
             {
                 //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
-                string sql = "INSERT INTO provedores (nombre, Domicilio, Telefono, Laboratorio, RFC, Correo) VALUES ('" + nombre + "', '" + Domicilio + "', '" + Telefono + "', '" + Laboratorio + "', '" + RFC + "', '" + Correo + "')";
+                string sql = "INSERT INTO provedores (Nombre, Domicilio, Telefono, Laboratorio, RFC, Correo) VALUES ('" + nombre + "', '" + Domicilio + "', '" + Telefono + "', '" + Laboratorio + "', '" + RFC + "', '" + Correo + "')";
                 MySqlConnection conexionBD = Conexion.conexion();
                 conexionBD.Open();
 
