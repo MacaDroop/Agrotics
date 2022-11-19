@@ -59,13 +59,14 @@ namespace Agrotics
             // 
             this.bttBuscar.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
             this.bttBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bttBuscar.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttBuscar.Location = new System.Drawing.Point(228, 59);
             this.bttBuscar.Name = "bttBuscar";
             this.bttBuscar.Size = new System.Drawing.Size(129, 33);
             this.bttBuscar.TabIndex = 1;
             this.bttBuscar.Text = "Buscar";
             this.bttBuscar.UseVisualStyleBackColor = true;
+            this.bttBuscar.Click += new System.EventHandler(this.bttBuscar_Click);
             // 
             // dataGridView1
             // 
@@ -79,7 +80,7 @@ namespace Agrotics
             // 
             this.bttAg.BackgroundImage = global::Agrotics.Properties.Resources.icons8_añadir_usuario_grupo_mujer_hombre_100;
             this.bttAg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bttAg.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttAg.Location = new System.Drawing.Point(359, 310);
             this.bttAg.Name = "bttAg";
             this.bttAg.Size = new System.Drawing.Size(97, 39);
@@ -91,7 +92,7 @@ namespace Agrotics
             // 
             this.bttEd.BackgroundImage = global::Agrotics.Properties.Resources.icons8_retire_hombre_usuario_100;
             this.bttEd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bttEd.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttEd.Location = new System.Drawing.Point(486, 310);
             this.bttEd.Name = "bttEd";
             this.bttEd.Size = new System.Drawing.Size(93, 39);
@@ -103,7 +104,7 @@ namespace Agrotics
             // 
             this.bttEli.BackgroundImage = global::Agrotics.Properties.Resources.icons8_editar_usuaria_100;
             this.bttEli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bttEli.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttEli.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttEli.Location = new System.Drawing.Point(615, 308);
             this.bttEli.Name = "bttEli";
             this.bttEli.Size = new System.Drawing.Size(90, 41);
