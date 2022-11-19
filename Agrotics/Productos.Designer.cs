@@ -57,6 +57,8 @@ namespace Agrotics
             // 
             // bttBuscar
             // 
+            this.bttBuscar.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
+            this.bttBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttBuscar.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttBuscar.Location = new System.Drawing.Point(228, 59);
             this.bttBuscar.Name = "bttBuscar";
@@ -75,30 +77,36 @@ namespace Agrotics
             // 
             // bttAg
             // 
+            this.bttAg.BackgroundImage = global::Agrotics.Properties.Resources.icons8_añadir_usuario_grupo_mujer_hombre_100;
+            this.bttAg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttAg.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttAg.Location = new System.Drawing.Point(378, 310);
+            this.bttAg.Location = new System.Drawing.Point(359, 310);
             this.bttAg.Name = "bttAg";
-            this.bttAg.Size = new System.Drawing.Size(72, 29);
+            this.bttAg.Size = new System.Drawing.Size(97, 39);
             this.bttAg.TabIndex = 3;
             this.bttAg.Text = "Agregar";
             this.bttAg.UseVisualStyleBackColor = true;
             // 
             // bttEd
             // 
+            this.bttEd.BackgroundImage = global::Agrotics.Properties.Resources.icons8_retire_hombre_usuario_100;
+            this.bttEd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttEd.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEd.Location = new System.Drawing.Point(494, 310);
+            this.bttEd.Location = new System.Drawing.Point(486, 310);
             this.bttEd.Name = "bttEd";
-            this.bttEd.Size = new System.Drawing.Size(82, 29);
+            this.bttEd.Size = new System.Drawing.Size(93, 39);
             this.bttEd.TabIndex = 4;
             this.bttEd.Text = "Eliminar";
             this.bttEd.UseVisualStyleBackColor = true;
             // 
             // bttEli
             // 
+            this.bttEli.BackgroundImage = global::Agrotics.Properties.Resources.icons8_editar_usuaria_100;
+            this.bttEli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttEli.Font = new System.Drawing.Font("Meiryo", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttEli.Location = new System.Drawing.Point(615, 308);
             this.bttEli.Name = "bttEli";
-            this.bttEli.Size = new System.Drawing.Size(70, 31);
+            this.bttEli.Size = new System.Drawing.Size(90, 41);
             this.bttEli.TabIndex = 5;
             this.bttEli.Text = "Editar";
             this.bttEli.UseVisualStyleBackColor = true;
