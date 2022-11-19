@@ -43,14 +43,14 @@ namespace Agrotics
 
         private void bttagregar_Click(object sender, EventArgs e)
         {
-            
+
             string nombre = txtNombre.Text;
             string Domicilio = txtDomicilio.Text;
             string Telefono = txtTelefono.Text;
             string Laboratorio = txtLaboratorio.Text;
             string RFC = txtRFC.Text;
             string Correo = txtCorreo.Text;
-           
+
 
             if (txtNombre.Text.Length == 0)
             {
@@ -70,7 +70,7 @@ namespace Agrotics
                     MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Registro Guardado");
-   
+
 
                 }
                 catch (MySqlException ex)
@@ -93,7 +93,7 @@ namespace Agrotics
             string RFC = txtRFC.Text;
             string Correo = txtCorreo.Text;
 
-            string sql = "UPDATE alumnos SET Nombre= '" + nombre + "', Domicilio='" + Domicilio + "', Telefono='" + Telefono + "', Laboratorio='" + Laboratorio + "', RFC='" + RFC + "', Correo='" + Correo + "' WHERE n_control='" + txtBusquedaPro.Text + "'";
+            string sql = "UPDATE proveedores SET Nombre= '" + nombre + "', Domicilio='" + Domicilio + "', Telefono='" + Telefono + "', Laboratorio='" + Laboratorio + "', RFC='" + RFC + "', Correo='" + Correo + "' WHERE n_control='" + txtBusquedaPro.Text + "'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
 
@@ -102,7 +102,7 @@ namespace Agrotics
                 MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Registro Actualizado");
-                
+
 
             }
             catch (MySqlException ex)
@@ -114,4 +114,5 @@ namespace Agrotics
                 conexionBD.Close();
             }
         }
+    }
 }
