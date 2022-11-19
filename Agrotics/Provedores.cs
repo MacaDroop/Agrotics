@@ -43,24 +43,24 @@ namespace Agrotics
 
         private void bttagregar_Click(object sender, EventArgs e)
         {
-            string nControl = txtNControl.Text;
+            
             string nombre = txtNombre.Text;
-            string apellidoP = txtApellidoP.Text;
-            string apellidoM = txtApellidoM.Text;
-            string localidad = txtLocalidad.Text;
-            string edad = txtEdad.Text;
-            string sexo = "";
-            string semestre = txtSemestre.Text;
+            string Domicilio = txtDomicilio.Text;
+            string Telefono = txtTelefono.Text;
+            string Laboratorio = txtLaboratorio.Text;
+            string RFC = txtRFC.Text;
+            string Correo = txtCorreo.Text;
+           
 
-            if (txtNControl.Text.Length == 0)
+            if (txtNombre.Text.Length == 0)
             {
                 MessageBox.Show("No se han completado todos los campos");
             }
 
             else
             {
-                sexo = Convert.ToString(cbHM.SelectedItem.ToString());
-                string sql = "INSERT INTO alumnos (n_control, nombre, apellido_paterno, apellido_materno, edad, localidad, sexo, semestre) VALUES ('" + nControl + "', '" + nombre + "', '" + apellidoP + "', '" + apellidoM + "', '" + edad + "', '" + localidad + "', '" + sexo + "','" + semestre + "')";
+                //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
+                string sql = "INSERT INTO provedores (nombre, Domicilio, Telefono, Laboratorio, RFC, Correo) VALUES ('" + nombre + "', '" + Domicilio + "', '" + Telefono + "', '" + Laboratorio + "', '" + RFC + "', '" + Correo + "')";
                 MySqlConnection conexionBD = Conexion.conexion();
                 conexionBD.Open();
 
@@ -70,9 +70,7 @@ namespace Agrotics
                     MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Registro Guardado");
-                    limpiar();
-                    contarAlumnos();
-                    TodosLosAlumnos();
+   
 
                 }
                 catch (MySqlException ex)

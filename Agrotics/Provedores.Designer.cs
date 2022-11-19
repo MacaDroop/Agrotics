@@ -36,14 +36,14 @@ namespace Agrotics
             this.bttagregar = new System.Windows.Forms.Button();
             this.bttbusqueda = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtLaboratorio = new System.Windows.Forms.TextBox();
             this.txtRFC = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -122,12 +122,12 @@ namespace Agrotics
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 6;
             // 
-            // txt
+            // txtDomicilio
             // 
-            this.txt.Location = new System.Drawing.Point(79, 177);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(100, 20);
-            this.txt.TabIndex = 7;
+            this.txtDomicilio.Location = new System.Drawing.Point(79, 177);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(100, 20);
+            this.txtDomicilio.TabIndex = 7;
             // 
             // label1
             // 
@@ -183,12 +183,12 @@ namespace Agrotics
             this.label5.TabIndex = 13;
             this.label5.Text = "Correo";
             // 
-            // textBox2
+            // txtTelefono
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 217);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 14;
+            this.txtTelefono.Location = new System.Drawing.Point(79, 217);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.TabIndex = 14;
             // 
             // txtLaboratorio
             // 
@@ -219,14 +219,14 @@ namespace Agrotics
             this.Controls.Add(this.txtCorreo);
             this.Controls.Add(this.txtRFC);
             this.Controls.Add(this.txtLaboratorio);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btteditar);
             this.Controls.Add(this.bttEliminar);
@@ -252,14 +252,14 @@ namespace Agrotics
         private System.Windows.Forms.Button bttEliminar;
         private System.Windows.Forms.Button btteditar;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox txtDomicilio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtLaboratorio;
         private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.TextBox txtCorreo;
