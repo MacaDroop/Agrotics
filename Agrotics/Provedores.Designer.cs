@@ -89,6 +89,7 @@ namespace Agrotics
             this.bttEliminar.TabIndex = 4;
             this.bttEliminar.Text = "Eliminar";
             this.bttEliminar.UseVisualStyleBackColor = true;
+            this.bttEliminar.Click += new System.EventHandler(this.bttEliminar_Click);
             // 
             // bttagregar
             // 
