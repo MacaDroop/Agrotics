@@ -36,6 +36,16 @@ namespace Agrotics
             }
 
         }
+
+        public void limpiar()
+        {
+            txtNombre.Text = "";
+            txtDomicilio.Text = "";
+            txtLaboratorio.Text = "";
+            txtRFC.Text = "";
+            txtTelefono.Text = "";
+            txtCorreo.Text = "";
+        }
         private void Provedores_Load(object sender, EventArgs e)
         {
             todosprovedores();
@@ -70,6 +80,7 @@ namespace Agrotics
                     MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Registro Guardado");
+                    limpiar();
 
 
                 }
@@ -102,6 +113,8 @@ namespace Agrotics
                 MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Registro Actualizado");
+                limpiar();
+                todosprovedores();
 
 
             }
