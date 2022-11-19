@@ -43,14 +43,14 @@ namespace Agrotics
 
         private void bttagregar_Click(object sender, EventArgs e)
         {
-            
+
             string nombre = txtNombre.Text;
             string Domicilio = txtDomicilio.Text;
             string Telefono = txtTelefono.Text;
             string Laboratorio = txtLaboratorio.Text;
             string RFC = txtRFC.Text;
             string Correo = txtCorreo.Text;
-           
+
 
             if (txtNombre.Text.Length == 0)
             {
@@ -70,7 +70,7 @@ namespace Agrotics
                     MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Registro Guardado");
-   
+
 
                 }
                 catch (MySqlException ex)
@@ -102,7 +102,7 @@ namespace Agrotics
                 MySqlCommand comando = new MySqlCommand(sql, conexionBD);
                 comando.ExecuteNonQuery();
                 MessageBox.Show("Registro Actualizado");
-                
+
 
             }
             catch (MySqlException ex)
@@ -138,7 +138,7 @@ namespace Agrotics
                     {
                         while (reader.Read())
                         {
-                           
+
                             txtNombre.Text = reader.GetString(0);
                             txtDomicilio.Text = reader.GetString(1);
                             txtTelefono.Text = reader.GetString(2);
@@ -171,4 +171,5 @@ namespace Agrotics
 
         }
     }
+}
      
