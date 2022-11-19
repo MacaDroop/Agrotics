@@ -60,8 +60,8 @@ namespace Agrotics
             else
             {
                 //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
-                string sql = "INSERT INTO provedores (Nombre, Domicilio, Telefono, Laboratorio, RFC, Correo) VALUES ('" + nombre + "', '" + Domicilio + "', '" + Telefono + "', '" + Laboratorio + "', '" + RFC + "', '" + Correo + "')";
-                MySqlConnection conexionBD = Conexion.conexion();
+                string sql = "INSERT INTO proveedores (Nombre, Domicilio, Telefono, Laboratorio, RFC, Correo) VALUES ('" + nombre + "', '" + Domicilio + "', '" + Telefono + "', '" + Laboratorio + "', '" + RFC + "', '" + Correo + "')";
+                MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
 
@@ -83,5 +83,35 @@ namespace Agrotics
                 }
             }
         }
-    }
+
+        private void btteditar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            string Domicilio = txtDomicilio.Text;
+            string Telefono = txtTelefono.Text;
+            string Laboratorio = txtLaboratorio.Text;
+            string RFC = txtRFC.Text;
+            string Correo = txtCorreo.Text;
+
+            string sql = "UPDATE alumnos SET Nombre= '" + nombre + "', Domicilio='" + Domicilio + "', Telefono='" + Telefono + "', Laboratorio='" + Laboratorio + "', RFC='" + RFC + "', Correo='" + Correo + "' WHERE n_control='" + txtBusquedaPro.Text + "'";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Registro Actualizado");
+                
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al Registrar: " + ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close();
+            }
+        }
 }

@@ -29,7 +29,7 @@ namespace Agrotics
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBusquedaPro = new System.Windows.Forms.TextBox();
             this.dgvprovedores = new System.Windows.Forms.DataGridView();
             this.btteditar = new System.Windows.Forms.Button();
             this.bttEliminar = new System.Windows.Forms.Button();
@@ -50,12 +50,12 @@ namespace Agrotics
             ((System.ComponentModel.ISupportInitialize)(this.dgvprovedores)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtBusquedaPro
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(202, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtBusquedaPro.Location = new System.Drawing.Point(67, 72);
+            this.txtBusquedaPro.Name = "txtBusquedaPro";
+            this.txtBusquedaPro.Size = new System.Drawing.Size(202, 20);
+            this.txtBusquedaPro.TabIndex = 0;
             // 
             // dgvprovedores
             // 
@@ -76,6 +76,7 @@ namespace Agrotics
             this.btteditar.TabIndex = 5;
             this.btteditar.Text = "Editar";
             this.btteditar.UseVisualStyleBackColor = true;
+            this.btteditar.Click += new System.EventHandler(this.btteditar_Click);
             // 
             // bttEliminar
             // 
@@ -233,7 +234,7 @@ namespace Agrotics
             this.Controls.Add(this.bttagregar);
             this.Controls.Add(this.dgvprovedores);
             this.Controls.Add(this.bttbusqueda);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBusquedaPro);
             this.Name = "Provedores";
             this.Text = "Provedores";
             this.Load += new System.EventHandler(this.Provedores_Load);
@@ -245,7 +246,7 @@ namespace Agrotics
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBusquedaPro;
         private System.Windows.Forms.Button bttbusqueda;
         private System.Windows.Forms.DataGridView dgvprovedores;
         private System.Windows.Forms.Button bttagregar;
