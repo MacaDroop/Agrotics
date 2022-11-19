@@ -31,5 +31,10 @@ namespace Agrotics
         {
 
         }
+
+        private void bttAg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

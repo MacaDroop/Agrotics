@@ -81,6 +81,7 @@ namespace Agrotics
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Registro Guardado");
                     limpiar();
+                    todosprovedores();
 
 
                 }

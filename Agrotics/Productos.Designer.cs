@@ -87,6 +87,7 @@ namespace Agrotics
             this.bttAg.TabIndex = 3;
             this.bttAg.Text = "Agregar";
             this.bttAg.UseVisualStyleBackColor = true;
+            this.bttAg.Click += new System.EventHandler(this.bttAg_Click);
             // 
             // bttEd
             // 
