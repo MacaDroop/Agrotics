@@ -56,6 +56,7 @@ namespace Agrotics
             this.txtBusquedaPro.Name = "txtBusquedaPro";
             this.txtBusquedaPro.Size = new System.Drawing.Size(202, 20);
             this.txtBusquedaPro.TabIndex = 0;
+            this.txtBusquedaPro.TextChanged += new System.EventHandler(this.txtBusquedaPro_TextChanged);
             // 
             // dgvprovedores
             // 

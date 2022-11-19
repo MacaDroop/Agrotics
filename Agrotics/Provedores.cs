@@ -193,6 +193,11 @@ namespace Agrotics
                 conexionBD.Close();
             }
         }
+
+        private void txtBusquedaPro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
      
