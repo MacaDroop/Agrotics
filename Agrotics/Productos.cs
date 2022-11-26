@@ -36,5 +36,15 @@ namespace Agrotics
         {
          
         }
+
+        private void bttEd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bttEli_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

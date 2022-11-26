@@ -100,6 +100,7 @@ namespace Agrotics
             this.bttEd.TabIndex = 4;
             this.bttEd.Text = "Eliminar";
             this.bttEd.UseVisualStyleBackColor = true;
+            this.bttEd.Click += new System.EventHandler(this.bttEd_Click);
             // 
             // bttEli
             // 
@@ -112,6 +113,7 @@ namespace Agrotics
             this.bttEli.TabIndex = 5;
             this.bttEli.Text = "Editar";
             this.bttEli.UseVisualStyleBackColor = true;
+            this.bttEli.Click += new System.EventHandler(this.bttEli_Click);
             // 
             // lblnombre
             // 
