@@ -29,8 +29,8 @@ namespace Agrotics
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bttBuscar = new System.Windows.Forms.Button();
+            this.txtBuscarpro = new System.Windows.Forms.TextBox();
+            this.btnBuscarPro = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bttAg = new System.Windows.Forms.Button();
             this.bttEd = new System.Windows.Forms.Button();
@@ -39,34 +39,34 @@ namespace Agrotics
             this.lbldosis = new System.Windows.Forms.Label();
             this.lblprecio = new System.Windows.Forms.Label();
             this.lblcaducidad = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNombrePro = new System.Windows.Forms.TextBox();
+            this.txtDescripcionPro = new System.Windows.Forms.TextBox();
+            this.txtLaboratorio = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtFechaCaducidad = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtBuscarpro
             // 
-            this.textBox1.Location = new System.Drawing.Point(31, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtBuscarpro.Location = new System.Drawing.Point(65, 66);
+            this.txtBuscarpro.Name = "txtBuscarpro";
+            this.txtBuscarpro.Size = new System.Drawing.Size(144, 20);
+            this.txtBuscarpro.TabIndex = 0;
             // 
-            // bttBuscar
+            // btnBuscarPro
             // 
-            this.bttBuscar.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
-            this.bttBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bttBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttBuscar.Location = new System.Drawing.Point(228, 59);
-            this.bttBuscar.Name = "bttBuscar";
-            this.bttBuscar.Size = new System.Drawing.Size(129, 33);
-            this.bttBuscar.TabIndex = 1;
-            this.bttBuscar.Text = "Buscar";
-            this.bttBuscar.UseVisualStyleBackColor = true;
-            this.bttBuscar.Click += new System.EventHandler(this.bttBuscar_Click);
+            this.btnBuscarPro.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
+            this.btnBuscarPro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarPro.Location = new System.Drawing.Point(228, 59);
+            this.btnBuscarPro.Name = "btnBuscarPro";
+            this.btnBuscarPro.Size = new System.Drawing.Size(129, 33);
+            this.btnBuscarPro.TabIndex = 1;
+            this.btnBuscarPro.Text = "Buscar";
+            this.btnBuscarPro.UseVisualStyleBackColor = true;
+            this.btnBuscarPro.Click += new System.EventHandler(this.bttBuscar_Click);
             // 
             // dataGridView1
             // 
@@ -129,9 +129,9 @@ namespace Agrotics
             this.lbldosis.AutoSize = true;
             this.lbldosis.Location = new System.Drawing.Point(12, 162);
             this.lbldosis.Name = "lbldosis";
-            this.lbldosis.Size = new System.Drawing.Size(33, 13);
+            this.lbldosis.Size = new System.Drawing.Size(63, 13);
             this.lbldosis.TabIndex = 7;
-            this.lbldosis.Text = "Dosis";
+            this.lbldosis.Text = "Descripcion";
             // 
             // lblprecio
             // 
@@ -152,33 +152,33 @@ namespace Agrotics
             this.lblcaducidad.Text = "Caducidad";
             this.lblcaducidad.Click += new System.EventHandler(this.lblcaducidad_Click);
             // 
-            // textBox2
+            // txtNombrePro
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 117);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtNombrePro.Location = new System.Drawing.Point(124, 117);
+            this.txtNombrePro.Name = "txtNombrePro";
+            this.txtNombrePro.Size = new System.Drawing.Size(168, 20);
+            this.txtNombrePro.TabIndex = 10;
             // 
-            // textBox3
+            // txtDescripcionPro
             // 
-            this.textBox3.Location = new System.Drawing.Point(124, 162);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtDescripcionPro.Location = new System.Drawing.Point(124, 162);
+            this.txtDescripcionPro.Name = "txtDescripcionPro";
+            this.txtDescripcionPro.Size = new System.Drawing.Size(168, 20);
+            this.txtDescripcionPro.TabIndex = 11;
             // 
-            // textBox4
+            // txtLaboratorio
             // 
-            this.textBox4.Location = new System.Drawing.Point(124, 200);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(168, 20);
-            this.textBox4.TabIndex = 12;
+            this.txtLaboratorio.Location = new System.Drawing.Point(124, 200);
+            this.txtLaboratorio.Name = "txtLaboratorio";
+            this.txtLaboratorio.Size = new System.Drawing.Size(168, 20);
+            this.txtLaboratorio.TabIndex = 12;
             // 
-            // textBox5
+            // txtPrecio
             // 
-            this.textBox5.Location = new System.Drawing.Point(124, 240);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(168, 20);
-            this.textBox5.TabIndex = 13;
+            this.txtPrecio.Location = new System.Drawing.Point(124, 240);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(168, 20);
+            this.txtPrecio.TabIndex = 13;
             // 
             // label1
             // 
@@ -189,24 +189,24 @@ namespace Agrotics
             this.label1.TabIndex = 14;
             this.label1.Text = "Laboratorio";
             // 
-            // textBox6
+            // txtFechaCaducidad
             // 
-            this.textBox6.Location = new System.Drawing.Point(124, 288);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(168, 20);
-            this.textBox6.TabIndex = 15;
+            this.txtFechaCaducidad.Location = new System.Drawing.Point(124, 288);
+            this.txtFechaCaducidad.Name = "txtFechaCaducidad";
+            this.txtFechaCaducidad.Size = new System.Drawing.Size(168, 20);
+            this.txtFechaCaducidad.TabIndex = 15;
             // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtFechaCaducidad);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.txtLaboratorio);
+            this.Controls.Add(this.txtDescripcionPro);
+            this.Controls.Add(this.txtNombrePro);
             this.Controls.Add(this.lblcaducidad);
             this.Controls.Add(this.lblprecio);
             this.Controls.Add(this.lbldosis);
@@ -215,8 +215,8 @@ namespace Agrotics
             this.Controls.Add(this.bttEd);
             this.Controls.Add(this.bttAg);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.bttBuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnBuscarPro);
+            this.Controls.Add(this.txtBuscarpro);
             this.Name = "Productos";
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.Productos_Load);
@@ -228,8 +228,8 @@ namespace Agrotics
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button bttBuscar;
+        private System.Windows.Forms.TextBox txtBuscarpro;
+        private System.Windows.Forms.Button btnBuscarPro;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bttAg;
         private System.Windows.Forms.Button bttEd;
@@ -238,11 +238,11 @@ namespace Agrotics
         private System.Windows.Forms.Label lbldosis;
         private System.Windows.Forms.Label lblprecio;
         private System.Windows.Forms.Label lblcaducidad;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNombrePro;
+        private System.Windows.Forms.TextBox txtDescripcionPro;
+        private System.Windows.Forms.TextBox txtLaboratorio;
+        private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtFechaCaducidad;
     }
 }

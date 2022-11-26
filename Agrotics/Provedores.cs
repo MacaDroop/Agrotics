@@ -49,6 +49,7 @@ namespace Agrotics
         private void Provedores_Load(object sender, EventArgs e)
         {
             todosprovedores();
+            
         }
 
         private void bttagregar_Click(object sender, EventArgs e)
