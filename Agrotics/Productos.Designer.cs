@@ -136,7 +136,7 @@ namespace Agrotics
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(12, 240);
+            this.lblprecio.Location = new System.Drawing.Point(12, 247);
             this.lblprecio.Name = "lblprecio";
             this.lblprecio.Size = new System.Drawing.Size(37, 13);
             this.lblprecio.TabIndex = 8;

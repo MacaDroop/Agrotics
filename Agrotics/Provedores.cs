@@ -49,6 +49,8 @@ namespace Agrotics
         private void Provedores_Load(object sender, EventArgs e)
         {
             todosprovedores();
+
+            bttEliminar.Enabled =false;
             
         }
 
@@ -163,7 +165,7 @@ namespace Agrotics
                             txtLaboratorio.Text = reader.GetString(3);
                             txtRFC.Text = reader.GetString(4);
                             txtCorreo.Text = reader.GetString(5);
-
+                            bttEliminar.Enabled = true;
                         }
                     }
                     else
