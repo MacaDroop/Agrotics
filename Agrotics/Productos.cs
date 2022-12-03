@@ -16,12 +16,139 @@ namespace Agrotics
         {
             InitializeComponent();
         }
-
+        public void limpiar()
+        {
+            txtBuscarpro.Text = "";
+            txtDescripcionPro.Text = "";
+            txtFCAño.Text = "";
+            txtFCDia.Text = "";
+            txtFCMes.Text = "";
+            txtLaboratorio.Text = "";
+            txtNombrePro.Text = "";
+            txtPrecio.Text = "";
+        }
         private void lblcaducidad_Click(object sender, EventArgs e)
         {
 
         }
+        public void agregarProductos()
+        {
+            string nombrePro = txtNombrePro.Text;
+            string descripcionPro = txtDescripcionPro.Text;
+            string laboratorioPro = txtLaboratorio.Text;
+            string precio = txtPrecio.Text;
+            string fechaCad = txtFCDia.Text + "/" + txtFCMes.Text + "/" + txtFCAño.Text;
+            
 
+
+            if (txtPrecio.Text.Length == 0)
+            {
+                MessageBox.Show("No se han completado todos los campos");
+            }
+
+            else
+            {
+                //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
+                string sql = "INSERT INTO productos (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad) VALUES ('" + nombrePro + "', '" + descripcionPro + "', '" + laboratorioPro + "', '"  + precio + "', '" + fechaCad + "')";
+                MySqlConnection conexionBD = Conexion2.conexion();
+                conexionBD.Open();
+
+
+                try
+                {
+                    MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Registro Guardado");
+                    todosProductos();
+                    limpiar();
+
+
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error al guardar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionBD.Close();
+                }
+            }
+        }
+        public void editarProductos()
+        {
+            string nombrePro = txtNombrePro.Text;
+            string descripcion = txtDescripcionPro.Text;
+            string Laboratorio =txtLaboratorio.Text;
+            string Precio = txtPrecio.Text;
+            string fechaCad = txtFCDia.Text + "/" + txtFCMes.Text + "/" + txtFCAño.Text;
+            
+
+            string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Registro Actualizado");
+                limpiar();
+              
+
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al Registrar: " + ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close();
+            }
+        }
+        public void eliminarproductos()
+
+        {
+            string sql = "DELETE FROM productos WHERE NombreProducto= '" + txtBuscarpro.Text + "'";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+
+
+                MessageBox.Show("Registro Eliminado");
+                
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al Eliminar: " + ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close();
+            }
+        }
+        public void todosProductos()
+        {
+            MySqlDataReader reader = null;
+
+            string Sql = "SELECT * from productos";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand(Sql, conexionBD);
+            reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                DataTable datos = new DataTable();
+
+                datos.Load(reader);
+                dgvProductos.DataSource = datos;
+            }
+        }
         private void bttBuscar_Click(object sender, EventArgs e)
         {
             if (btnBuscarPro.Text.Length == 0)
@@ -50,7 +177,7 @@ namespace Agrotics
                            txtDescripcionPro.Text = reader.GetString(1);
                            txtLaboratorio.Text = reader.GetString(2);
                            txtPrecio.Text = reader.GetString(3);
-                            txtFechaCaducidad.Text = reader.GetString(4);
+                            txtFCDia.Text = reader.GetString(4);
                             
 
                         }
@@ -72,25 +199,26 @@ namespace Agrotics
                 }
             }
         }
+       
          
         private void Productos_Load(object sender, EventArgs e)
         {
-
+            todosProductos();
         }
 
         private void bttAg_Click(object sender, EventArgs e)
         {
-         
+            agregarProductos();
         }
 
-        private void bttEd_Click(object sender, EventArgs e)
+        private void btnEdi_Clik(object sender, EventArgs e)
         {
-
+            editarProductos();
         }
 
-        private void bttEli_Click(object sender, EventArgs e)
+        private void btnEli_Click(object sender, EventArgs e)
         {
-
+            eliminarproductos();
         }
     }
 }

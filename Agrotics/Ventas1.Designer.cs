@@ -70,7 +70,7 @@
             this.ListaPrecios.FormattingEnabled = true;
             this.ListaPrecios.Location = new System.Drawing.Point(231, 295);
             this.ListaPrecios.Name = "ListaPrecios";
-            this.ListaPrecios.Size = new System.Drawing.Size(77, 95);
+            this.ListaPrecios.Size = new System.Drawing.Size(130, 95);
             this.ListaPrecios.TabIndex = 3;
             // 
             // label1
@@ -112,7 +112,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 209);
+            this.comboBox1.Location = new System.Drawing.Point(107, 209);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 8;
@@ -120,7 +120,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 212);
+            this.label5.Location = new System.Drawing.Point(49, 212);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 9;

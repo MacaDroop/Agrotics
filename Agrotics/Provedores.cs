@@ -108,7 +108,7 @@ namespace Agrotics
             string RFC = txtRFC.Text;
             string Correo = txtCorreo.Text;
 
-            string sql = "UPDATE alumnos SET Nombre= '" + nombre + "', Domicilio='" + Domicilio + "', Telefono='" + Telefono + "', Laboratorio='" + Laboratorio + "', RFC='" + RFC + "', Correo='" + Correo + "' WHERE n_control='" + txtBusquedaPro.Text + "'";
+            string sql = "UPDATE proveedores SET Nombre= '" + nombre + "', Domicilio='" + Domicilio + "', Telefono='" + Telefono + "', Laboratorio='" + Laboratorio + "', RFC='" + RFC + "', Correo='" + Correo + "' WHERE n_control='" + txtBusquedaPro.Text + "'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
 
