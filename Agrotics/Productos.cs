@@ -38,7 +38,7 @@ namespace Agrotics
             string descripcionPro = txtDescripcionPro.Text;
             string laboratorioPro = txtLaboratorio.Text;
             string precio = txtPrecio.Text;
-            string fechaCad = txtFCDia.Text + "/" + txtFCMes.Text + "/" + txtFCAño.Text;
+            string fechaCad = txtFCAño.Text + "-" + txtFCMes.Text + "-" + txtFCDia.Text;
             
 
 
@@ -81,7 +81,7 @@ namespace Agrotics
             string descripcion = txtDescripcionPro.Text;
             string Laboratorio =txtLaboratorio.Text;
             string Precio = txtPrecio.Text;
-            string fechaCad = txtFCDia.Text + "/" + txtFCMes.Text + "/" + txtFCAño.Text;
+            string fechaCad = txtFCAño.Text + "-" + txtFCMes.Text + "-" + txtFCDia.Text;
             
 
             string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
