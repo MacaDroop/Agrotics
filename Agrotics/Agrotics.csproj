@@ -76,10 +76,10 @@
     <Compile Include="Provedores.Designer.cs">
       <DependentUpon>Provedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Ventas1.cs">
+    <Compile Include="Ventas1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\Ventas1.Designer.cs">
+    <Compile Include="Ventas1.Designer.cs">
       <DependentUpon>Ventas1.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Agrotics.resx">
@@ -104,7 +104,7 @@
     <EmbeddedResource Include="Provedores.resx">
       <DependentUpon>Provedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Ventas1.resx">
+    <EmbeddedResource Include="Ventas1.resx">
       <DependentUpon>Ventas1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
