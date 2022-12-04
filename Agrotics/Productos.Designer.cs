@@ -54,12 +54,16 @@ namespace Agrotics
             this.label4 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscarpro
             // 
-            this.txtBuscarpro.Location = new System.Drawing.Point(67, 53);
+            this.txtBuscarpro.Location = new System.Drawing.Point(21, 29);
             this.txtBuscarpro.Name = "txtBuscarpro";
             this.txtBuscarpro.Size = new System.Drawing.Size(209, 20);
             this.txtBuscarpro.TabIndex = 0;
@@ -69,7 +73,7 @@ namespace Agrotics
             this.btnBuscarPro.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
             this.btnBuscarPro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPro.Location = new System.Drawing.Point(308, 46);
+            this.btnBuscarPro.Location = new System.Drawing.Point(236, 22);
             this.btnBuscarPro.Name = "btnBuscarPro";
             this.btnBuscarPro.Size = new System.Drawing.Size(129, 33);
             this.btnBuscarPro.TabIndex = 1;
@@ -127,7 +131,7 @@ namespace Agrotics
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(12, 116);
+            this.lblnombre.Location = new System.Drawing.Point(12, 100);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(106, 13);
             this.lblnombre.TabIndex = 6;
@@ -136,7 +140,7 @@ namespace Agrotics
             // lbldosis
             // 
             this.lbldosis.AutoSize = true;
-            this.lbldosis.Location = new System.Drawing.Point(12, 171);
+            this.lbldosis.Location = new System.Drawing.Point(12, 138);
             this.lbldosis.Name = "lbldosis";
             this.lbldosis.Size = new System.Drawing.Size(63, 13);
             this.lbldosis.TabIndex = 7;
@@ -145,7 +149,7 @@ namespace Agrotics
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(12, 275);
+            this.lblprecio.Location = new System.Drawing.Point(12, 282);
             this.lblprecio.Name = "lblprecio";
             this.lblprecio.Size = new System.Drawing.Size(37, 13);
             this.lblprecio.TabIndex = 8;
@@ -163,16 +167,17 @@ namespace Agrotics
             // 
             // txtNombrePro
             // 
-            this.txtNombrePro.Location = new System.Drawing.Point(124, 113);
+            this.txtNombrePro.Location = new System.Drawing.Point(124, 97);
             this.txtNombrePro.Name = "txtNombrePro";
             this.txtNombrePro.Size = new System.Drawing.Size(168, 20);
             this.txtNombrePro.TabIndex = 10;
             // 
             // txtDescripcionPro
             // 
-            this.txtDescripcionPro.Location = new System.Drawing.Point(124, 164);
+            this.txtDescripcionPro.Location = new System.Drawing.Point(124, 123);
+            this.txtDescripcionPro.Multiline = true;
             this.txtDescripcionPro.Name = "txtDescripcionPro";
-            this.txtDescripcionPro.Size = new System.Drawing.Size(168, 20);
+            this.txtDescripcionPro.Size = new System.Drawing.Size(168, 48);
             this.txtDescripcionPro.TabIndex = 11;
             // 
             // txtLaboratorio
@@ -185,7 +190,7 @@ namespace Agrotics
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(124, 275);
+            this.txtPrecio.Location = new System.Drawing.Point(124, 279);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(168, 20);
             this.txtPrecio.TabIndex = 13;
@@ -194,7 +199,7 @@ namespace Agrotics
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 214);
+            this.label1.Location = new System.Drawing.Point(12, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 14;
@@ -250,7 +255,7 @@ namespace Agrotics
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(124, 249);
+            this.txtStock.Location = new System.Drawing.Point(124, 242);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(168, 20);
             this.txtStock.TabIndex = 22;
@@ -264,11 +269,50 @@ namespace Agrotics
             this.label5.TabIndex = 23;
             this.label5.Text = "Stock";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 195);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "Tipo";
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Location = new System.Drawing.Point(124, 188);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(168, 20);
+            this.txtTipo.TabIndex = 25;
+            this.txtTipo.Text = " ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(310, 82);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(403, 13);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "AGREGAR A LA BASE DE DATOS UN CAMPO QUE SE LLAME \"tipo\" varchar(20)";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(310, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(381, 13);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "AGREGAR A LA BASE DE DATOS UN CAMPO QUE SE LLAME \"stock\" int(4)";
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label4);
@@ -328,5 +372,9 @@ namespace Agrotics
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

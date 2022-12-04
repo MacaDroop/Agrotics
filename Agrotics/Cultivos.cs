@@ -16,5 +16,10 @@ namespace Agrotics
         {
             InitializeComponent();
         }
+
+        private void Cultivos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
