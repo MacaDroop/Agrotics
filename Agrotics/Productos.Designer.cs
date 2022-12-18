@@ -44,11 +44,9 @@ namespace Agrotics
             this.txtLaboratorio = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtFCDia = new System.Windows.Forms.TextBox();
+            this.txtCaducidad = new System.Windows.Forms.TextBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.colorDialog2 = new System.Windows.Forms.ColorDialog();
-            this.txtFCMes = new System.Windows.Forms.TextBox();
-            this.txtFCAño = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,8 +54,8 @@ namespace Agrotics
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -149,7 +147,7 @@ namespace Agrotics
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(12, 282);
+            this.lblprecio.Location = new System.Drawing.Point(12, 219);
             this.lblprecio.Name = "lblprecio";
             this.lblprecio.Size = new System.Drawing.Size(37, 13);
             this.lblprecio.TabIndex = 8;
@@ -158,7 +156,7 @@ namespace Agrotics
             // lblcaducidad
             // 
             this.lblcaducidad.AutoSize = true;
-            this.lblcaducidad.Location = new System.Drawing.Point(12, 332);
+            this.lblcaducidad.Location = new System.Drawing.Point(12, 253);
             this.lblcaducidad.Name = "lblcaducidad";
             this.lblcaducidad.Size = new System.Drawing.Size(58, 13);
             this.lblcaducidad.TabIndex = 9;
@@ -182,7 +180,7 @@ namespace Agrotics
             // 
             // txtLaboratorio
             // 
-            this.txtLaboratorio.Location = new System.Drawing.Point(124, 214);
+            this.txtLaboratorio.Location = new System.Drawing.Point(124, 187);
             this.txtLaboratorio.Name = "txtLaboratorio";
             this.txtLaboratorio.Size = new System.Drawing.Size(168, 20);
             this.txtLaboratorio.TabIndex = 12;
@@ -190,7 +188,7 @@ namespace Agrotics
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(124, 279);
+            this.txtPrecio.Location = new System.Drawing.Point(124, 216);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(168, 20);
             this.txtPrecio.TabIndex = 13;
@@ -199,37 +197,23 @@ namespace Agrotics
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 217);
+            this.label1.Location = new System.Drawing.Point(12, 190);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Laboratorio";
             // 
-            // txtFCDia
+            // txtCaducidad
             // 
-            this.txtFCDia.Location = new System.Drawing.Point(124, 329);
-            this.txtFCDia.Name = "txtFCDia";
-            this.txtFCDia.Size = new System.Drawing.Size(44, 20);
-            this.txtFCDia.TabIndex = 15;
-            // 
-            // txtFCMes
-            // 
-            this.txtFCMes.Location = new System.Drawing.Point(174, 329);
-            this.txtFCMes.Name = "txtFCMes";
-            this.txtFCMes.Size = new System.Drawing.Size(56, 20);
-            this.txtFCMes.TabIndex = 16;
-            // 
-            // txtFCAño
-            // 
-            this.txtFCAño.Location = new System.Drawing.Point(236, 329);
-            this.txtFCAño.Name = "txtFCAño";
-            this.txtFCAño.Size = new System.Drawing.Size(56, 20);
-            this.txtFCAño.TabIndex = 18;
+            this.txtCaducidad.Location = new System.Drawing.Point(124, 250);
+            this.txtCaducidad.Name = "txtCaducidad";
+            this.txtCaducidad.Size = new System.Drawing.Size(168, 20);
+            this.txtCaducidad.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(124, 356);
+            this.label2.Location = new System.Drawing.Point(124, 277);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 19;
@@ -238,7 +222,7 @@ namespace Agrotics
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(195, 356);
+            this.label3.Location = new System.Drawing.Point(188, 277);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 20;
@@ -247,7 +231,7 @@ namespace Agrotics
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(250, 356);
+            this.label4.Location = new System.Drawing.Point(250, 277);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 21;
@@ -255,7 +239,7 @@ namespace Agrotics
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(124, 242);
+            this.txtStock.Location = new System.Drawing.Point(124, 294);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(168, 20);
             this.txtStock.TabIndex = 22;
@@ -263,7 +247,7 @@ namespace Agrotics
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 249);
+            this.label5.Location = new System.Drawing.Point(12, 301);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 23;
@@ -272,7 +256,7 @@ namespace Agrotics
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 195);
+            this.label6.Location = new System.Drawing.Point(12, 332);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(28, 13);
             this.label6.TabIndex = 24;
@@ -280,37 +264,44 @@ namespace Agrotics
             // 
             // txtTipo
             // 
-            this.txtTipo.Location = new System.Drawing.Point(124, 188);
+            this.txtTipo.AutoCompleteCustomSource.AddRange(new string[] {
+            "HERBICIDA",
+            "FERTILIZANTE"});
+            this.txtTipo.Location = new System.Drawing.Point(124, 325);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(168, 20);
             this.txtTipo.TabIndex = 25;
             this.txtTipo.Text = " ";
             // 
-            // label7
+            // txtCantidad
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(310, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(403, 13);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "AGREGAR A LA BASE DE DATOS UN CAMPO QUE SE LLAME \"tipo\" varchar(20)";
+            this.txtCantidad.AutoCompleteCustomSource.AddRange(new string[] {
+            "250GR",
+            "500GR",
+            "1KG",
+            "500ML",
+            "1L"});
+            this.txtCantidad.Location = new System.Drawing.Point(124, 351);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(168, 20);
+            this.txtCantidad.TabIndex = 28;
             // 
-            // label8
+            // label9
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(310, 100);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(381, 13);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "AGREGAR A LA BASE DE DATOS UN CAMPO QUE SE LLAME \"stock\" int(4)";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 354);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Cantidad";
             // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -318,9 +309,7 @@ namespace Agrotics
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtFCAño);
-            this.Controls.Add(this.txtFCMes);
-            this.Controls.Add(this.txtFCDia);
+            this.Controls.Add(this.txtCaducidad);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.txtLaboratorio);
@@ -362,11 +351,9 @@ namespace Agrotics
         private System.Windows.Forms.TextBox txtLaboratorio;
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtFCDia;
+        private System.Windows.Forms.TextBox txtCaducidad;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ColorDialog colorDialog2;
-        private System.Windows.Forms.TextBox txtFCMes;
-        private System.Windows.Forms.TextBox txtFCAño;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -374,7 +361,7 @@ namespace Agrotics
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Label label9;
     }
 }

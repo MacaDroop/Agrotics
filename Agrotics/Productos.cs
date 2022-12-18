@@ -22,7 +22,7 @@ namespace Agrotics
             txtBuscarpro.Text = "";
             txtDescripcionPro.Text = "";
             txtFCAño.Text = "";
-            txtFCDia.Text = "";
+            txtCaducidad.Text = "";
             txtFCMes.Text = "";
             txtLaboratorio.Text = "";
             txtNombrePro.Text = "";
@@ -38,7 +38,7 @@ namespace Agrotics
             string descripcionPro = txtDescripcionPro.Text;
             string laboratorioPro = txtLaboratorio.Text;
             string precio = txtPrecio.Text;
-            string fechaCad = txtFCAño.Text + "-" + txtFCMes.Text + "-" + txtFCDia.Text;
+            string fechaCad = txtCaducidad.Text;
             
 
 
@@ -81,7 +81,7 @@ namespace Agrotics
             string descripcion = txtDescripcionPro.Text;
             string Laboratorio =txtLaboratorio.Text;
             string Precio = txtPrecio.Text;
-            string fechaCad = txtFCAño.Text + "-" + txtFCMes.Text + "-" + txtFCDia.Text;
+            string fechaCad =txtCaducidad.Text;
             
 
             string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
@@ -161,7 +161,7 @@ namespace Agrotics
                 string buscar =txtBuscarpro.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad FROM productos WHERE Nombre LIKE '" + buscar + "' LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, stock, TipoProducto, cantidadProducto FROM productos WHERE Nombre LIKE '" + buscar + "' LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -178,7 +178,10 @@ namespace Agrotics
                            txtDescripcionPro.Text = reader.GetString(1);
                            txtLaboratorio.Text = reader.GetString(2);
                            txtPrecio.Text = reader.GetString(3);
-                            txtFCDia.Text = reader.GetString(4);
+                            txtCaducidad.Text = reader.GetString(4);
+                            txtStock.Text = reader.GetString(5);
+                            txtTipo.Text = reader.GetString(6);
+                            txtCaducidad.Text = reader.GetString(6);
                             
 
                         }

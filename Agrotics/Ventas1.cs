@@ -21,5 +21,17 @@ namespace Agrotics.Resources
         {
 
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtBuscarProVen.TextLength == 0) {
+                MessageBox.Show("PRIMERO SELECCIONA LA CANTIDAD DE PRODUCTOS A VENDER");
+            
+            }
+            else
+            {
+
+            }
+        }
     }
 }
