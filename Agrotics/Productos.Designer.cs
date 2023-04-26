@@ -61,7 +61,7 @@ namespace Agrotics
             // 
             // txtBuscarpro
             // 
-            this.txtBuscarpro.Location = new System.Drawing.Point(21, 29);
+            this.txtBuscarpro.Location = new System.Drawing.Point(21, 35);
             this.txtBuscarpro.Name = "txtBuscarpro";
             this.txtBuscarpro.Size = new System.Drawing.Size(209, 20);
             this.txtBuscarpro.TabIndex = 0;
@@ -71,7 +71,7 @@ namespace Agrotics
             this.btnBuscarPro.BackgroundImage = global::Agrotics.Properties.Resources.icons8_búsqueda_usuaria_100;
             this.btnBuscarPro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnBuscarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPro.Location = new System.Drawing.Point(236, 22);
+            this.btnBuscarPro.Location = new System.Drawing.Point(236, 28);
             this.btnBuscarPro.Name = "btnBuscarPro";
             this.btnBuscarPro.Size = new System.Drawing.Size(129, 33);
             this.btnBuscarPro.TabIndex = 1;

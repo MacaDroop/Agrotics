@@ -212,7 +212,7 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(134, 163);
+            this.txtDescription.Location = new System.Drawing.Point(122, 163);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(351, 50);
@@ -222,7 +222,7 @@
             // 
             this.label10.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(644, 162);
+            this.label10.Location = new System.Drawing.Point(645, 131);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 19;
@@ -230,7 +230,7 @@
             // 
             // txtPrecioVentas
             // 
-            this.txtPrecioVentas.Location = new System.Drawing.Point(719, 159);
+            this.txtPrecioVentas.Location = new System.Drawing.Point(720, 128);
             this.txtPrecioVentas.Name = "txtPrecioVentas";
             this.txtPrecioVentas.Size = new System.Drawing.Size(68, 20);
             this.txtPrecioVentas.TabIndex = 20;
@@ -239,7 +239,7 @@
             // 
             this.label11.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(493, 162);
+            this.label11.Location = new System.Drawing.Point(494, 131);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 21;
@@ -247,7 +247,7 @@
             // 
             // txtLabVentas
             // 
-            this.txtLabVentas.Location = new System.Drawing.Point(562, 159);
+            this.txtLabVentas.Location = new System.Drawing.Point(563, 128);
             this.txtLabVentas.Name = "txtLabVentas";
             this.txtLabVentas.Size = new System.Drawing.Size(68, 20);
             this.txtLabVentas.TabIndex = 22;
@@ -256,7 +256,7 @@
             // 
             this.label12.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(491, 188);
+            this.label12.Location = new System.Drawing.Point(492, 162);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 13);
             this.label12.TabIndex = 23;
@@ -264,14 +264,14 @@
             // 
             // txtCadVentas
             // 
-            this.txtCadVentas.Location = new System.Drawing.Point(562, 186);
+            this.txtCadVentas.Location = new System.Drawing.Point(563, 160);
             this.txtCadVentas.Name = "txtCadVentas";
             this.txtCadVentas.Size = new System.Drawing.Size(68, 20);
             this.txtCadVentas.TabIndex = 24;
             // 
             // txtStockVentas
             // 
-            this.txtStockVentas.Location = new System.Drawing.Point(719, 185);
+            this.txtStockVentas.Location = new System.Drawing.Point(720, 159);
             this.txtStockVentas.Name = "txtStockVentas";
             this.txtStockVentas.Size = new System.Drawing.Size(68, 20);
             this.txtStockVentas.TabIndex = 26;
@@ -280,7 +280,7 @@
             // 
             this.label19.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(646, 188);
+            this.label19.Location = new System.Drawing.Point(647, 162);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 13);
             this.label19.TabIndex = 25;
@@ -288,7 +288,7 @@
             // 
             // txtTipoPVentas
             // 
-            this.txtTipoPVentas.Location = new System.Drawing.Point(562, 210);
+            this.txtTipoPVentas.Location = new System.Drawing.Point(563, 192);
             this.txtTipoPVentas.Name = "txtTipoPVentas";
             this.txtTipoPVentas.Size = new System.Drawing.Size(68, 20);
             this.txtTipoPVentas.TabIndex = 28;
@@ -297,7 +297,7 @@
             // 
             this.label13.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(493, 213);
+            this.label13.Location = new System.Drawing.Point(494, 195);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(31, 13);
             this.label13.TabIndex = 27;
@@ -305,7 +305,7 @@
             // 
             // txtPresentacionVentas
             // 
-            this.txtPresentacionVentas.Location = new System.Drawing.Point(719, 211);
+            this.txtPresentacionVentas.Location = new System.Drawing.Point(720, 193);
             this.txtPresentacionVentas.Name = "txtPresentacionVentas";
             this.txtPresentacionVentas.Size = new System.Drawing.Size(68, 20);
             this.txtPresentacionVentas.TabIndex = 30;
@@ -314,7 +314,7 @@
             // 
             this.label14.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(646, 214);
+            this.label14.Location = new System.Drawing.Point(647, 196);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 13);
             this.label14.TabIndex = 29;
@@ -322,7 +322,7 @@
             // 
             // txtVender
             // 
-            this.txtVender.Location = new System.Drawing.Point(443, 343);
+            this.txtVender.Location = new System.Drawing.Point(477, 311);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(75, 23);
             this.txtVender.TabIndex = 31;
@@ -331,7 +331,16 @@
             // 
             // txtBuscarPresentacion
             // 
-            this.txtBuscarPresentacion.Location = new System.Drawing.Point(48, 82);
+            this.txtBuscarPresentacion.AutoCompleteCustomSource.AddRange(new string[] {
+            "1KG",
+            "250GR",
+            "100ML",
+            "250ML",
+            "500ML",
+            "1L"});
+            this.txtBuscarPresentacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.txtBuscarPresentacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtBuscarPresentacion.Location = new System.Drawing.Point(48, 92);
             this.txtBuscarPresentacion.Name = "txtBuscarPresentacion";
             this.txtBuscarPresentacion.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarPresentacion.TabIndex = 32;
