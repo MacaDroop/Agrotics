@@ -29,10 +29,13 @@ namespace Agrotics
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -46,6 +49,7 @@ namespace Agrotics
             this.button1.Size = new System.Drawing.Size(140, 57);
             this.button1.TabIndex = 0;
             this.button1.Text = "Proveedores";
+            this.toolTip1.SetToolTip(this.button1, "Aqui podras registrar la información de tus proveedores.");
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -60,6 +64,7 @@ namespace Agrotics
             this.button2.Size = new System.Drawing.Size(140, 57);
             this.button2.TabIndex = 1;
             this.button2.Text = "Productos";
+            this.toolTip2.SetToolTip(this.button2, "Aquí podras podras registrar, editar y eliminar tus productos.");
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -76,6 +81,10 @@ namespace Agrotics
             this.button3.Text = "Cultivos";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
             // 
             // Form1
             // 
@@ -99,6 +108,8 @@ namespace Agrotics
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 
