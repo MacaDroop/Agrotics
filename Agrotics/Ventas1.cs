@@ -33,5 +33,10 @@ namespace Agrotics.Resources
 
             }
         }
+
+        private void Ventas1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

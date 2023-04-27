@@ -21,9 +21,7 @@ namespace Agrotics
         {
             txtBuscarpro.Text = "";
             txtDescripcionPro.Text = "";
-            txtFCAño.Text = "";
             txtCaducidad.Text = "";
-            txtFCMes.Text = "";
             txtLaboratorio.Text = "";
             txtNombrePro.Text = "";
             txtPrecio.Text = "";

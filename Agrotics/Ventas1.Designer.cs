@@ -384,6 +384,7 @@
             this.Controls.Add(this.txtBuscarProVen);
             this.Name = "Ventas1";
             this.Text = "Ventas1";
+            this.Load += new System.EventHandler(this.Ventas1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

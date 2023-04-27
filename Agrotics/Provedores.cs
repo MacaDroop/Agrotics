@@ -20,6 +20,7 @@ namespace Agrotics
 
         public void todosprovedores()
         {
+            //AGREGAR UN MANEJO DE EXCEPCIONES PARA ESTA CONSULTA
             MySqlDataReader reader = null;
 
             string Sql = "SELECT * from proveedores";
@@ -56,7 +57,7 @@ namespace Agrotics
 
         private void bttagregar_Click(object sender, EventArgs e)
         {
-
+            //AGREGAR ESTAS VARIBLES AL INICIO PARA NO DECLARARLAS EN VARIOS METODOS
             string nombre = txtNombre.Text;
             string Domicilio = txtDomicilio.Text;
             string Telefono = txtTelefono.Text;

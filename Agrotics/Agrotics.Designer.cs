@@ -36,6 +36,7 @@ namespace Agrotics
             this.button3 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -79,6 +80,7 @@ namespace Agrotics
             this.button3.Size = new System.Drawing.Size(141, 57);
             this.button3.TabIndex = 2;
             this.button3.Text = "Cultivos";
+            this.toolTip3.SetToolTip(this.button3, "Encontraras productos relacionados al cultivo seleccionado.");
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -110,6 +112,7 @@ namespace Agrotics
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.ToolTip toolTip3;
     }
 }
 

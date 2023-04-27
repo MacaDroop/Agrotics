@@ -57,6 +57,7 @@ namespace Agrotics
             this.button2.TabIndex = 1;
             this.button2.Text = "MAIZ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             // 
             // button3
             // 
