@@ -34,5 +34,11 @@ namespace Agrotics
             path.CloseAllFigures();
             button1.Region = new Region(path);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.Show();
+        }
     }
 }
