@@ -63,6 +63,16 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bienes {
+            get {
+                object obj = ResourceManager.GetObject("bienes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_añadir_usuario_grupo_mujer_hombre_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-añadir-usuario-grupo-mujer-hombre-100", resourceCulture);

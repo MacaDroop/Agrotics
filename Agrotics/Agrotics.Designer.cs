@@ -92,7 +92,7 @@ namespace Agrotics
             // btnventas
             // 
             this.btnventas.BackColor = System.Drawing.Color.White;
-            this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.icons8_coleccionables_100;
+            this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.bienes;
             this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventas.Location = new System.Drawing.Point(27, 227);
