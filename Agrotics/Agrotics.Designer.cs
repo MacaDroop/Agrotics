@@ -37,6 +37,7 @@ namespace Agrotics
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnventas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -88,6 +89,21 @@ namespace Agrotics
             // 
             this.toolTip1.IsBalloon = true;
             // 
+            // btnventas
+            // 
+            this.btnventas.BackColor = System.Drawing.Color.White;
+            this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.icons8_coleccionables_100;
+            this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventas.Location = new System.Drawing.Point(27, 227);
+            this.btnventas.Name = "btnventas";
+            this.btnventas.Size = new System.Drawing.Size(141, 57);
+            this.btnventas.TabIndex = 3;
+            this.btnventas.Text = "Ventas";
+            this.toolTip3.SetToolTip(this.btnventas, "Encontraras productos relacionados al cultivo seleccionado.");
+            this.btnventas.UseVisualStyleBackColor = false;
+            this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,6 +111,7 @@ namespace Agrotics
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(620, 471);
+            this.Controls.Add(this.btnventas);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -113,6 +130,7 @@ namespace Agrotics
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolTip toolTip2;
         private System.Windows.Forms.ToolTip toolTip3;
+        private System.Windows.Forms.Button btnventas;
     }
 }
 
