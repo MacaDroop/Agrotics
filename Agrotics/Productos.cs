@@ -135,7 +135,7 @@ namespace Agrotics
         {
             MySqlDataReader reader = null;
 
-            string Sql = "SELECT  from productos";
+            string Sql = "SELECT * from productos";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand(Sql, conexionBD);
