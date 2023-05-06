@@ -92,14 +92,15 @@ namespace Agrotics
             // btnventas
             // 
             this.btnventas.BackColor = System.Drawing.Color.White;
-            this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.bienes;
+            this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.carrito_de_compras;
             this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventas.Location = new System.Drawing.Point(27, 227);
+            this.btnventas.Location = new System.Drawing.Point(27, 216);
             this.btnventas.Name = "btnventas";
-            this.btnventas.Size = new System.Drawing.Size(141, 57);
+            this.btnventas.Size = new System.Drawing.Size(140, 58);
             this.btnventas.TabIndex = 3;
             this.btnventas.Text = "Ventas";
+            this.btnventas.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.toolTip3.SetToolTip(this.btnventas, "Encontraras productos relacionados al cultivo seleccionado.");
             this.btnventas.UseVisualStyleBackColor = false;
             this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
@@ -110,7 +111,7 @@ namespace Agrotics
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(620, 471);
+            this.ClientSize = new System.Drawing.Size(583, 471);
             this.Controls.Add(this.btnventas);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
