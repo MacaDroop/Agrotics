@@ -12,9 +12,11 @@ namespace Agrotics
 {
     public partial class Cultivos : Form
     {
+        public String ValorEnviado { get; set; }
         public Cultivos()
         {
             InitializeComponent();
+           
         }
 
         private void Cultivos_Load(object sender, EventArgs e)
@@ -38,6 +40,14 @@ namespace Agrotics
         private void button1_Click(object sender, EventArgs e)
         {
             ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "piña";
+            mensajero.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "maiz";
             mensajero.Show();
         }
     }

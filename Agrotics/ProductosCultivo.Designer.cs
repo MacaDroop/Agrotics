@@ -30,9 +30,14 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -48,6 +53,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.dgvFertilizantes);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -55,6 +63,25 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "FERTILIZANTES";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(388, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(5, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // tabPage2
             // 
@@ -76,6 +103,14 @@
             this.tabPage3.Text = "ELEMENTO 3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dgvFertilizantes
+            // 
+            this.dgvFertilizantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFertilizantes.Location = new System.Drawing.Point(50, 124);
+            this.dgvFertilizantes.Name = "dgvFertilizantes";
+            this.dgvFertilizantes.Size = new System.Drawing.Size(429, 150);
+            this.dgvFertilizantes.TabIndex = 2;
+            // 
             // ProductosCultivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -84,7 +119,11 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "ProductosCultivo";
             this.Text = "ProductosCultivo";
+            this.Load += new System.EventHandler(this.ProductosCultivo_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,5 +134,8 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvFertilizantes;
     }
 }
