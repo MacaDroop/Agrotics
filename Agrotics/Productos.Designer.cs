@@ -92,7 +92,7 @@ namespace Agrotics
             this.bttAg.BackgroundImage = global::Agrotics.Properties.Resources.icons8_añadir_usuario_grupo_mujer_hombre_100;
             this.bttAg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.bttAg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttAg.Location = new System.Drawing.Point(359, 310);
+            this.bttAg.Location = new System.Drawing.Point(359, 308);
             this.bttAg.Name = "bttAg";
             this.bttAg.Size = new System.Drawing.Size(97, 39);
             this.bttAg.TabIndex = 3;

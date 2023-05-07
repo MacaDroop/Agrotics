@@ -322,7 +322,7 @@
             // 
             // txtVender
             // 
-            this.txtVender.Location = new System.Drawing.Point(477, 311);
+            this.txtVender.Location = new System.Drawing.Point(435, 311);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(75, 23);
             this.txtVender.TabIndex = 31;

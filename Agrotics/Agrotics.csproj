@@ -197,5 +197,20 @@
   <ItemGroup>
     <None Include="Resources\carrito-de-compras.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO AGROTICS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandia.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
