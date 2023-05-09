@@ -35,11 +35,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstCantidad = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCantVen = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -122,14 +122,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Total:";
             // 
-            // label4
+            // lblTotal
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(334, 421);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(19, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "$0";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(334, 421);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(19, 13);
+            this.lblTotal.TabIndex = 7;
+            this.lblTotal.Text = "$0";
             // 
             // label5
             // 
@@ -140,13 +140,13 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Cantidad:";
             // 
-            // listBox1
+            // lstCantidad
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(170, 311);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(106, 95);
-            this.listBox1.TabIndex = 10;
+            this.lstCantidad.FormattingEnabled = true;
+            this.lstCantidad.Location = new System.Drawing.Point(170, 311);
+            this.lstCantidad.Name = "lstCantidad";
+            this.lstCantidad.Size = new System.Drawing.Size(106, 95);
+            this.lstCantidad.TabIndex = 10;
             // 
             // label6
             // 
@@ -157,12 +157,12 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Cantidad";
             // 
-            // textBox1
+            // txtCantVen
             // 
-            this.textBox1.Location = new System.Drawing.Point(107, 250);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 12;
+            this.txtCantVen.Location = new System.Drawing.Point(107, 250);
+            this.txtCantVen.Name = "txtCantVen";
+            this.txtCantVen.Size = new System.Drawing.Size(100, 20);
+            this.txtCantVen.TabIndex = 12;
             // 
             // btnAgregar
             // 
@@ -370,11 +370,11 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCantVen);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstCantidad);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -399,11 +399,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstCantidad;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCantVen;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label7;

@@ -179,7 +179,7 @@ namespace Agrotics
                             txtCaducidad.Text = reader.GetString(4);
                             txtStock.Text = reader.GetString(5);
                             txtTipo.Text = reader.GetString(6);
-                            txtCaducidad.Text = reader.GetString(6);
+                            txtPresentacion.Text = reader.GetString(6);
                             
 
                         }

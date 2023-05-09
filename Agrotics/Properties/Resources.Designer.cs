@@ -163,6 +163,16 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loag {
+            get {
+                object obj = ResourceManager.GetObject("loag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_AGROTICS {
             get {
                 object obj = ResourceManager.GetObject("LOGO AGROTICS", resourceCulture);

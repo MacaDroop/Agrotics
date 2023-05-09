@@ -212,5 +212,8 @@
   <ItemGroup>
     <None Include="Resources\sandia.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loag.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

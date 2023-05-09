@@ -45,8 +45,6 @@ namespace Agrotics
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCaducidad = new System.Windows.Forms.TextBox();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,7 +52,7 @@ namespace Agrotics
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtPresentacion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
@@ -273,27 +271,27 @@ namespace Agrotics
             this.txtTipo.TabIndex = 25;
             this.txtTipo.Text = " ";
             // 
-            // txtCantidad
+            // txtPresentacion
             // 
-            this.txtCantidad.AutoCompleteCustomSource.AddRange(new string[] {
+            this.txtPresentacion.AutoCompleteCustomSource.AddRange(new string[] {
             "250GR",
             "500GR",
             "1KG",
             "500ML",
             "1L"});
-            this.txtCantidad.Location = new System.Drawing.Point(124, 351);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(168, 20);
-            this.txtCantidad.TabIndex = 28;
+            this.txtPresentacion.Location = new System.Drawing.Point(124, 351);
+            this.txtPresentacion.Name = "txtPresentacion";
+            this.txtPresentacion.Size = new System.Drawing.Size(168, 20);
+            this.txtPresentacion.TabIndex = 28;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 354);
+            this.label9.Location = new System.Drawing.Point(12, 358);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 29;
-            this.label9.Text = "Cantidad";
+            this.label9.Text = "Presentacion";
             // 
             // Productos
             // 
@@ -301,7 +299,7 @@ namespace Agrotics
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.txtPresentacion);
             this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -352,8 +350,6 @@ namespace Agrotics
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCaducidad;
-        private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ColorDialog colorDialog2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -361,7 +357,7 @@ namespace Agrotics
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.TextBox txtPresentacion;
         private System.Windows.Forms.Label label9;
     }
 }
