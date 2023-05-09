@@ -328,6 +328,7 @@
             this.txtVender.TabIndex = 31;
             this.txtVender.Text = "Vender";
             this.txtVender.UseVisualStyleBackColor = true;
+            this.txtVender.Click += new System.EventHandler(this.txtVender_Click);
             // 
             // txtBuscarPresentacion
             // 

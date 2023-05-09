@@ -8,6 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+
 
 namespace Agrotics.Resources
 {
@@ -111,6 +115,42 @@ namespace Agrotics.Resources
         private void Ventas1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtVender_Click(object sender, EventArgs e)
+        {
+            // Creamos el documento PDF
+            Document doc = new Document(PageSize.A4, 50, 50, 50, 50);
+
+            // Creamos un objeto PDFWriter para escribir el PDF
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream("Tabla.pdf", FileMode.Create));
+
+            // Abrimos el documento
+            doc.Open();
+
+            // Creamos una tabla con tres columnas
+            PdfPTable table = new PdfPTable(3);
+
+            // Agregamos los encabezados de las columnas
+            table.AddCell("ListBox 1");
+            table.AddCell("ListBox 2");
+            table.AddCell("ListBox 3");
+
+            // Agregamos las filas de la tabla con la información de los ListBox
+            for (int i = 0; i < Math.Max(ListaPrecios.Items.Count, Math.Max(lstCantidad.Items.Count, ListaPrecios.Items.Count)); i++)
+            {
+                table.AddCell(i < listaProductos.Items.Count ? listaProductos.Items[i].ToString() : "");
+                table.AddCell(i < lstCantidad.Items.Count ? lstCantidad.Items[i].ToString() : "");
+                table.AddCell(i < ListaPrecios.Items.Count ? ListaPrecios.Items[i].ToString() : "");
+            }
+
+            // Agregamos la tabla al documento
+            doc.Add(table);
+
+            // Cerramos el documento
+            doc.Close();
+
+            MessageBox.Show("PDF generado exitosamente.");
         }
     }
 }
