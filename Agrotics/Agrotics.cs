@@ -47,5 +47,30 @@ namespace Agrotics
             form.Show();
         
         }
+
+        private void btnventas_MouseHover(object sender, EventArgs e)
+        {
+            btnventas.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
+
+        private void btnProveedores_MouseHover(object sender, EventArgs e)
+        {
+            btnProveedores.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
+
+        private void btnCultivos_MouseHover(object sender, EventArgs e)
+        {
+            btnCultivos.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
+
+        private void btnProductos_MouseHover(object sender, EventArgs e)
+        {
+            btnProductos.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
+
+        private void toolTip3_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }

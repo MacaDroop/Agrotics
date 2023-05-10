@@ -152,5 +152,10 @@ namespace Agrotics.Resources
 
             MessageBox.Show("PDF generado exitosamente.");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

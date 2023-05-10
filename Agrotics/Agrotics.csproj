@@ -128,6 +128,9 @@
     <Compile Include="Ventas1.Designer.cs">
       <DependentUpon>Ventas1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Agrotics.es-419.resx">
+      <DependentUpon>Agrotics.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Agrotics.resx">
       <DependentUpon>Agrotics.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +220,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc-sinfondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-cultivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-productos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-proveedores.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
