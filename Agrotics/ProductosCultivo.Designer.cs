@@ -30,11 +30,11 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
@@ -65,10 +65,18 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // dgvFertilizantes
+            // 
+            this.dgvFertilizantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFertilizantes.Location = new System.Drawing.Point(23, 56);
+            this.dgvFertilizantes.Name = "dgvFertilizantes";
+            this.dgvFertilizantes.Size = new System.Drawing.Size(747, 327);
+            this.dgvFertilizantes.TabIndex = 2;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(388, 18);
+            this.label2.Location = new System.Drawing.Point(372, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
@@ -102,14 +110,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ELEMENTO 3";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dgvFertilizantes
-            // 
-            this.dgvFertilizantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFertilizantes.Location = new System.Drawing.Point(50, 124);
-            this.dgvFertilizantes.Name = "dgvFertilizantes";
-            this.dgvFertilizantes.Size = new System.Drawing.Size(429, 150);
-            this.dgvFertilizantes.TabIndex = 2;
             // 
             // ProductosCultivo
             // 

@@ -31,14 +31,14 @@ namespace Agrotics
         private void button1_Click(object sender, EventArgs e)
         {
             ProductosCultivo mensajero = new ProductosCultivo();
-            mensajero.ValorEnviado = "piña";
+            mensajero.ValorEnviado = "Piña";
             mensajero.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             ProductosCultivo mensajero = new ProductosCultivo();
-            mensajero.ValorEnviado = "maiz";
+            mensajero.ValorEnviado = "Maiz";
             mensajero.Show();
         }
     }

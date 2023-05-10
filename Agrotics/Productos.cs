@@ -38,6 +38,7 @@ namespace Agrotics
             string precio = txtPrecio.Text;
             string fechaCad = txtCaducidad.Text;
             
+            
 
 
             if (txtPrecio.Text.Length == 0)
@@ -48,7 +49,7 @@ namespace Agrotics
             else
             {
                 //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
-                string sql = "INSERT INTO productos (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad) VALUES ('" + nombrePro + "', '" + descripcionPro + "', '" + laboratorioPro + "', '"  + precio + "', '" + fechaCad + "')";
+                string sql = "INSERT INTO productos (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos) VALUES ('" + nombrePro + "', '" + descripcionPro + "', '" + laboratorioPro + "', '"  + precio + "', '" + fechaCad + "', '" + txtStock.Text + "', '" + txtTipo.Text + "', '" + txtPresentacion.Text + "', '" + txtCultivos.Text + "')";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -82,7 +83,7 @@ namespace Agrotics
             string fechaCad =txtCaducidad.Text;
             
 
-            string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
+            string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "', Stock='" + txtStock.Text + "', Tipo='" + txtTipo.Text + "', Presentacion='" + txtPresentacion.Text + "', Cultivos='" + txtCultivos.Text + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
 
@@ -159,7 +160,7 @@ namespace Agrotics
                 string buscar =txtBuscarpro.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, stock, TipoProducto, cantidadProducto FROM productos WHERE Nombre LIKE '" + buscar + "' LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto LIKE '" + buscar + "' LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -179,7 +180,8 @@ namespace Agrotics
                             txtCaducidad.Text = reader.GetString(4);
                             txtStock.Text = reader.GetString(5);
                             txtTipo.Text = reader.GetString(6);
-                            txtPresentacion.Text = reader.GetString(6);
+                            txtPresentacion.Text = reader.GetString(7);
+                            txtCultivos.Text =reader.GetString(8);
                             
 
                         }

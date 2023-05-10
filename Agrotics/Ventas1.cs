@@ -25,6 +25,7 @@ namespace Agrotics.Resources
         public void limpiar()
         {
             txtBuscarProVen.Clear();
+            txtBuscarPresentacion.Clear();
             txtName.Clear();
             txtDescription.Clear();
             txtLabVentas.Clear();
@@ -32,6 +33,8 @@ namespace Agrotics.Resources
             txtTipoPVentas.Clear();
             txtPrecioVentas.Clear();
            txtPresentacionVentas.Clear();
+            txtCultivos.Clear();
+            txtStockVentas.Clear();
         }
         private void btnBuscarProVent_Click(object sender, EventArgs e)
         {
@@ -41,10 +44,10 @@ namespace Agrotics.Resources
             }
             else
             {
-                string buscar = btnBuscarProVent.Text;
+                string buscar = txtBuscarProVen.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, stock, TipoProducto, cantidadProducto FROM productos WHERE Nombre = '" + buscar + "' AND presentacion = '"+txtPresentacionVentas.Text+"'  LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto = '" + buscar + "' AND Presentacion = '"+txtBuscarPresentacion.Text+"'  LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -64,7 +67,8 @@ namespace Agrotics.Resources
                             txtCadVentas.Text = reader.GetString(4);
                             txtStockVentas.Text = reader.GetString(5);
                             txtTipoPVentas.Text = reader.GetString(6);
-                            txtPresentacionVentas.Text = reader.GetString(6);
+                            txtPresentacionVentas.Text = reader.GetString(7);
+                            txtCultivos.Text = reader.GetString(8);
 
                         }
                     }
@@ -123,7 +127,7 @@ namespace Agrotics.Resources
             Document doc = new Document(PageSize.A4, 50, 50, 50, 50);
 
             // Creamos un objeto PDFWriter para escribir el PDF
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream("Tabla.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Tabla.pdf", FileMode.Create));
 
             // Abrimos el documento
             doc.Open();

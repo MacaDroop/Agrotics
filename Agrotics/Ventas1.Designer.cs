@@ -60,7 +60,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtVender = new System.Windows.Forms.Button();
             this.txtBuscarPresentacion = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtCultivos = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtBuscarProVen
@@ -347,22 +348,29 @@
             this.txtBuscarPresentacion.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarPresentacion.TabIndex = 32;
             // 
-            // button1
+            // label4
             // 
-            this.button1.Location = new System.Drawing.Point(444, 376);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(494, 229);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Cultivos";
+            // 
+            // txtCultivos
+            // 
+            this.txtCultivos.Location = new System.Drawing.Point(563, 229);
+            this.txtCultivos.Name = "txtCultivos";
+            this.txtCultivos.Size = new System.Drawing.Size(225, 20);
+            this.txtCultivos.TabIndex = 35;
             // 
             // Ventas1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtCultivos);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBuscarPresentacion);
             this.Controls.Add(this.txtVender);
             this.Controls.Add(this.txtPresentacionVentas);
@@ -437,6 +445,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button txtVender;
         private System.Windows.Forms.TextBox txtBuscarPresentacion;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtCultivos;
     }
 }

@@ -33,10 +33,10 @@ namespace Agrotics
             MySqlDataReader reader = null;
 
             //REVISAR LA CADENA DE CONSULTA Y LA CONCATENACION DE LA VARIABLE
-            string Sql = "SELECT * FROM productos WHERE tipo = '" + ValorEnviado + "'";
+            string sql = "SELECT * FROM productos WHERE Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
-            MySqlCommand comando = new MySqlCommand(Sql, conexionBD);
+            MySqlCommand comando = new MySqlCommand(sql, conexionBD);
             reader = comando.ExecuteReader();
             if (reader.HasRows)
             {

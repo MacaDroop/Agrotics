@@ -54,6 +54,8 @@ namespace Agrotics
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtPresentacion = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCultivos = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,15 +89,18 @@ namespace Agrotics
             // 
             // bttAg
             // 
+            this.bttAg.BackColor = System.Drawing.Color.Transparent;
             this.bttAg.BackgroundImage = global::Agrotics.Properties.Resources.icons8_añadir_usuario_grupo_mujer_hombre_100;
             this.bttAg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bttAg.FlatAppearance.BorderSize = 0;
+            this.bttAg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttAg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttAg.Location = new System.Drawing.Point(359, 308);
             this.bttAg.Name = "bttAg";
             this.bttAg.Size = new System.Drawing.Size(97, 39);
             this.bttAg.TabIndex = 3;
             this.bttAg.Text = "Agregar";
-            this.bttAg.UseVisualStyleBackColor = true;
+            this.bttAg.UseVisualStyleBackColor = false;
             this.bttAg.Click += new System.EventHandler(this.bttAg_Click);
             // 
             // btnEliminar
@@ -293,11 +298,29 @@ namespace Agrotics
             this.label9.TabIndex = 29;
             this.label9.Text = "Presentacion";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 383);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Cultivos";
+            // 
+            // txtCultivos
+            // 
+            this.txtCultivos.Location = new System.Drawing.Point(124, 383);
+            this.txtCultivos.Name = "txtCultivos";
+            this.txtCultivos.Size = new System.Drawing.Size(168, 20);
+            this.txtCultivos.TabIndex = 31;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 418);
+            this.Controls.Add(this.txtCultivos);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtPresentacion);
             this.Controls.Add(this.txtTipo);
@@ -359,5 +382,7 @@ namespace Agrotics
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtPresentacion;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtCultivos;
     }
 }
