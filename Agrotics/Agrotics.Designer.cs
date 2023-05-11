@@ -125,6 +125,7 @@ namespace Agrotics
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Agrotics.Properties.Resources.Sin_título;
             this.Controls.Add(this.btnventas);
             this.Controls.Add(this.btnCultivos);

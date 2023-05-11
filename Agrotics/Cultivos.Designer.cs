@@ -40,6 +40,35 @@ namespace Agrotics
             button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(93, 27);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(472, 30);
+            label1.TabIndex = 6;
+            label1.Text = "SELECCIONA EL TIPO DE CULTIVO";
+            // 
+            // button1
+            // 
+            button1.BackColor = System.Drawing.Color.Transparent;
+            button1.BackgroundImage = global::Agrotics.Properties.Resources.piña;
+            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button1.ForeColor = System.Drawing.Color.Black;
+            button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            button1.Location = new System.Drawing.Point(70, 87);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(127, 89);
+            button1.TabIndex = 0;
+            button1.Text = "PIÑA";
+            button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(228, 246);
@@ -57,16 +86,6 @@ namespace Agrotics
             this.button6.TabIndex = 5;
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Open Sans Semibold", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(142, 27);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(428, 36);
-            label1.TabIndex = 6;
-            label1.Text = "SELECCIONA EL TIPO DE CULTIVO";
             // 
             // button4
             // 
@@ -120,29 +139,11 @@ namespace Agrotics
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             // 
-            // button1
-            // 
-            button1.BackColor = System.Drawing.Color.Transparent;
-            button1.BackgroundImage = global::Agrotics.Properties.Resources.piña;
-            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button1.ForeColor = System.Drawing.Color.Black;
-            button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            button1.Location = new System.Drawing.Point(70, 87);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(127, 89);
-            button1.TabIndex = 0;
-            button1.Text = "PIÑA";
-            button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Cultivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(656, 450);
             this.Controls.Add(label1);
             this.Controls.Add(this.button6);

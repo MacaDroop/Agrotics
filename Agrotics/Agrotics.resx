@@ -187,9 +187,6 @@
   <data name="&gt;&gt;toolTip2.Name" xml:space="preserve">
     <value>toolTip2</value>
   </data>
-  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 17pt, style=Bold</value>
-  </data>
   <data name="btnProveedores.ToolTip" xml:space="preserve">
     <value>Aqui podras registrar la información de tus proveedores.</value>
   </data>
@@ -199,8 +196,9 @@
   <data name="btnCultivos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btnProductos.ToolTip3" xml:space="preserve">
-    <value />
+  <data name="btnventas.ToolTip3" xml:space="preserve">
+    <value>Podras realizar la venta de tus Productos
+</value>
   </data>
   <data name="&gt;&gt;btnProductos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -232,16 +230,11 @@
   <data name="&gt;&gt;toolTip3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnventas.ToolTip3" xml:space="preserve">
-    <value>Podras realizar la venta de tus Productos
-</value>
-  </data>
   <data name="btnCultivos.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="btnventas.ToolTip1" xml:space="preserve">
-    <value>Podras realizar la venta de tus Productos
-</value>
+  <data name="btnProductos.ToolTip3" xml:space="preserve">
+    <value />
   </data>
   <data name="btnProveedores.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -249,7 +242,7 @@
   <data name="btnProductos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btnCultivos.ToolTip3" xml:space="preserve">
+  <data name="$this.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.ToolTip2" xml:space="preserve">
@@ -258,8 +251,11 @@
   <data name="btnProductos.ToolTip1" xml:space="preserve">
     <value>Aquí podras podras registrar, editar y eliminar tus productos.</value>
   </data>
-  <data name="&gt;&gt;toolTip4.Name" xml:space="preserve">
-    <value>toolTip4</value>
+  <data name="btnProductos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnCultivos.ToolTip3" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btnventas.Name" xml:space="preserve">
     <value>btnventas</value>
@@ -288,14 +284,18 @@
   <data name="&gt;&gt;toolTip4.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnProductos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="btnventas.ToolTip1" xml:space="preserve">
+    <value>Podras realizar la venta de tus Productos
+</value>
   </data>
   <data name="btnProveedores.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
   <data name="btnProveedores.ToolTip3" xml:space="preserve">
     <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Agrotics</value>
   </data>
   <data name="btnventas.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -327,6 +327,9 @@
   <data name="&gt;&gt;btnventas.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;toolTip4.Name" xml:space="preserve">
+    <value>toolTip4</value>
+  </data>
   <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
     <value>toolTip1</value>
   </data>
@@ -345,8 +348,8 @@
   <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Agrotics</value>
+  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 17pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;toolTip2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -366,9 +369,6 @@
   <data name="btnProductos.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>114, 17</value>
   </metadata>
@@ -378,11 +378,11 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>211, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>211, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>es-419</value>
