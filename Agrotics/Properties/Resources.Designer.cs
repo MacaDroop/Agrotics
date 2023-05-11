@@ -113,9 +113,29 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_chile {
+            get {
+                object obj = ResourceManager.GetObject("icon-chile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_cultivos {
             get {
                 object obj = ResourceManager.GetObject("icon-cultivos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_frijol {
+            get {
+                object obj = ResourceManager.GetObject("icon-frijol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

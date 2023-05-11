@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnAddFert = new System.Windows.Forms.Button();
             this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnAddFert);
             this.tabPage1.Controls.Add(this.dgvFertilizantes);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
@@ -65,13 +67,25 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // btnAddFert
+            // 
+            this.btnAddFert.Location = new System.Drawing.Point(460, 20);
+            this.btnAddFert.Name = "btnAddFert";
+            this.btnAddFert.Size = new System.Drawing.Size(75, 23);
+            this.btnAddFert.TabIndex = 3;
+            this.btnAddFert.Text = "Agregar Producto";
+            this.btnAddFert.UseVisualStyleBackColor = true;
+            this.btnAddFert.Click += new System.EventHandler(this.btnAddFert_Click);
+            // 
             // dgvFertilizantes
             // 
             this.dgvFertilizantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFertilizantes.Location = new System.Drawing.Point(23, 56);
             this.dgvFertilizantes.Name = "dgvFertilizantes";
-            this.dgvFertilizantes.Size = new System.Drawing.Size(747, 327);
+            this.dgvFertilizantes.ReadOnly = true;
+            this.dgvFertilizantes.Size = new System.Drawing.Size(747, 221);
             this.dgvFertilizantes.TabIndex = 2;
+            this.dgvFertilizantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFertilizantes_CellClick);
             // 
             // label2
             // 
@@ -137,5 +151,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvFertilizantes;
+        private System.Windows.Forms.Button btnAddFert;
     }
 }

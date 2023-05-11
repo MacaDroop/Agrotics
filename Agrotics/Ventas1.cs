@@ -14,12 +14,15 @@ using System.IO;
 
 
 namespace Agrotics.Resources
+    
 {
     public partial class Ventas1 : Form
     {
+        public String ValorCelda { get; set; }
         public Ventas1()
         {
             InitializeComponent();
+
         }
 
         public void limpiar()
@@ -93,7 +96,7 @@ namespace Agrotics.Resources
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtBuscarProVen.TextLength == 0) {
+            if (txtCantVen.TextLength == 0) {
                 MessageBox.Show("PRIMERO SELECCIONA LA CANTIDAD DE PRODUCTOS A VENDER");
             
             }
@@ -118,8 +121,55 @@ namespace Agrotics.Resources
 
         private void Ventas1_Load(object sender, EventArgs e)
         {
+            
+            if (!string.IsNullOrEmpty(ValorCelda))
+            {
+              
+                string buscar = txtBuscarProVen.Text;
+                MySqlDataReader reader = null;
+
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto = '" + ValorCelda + "'LIMIT 1";
+                MySqlConnection conexionBD = Conexion2.conexion();
+                conexionBD.Open();
+
+                try
+                {
+                    MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                    reader = comando.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+
+                            txtName.Text = reader.GetString(0);
+                            txtDescription.Text = reader.GetString(1);
+                            txtLabVentas.Text = reader.GetString(2);
+                            txtPrecioVentas.Text = reader.GetString(3);
+                            txtCadVentas.Text = reader.GetString(4);
+                            txtStockVentas.Text = reader.GetString(5);
+                            txtTipoPVentas.Text = reader.GetString(6);
+                            txtPresentacionVentas.Text = reader.GetString(7);
+                            txtCultivos.Text = reader.GetString(8);
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontraron los registros");
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error al buscar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionBD.Close();
+                }
+            }
 
         }
+        
 
         private void txtVender_Click(object sender, EventArgs e)
         {

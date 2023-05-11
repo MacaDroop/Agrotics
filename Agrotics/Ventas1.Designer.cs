@@ -62,6 +62,8 @@
             this.txtBuscarPresentacion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCultivos = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblPrueba = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBuscarProVen
@@ -364,12 +366,32 @@
             this.txtCultivos.Size = new System.Drawing.Size(225, 20);
             this.txtCultivos.TabIndex = 35;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 13);
+            this.label15.TabIndex = 36;
+            this.label15.Text = "label15";
+            // 
+            // lblPrueba
+            // 
+            this.lblPrueba.AutoSize = true;
+            this.lblPrueba.Location = new System.Drawing.Point(431, 56);
+            this.lblPrueba.Name = "lblPrueba";
+            this.lblPrueba.Size = new System.Drawing.Size(41, 13);
+            this.lblPrueba.TabIndex = 37;
+            this.lblPrueba.Text = "label16";
+            // 
             // Ventas1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPrueba);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.txtCultivos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBuscarPresentacion);
@@ -448,5 +470,7 @@
         private System.Windows.Forms.TextBox txtBuscarPresentacion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCultivos;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblPrueba;
     }
 }

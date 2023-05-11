@@ -41,5 +41,21 @@ namespace Agrotics
             mensajero.ValorEnviado = "Maiz";
             mensajero.Show();
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            
+          
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
+        }
     }
 }

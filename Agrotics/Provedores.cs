@@ -137,7 +137,7 @@ namespace Agrotics
 
         private void bttbusqueda_Click_1(object sender, EventArgs e)
         {
-
+            
             if (txtBusquedaPro.Text.Length == 0)
             {
                 MessageBox.Show("El campo de busqueda esta vacio");
