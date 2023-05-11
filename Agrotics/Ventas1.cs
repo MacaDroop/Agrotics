@@ -211,5 +211,54 @@ namespace Agrotics.Resources
         {
             
         }
+
+        private void txtBuscarProVen_TextChanged(object sender, EventArgs e)
+        {
+            string buscar = txtBuscarProVen.Text;
+            MySqlDataReader reader = null;
+
+
+            string sql = "SELECT * FROM productos WHERE NombreProducto  LIKE '" + buscar.Replace("'", "''") + "%'";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                reader = comando.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+
+                        txtName.Text = reader.GetString(0);
+                        txtDescription.Text = reader.GetString(1);
+                        txtLabVentas.Text = reader.GetString(2);
+                        txtPrecioVentas.Text = reader.GetString(3);
+                        txtCadVentas.Text = reader.GetString(4);
+                        txtStockVentas.Text = reader.GetString(5);
+                        txtTipoPVentas.Text = reader.GetString(6);
+                        txtPresentacionVentas.Text = reader.GetString(7);
+                        txtCultivos.Text = reader.GetString(8);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se encontraron los registros");
+                }
+
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al buscar: " + ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close();
+            }
+           
+        }
     }
 }

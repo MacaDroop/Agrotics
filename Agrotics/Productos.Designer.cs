@@ -309,6 +309,15 @@ namespace Agrotics
             // 
             // txtCultivos
             // 
+            this.txtCultivos.AutoCompleteCustomSource.AddRange(new string[] {
+            "Piña",
+            "Maiz",
+            "Frijol",
+            "Chile",
+            "Caña",
+            "Sandia"});
+            this.txtCultivos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.txtCultivos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtCultivos.Location = new System.Drawing.Point(124, 383);
             this.txtCultivos.Name = "txtCultivos";
             this.txtCultivos.Size = new System.Drawing.Size(168, 20);

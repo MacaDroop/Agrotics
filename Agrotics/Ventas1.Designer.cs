@@ -72,6 +72,7 @@
             this.txtBuscarProVen.Name = "txtBuscarProVen";
             this.txtBuscarProVen.Size = new System.Drawing.Size(186, 20);
             this.txtBuscarProVen.TabIndex = 0;
+            this.txtBuscarProVen.TextChanged += new System.EventHandler(this.txtBuscarProVen_TextChanged);
             // 
             // btnBuscarProVent
             // 
@@ -337,18 +338,19 @@
             // txtBuscarPresentacion
             // 
             this.txtBuscarPresentacion.AutoCompleteCustomSource.AddRange(new string[] {
-            "1KG",
-            "250GR",
-            "100ML",
-            "250ML",
-            "500ML",
+            "1Kg",
+            "250Gr",
+            "100ml",
+            "250ml",
+            "500ml",
             "1L"});
-            this.txtBuscarPresentacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.txtBuscarPresentacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtBuscarPresentacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtBuscarPresentacion.Location = new System.Drawing.Point(48, 92);
             this.txtBuscarPresentacion.Name = "txtBuscarPresentacion";
             this.txtBuscarPresentacion.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarPresentacion.TabIndex = 32;
+            this.txtBuscarPresentacion.Tag = "";
             // 
             // label4
             // 
