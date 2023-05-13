@@ -58,7 +58,7 @@ namespace Agrotics
                 DataTable datos = new DataTable();
 
                 datos.Load(reader);
-                dgvPesticidas.DataSource = datos;
+                dgvFungicidas.DataSource = datos;
             }
         }
         public void consulta4()
@@ -76,7 +76,7 @@ namespace Agrotics
                 DataTable datos = new DataTable();
 
                 datos.Load(reader);
-                dgvPesticidas.DataSource = datos;
+                dgvInsecticidas.DataSource = datos;
             }
 
         }
@@ -127,6 +127,50 @@ namespace Agrotics
         private void btnAddFert_Click(object sender, EventArgs e)
         {
             
+            Ventas1 mensajero = new Ventas1();
+            label1.Text = ValorCelda;
+            mensajero.ValorCelda = this.ValorCelda;
+            mensajero.Show();
+        }
+
+        private void btnPesticidas_Click(object sender, EventArgs e)
+        {
+            Ventas1 mensajero = new Ventas1();
+            label1.Text = ValorCelda;
+            mensajero.ValorCelda = this.ValorCelda;
+            mensajero.Show();
+        }
+
+        private void dgvPesticidas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ValorCelda = dgvPesticidas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+        }
+
+        private void dgvFungicidas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ValorCelda = dgvFungicidas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+        }
+
+        private void btnFungicidas_Click(object sender, EventArgs e)
+        {
+            Ventas1 mensajero = new Ventas1();
+            label1.Text = ValorCelda;
+            mensajero.ValorCelda = this.ValorCelda;
+            mensajero.Show();
+        }
+
+        private void dgvInsecticidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvInsecticidas_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ValorCelda = dgvInsecticidas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+        }
+
+        private void btnInsecticidas_Click(object sender, EventArgs e)
+        {
             Ventas1 mensajero = new Ventas1();
             label1.Text = ValorCelda;
             mensajero.ValorCelda = this.ValorCelda;
