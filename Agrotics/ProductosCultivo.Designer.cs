@@ -35,16 +35,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgvPesticidas = new System.Windows.Forms.DataGridView();
-            this.dgvFungicidas = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesticidas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFungicidas)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -122,17 +122,6 @@
             this.tabPage2.Text = "PESTICIDAS";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dgvFungicidas);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(797, 430);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "FUNGICIDAS";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // dgvPesticidas
             // 
             this.dgvPesticidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -141,13 +130,25 @@
             this.dgvPesticidas.Size = new System.Drawing.Size(583, 295);
             this.dgvPesticidas.TabIndex = 0;
             // 
-            // dgvFungicidas
+            // tabPage3
             // 
-            this.dgvFungicidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFungicidas.Location = new System.Drawing.Point(78, 56);
-            this.dgvFungicidas.Name = "dgvFungicidas";
-            this.dgvFungicidas.Size = new System.Drawing.Size(636, 334);
-            this.dgvFungicidas.TabIndex = 0;
+            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(797, 430);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "FUNGICIDAS";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(78, 56);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(636, 334);
+            this.dataGridView1.TabIndex = 0;
             // 
             // ProductosCultivo
             // 
@@ -163,9 +164,9 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesticidas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFungicidas)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,6 +182,6 @@
         private System.Windows.Forms.DataGridView dgvFertilizantes;
         private System.Windows.Forms.Button btnAddFert;
         private System.Windows.Forms.DataGridView dgvPesticidas;
-        private System.Windows.Forms.DataGridView dgvFungicidas;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
