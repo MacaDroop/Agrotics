@@ -61,7 +61,25 @@ namespace Agrotics
                 dgvPesticidas.DataSource = datos;
             }
         }
+        public void consulta4()
+        {
+            MySqlDataReader reader = null;
 
+            //REVISAR LA CADENA DE CONSULTA Y LA CONCATENACION DE LA VARIABLE
+            string sql = "SELECT * FROM productos WHERE Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%' AND Tipo = 'Insecticida'";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+            MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+            reader = comando.ExecuteReader();
+            if (reader.HasRows)
+            {
+                DataTable datos = new DataTable();
+
+                datos.Load(reader);
+                dgvPesticidas.DataSource = datos;
+            }
+
+        }
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -89,6 +107,8 @@ namespace Agrotics
             }
 
             consulta2();
+            consulta3();
+            consulta4();
 
 
         }

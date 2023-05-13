@@ -57,5 +57,33 @@ namespace Agrotics
         {
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "Sandia";
+            mensajero.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "Frijol";
+            mensajero.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "Chile";
+            mensajero.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "Caña";
+            mensajero.Show();
+        }
     }
 }
