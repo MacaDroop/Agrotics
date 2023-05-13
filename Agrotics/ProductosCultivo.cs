@@ -132,10 +132,5 @@ namespace Agrotics
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show();
         }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
