@@ -134,6 +134,7 @@ namespace Agrotics
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void btnPesticidas_Click(object sender, EventArgs e)
         {
             Ventas1 mensajero = new Ventas1();
