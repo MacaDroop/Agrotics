@@ -187,6 +187,9 @@
   <data name="&gt;&gt;toolTip2.Name" xml:space="preserve">
     <value>toolTip2</value>
   </data>
+  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 17pt, style=Bold</value>
+  </data>
   <data name="btnProveedores.ToolTip" xml:space="preserve">
     <value>Aqui podras registrar la información de tus proveedores.</value>
   </data>
@@ -294,9 +297,6 @@
   <data name="btnProveedores.ToolTip3" xml:space="preserve">
     <value />
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Agrotics</value>
-  </data>
   <data name="btnventas.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
   </data>
@@ -348,8 +348,8 @@
   <data name="&gt;&gt;btnProveedores.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnProductos.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 17pt, style=Bold</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Agrotics</value>
   </data>
   <data name="&gt;&gt;toolTip2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -369,8 +369,8 @@
   <data name="btnProductos.ToolTip2" xml:space="preserve">
     <value />
   </data>
-  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>114, 17</value>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es-419</value>
   </metadata>
   <metadata name="toolTip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>308, 17</value>
@@ -378,13 +378,16 @@
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>114, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="toolTip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>211, 17</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-419</value>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
 </root>

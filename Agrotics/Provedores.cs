@@ -217,6 +217,16 @@ namespace Agrotics
         {
 
         }
+
+        private void dgvprovedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
      

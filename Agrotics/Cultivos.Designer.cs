@@ -43,6 +43,7 @@ namespace Agrotics
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Transparent;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label1.Location = new System.Drawing.Point(93, 27);
             label1.Name = "label1";
@@ -90,6 +91,7 @@ namespace Agrotics
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.BackgroundImage = global::Agrotics.Properties.Resources.icon_frijol;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatAppearance.BorderSize = 0;
@@ -101,7 +103,7 @@ namespace Agrotics
             this.button5.TabIndex = 4;
             this.button5.Text = "FRIJOL";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
@@ -143,6 +145,7 @@ namespace Agrotics
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = global::Agrotics.Properties.Resources.maiz;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
@@ -155,7 +158,7 @@ namespace Agrotics
             this.button2.TabIndex = 1;
             this.button2.Text = "MAIZ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
@@ -165,6 +168,8 @@ namespace Agrotics
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_13_a_las_13_52_20;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(656, 450);
             this.Controls.Add(label1);
             this.Controls.Add(this.button6);

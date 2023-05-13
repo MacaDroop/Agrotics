@@ -233,6 +233,26 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2023_05_06_a_las_11_24_22 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2023-05-06 a las 11.24.22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Imagen_de_WhatsApp_2023_05_13_a_las_13_52_20 {
+            get {
+                object obj = ResourceManager.GetObject("Imagen de WhatsApp 2023-05-13 a las 13.52.20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loag {
             get {
                 object obj = ResourceManager.GetObject("loag", resourceCulture);
@@ -263,6 +283,16 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lupa {
+            get {
+                object obj = ResourceManager.GetObject("lupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maiz {
             get {
                 object obj = ResourceManager.GetObject("maiz", resourceCulture);
@@ -276,6 +306,16 @@ namespace Agrotics.Properties {
         internal static System.Drawing.Bitmap piña {
             get {
                 object obj = ResourceManager.GetObject("piña", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PINAp {
+            get {
+                object obj = ResourceManager.GetObject("PINAp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
