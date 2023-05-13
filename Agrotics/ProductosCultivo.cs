@@ -133,6 +133,7 @@ namespace Agrotics
             mensajero.Show();
         }
 
+<<<<<<< HEAD
         private void btnPesticidas_Click(object sender, EventArgs e)
         {
             Ventas1 mensajero = new Ventas1();
@@ -176,5 +177,9 @@ namespace Agrotics
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show();
         }
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+         }
     }
 }
