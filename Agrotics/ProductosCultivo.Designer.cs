@@ -36,9 +36,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dgvPesticidas = new System.Windows.Forms.DataGridView();
+            this.dgvFungicidas = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesticidas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFungicidas)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -99,7 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 6);
+            this.label1.Location = new System.Drawing.Point(130, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -107,23 +113,41 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dgvPesticidas);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(797, 430);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "ELEMENTO 2";
+            this.tabPage2.Text = "PESTICIDAS";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.dgvFungicidas);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(797, 430);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "ELEMENTO 3";
+            this.tabPage3.Text = "FUNGICIDAS";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dgvPesticidas
+            // 
+            this.dgvPesticidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesticidas.Location = new System.Drawing.Point(111, 84);
+            this.dgvPesticidas.Name = "dgvPesticidas";
+            this.dgvPesticidas.Size = new System.Drawing.Size(583, 295);
+            this.dgvPesticidas.TabIndex = 0;
+            // 
+            // dgvFungicidas
+            // 
+            this.dgvFungicidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFungicidas.Location = new System.Drawing.Point(78, 56);
+            this.dgvFungicidas.Name = "dgvFungicidas";
+            this.dgvFungicidas.Size = new System.Drawing.Size(636, 334);
+            this.dgvFungicidas.TabIndex = 0;
             // 
             // ProductosCultivo
             // 
@@ -138,6 +162,10 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesticidas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFungicidas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,5 +180,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvFertilizantes;
         private System.Windows.Forms.Button btnAddFert;
+        private System.Windows.Forms.DataGridView dgvPesticidas;
+        private System.Windows.Forms.DataGridView dgvFungicidas;
     }
 }
