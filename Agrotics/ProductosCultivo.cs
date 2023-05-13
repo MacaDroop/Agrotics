@@ -130,7 +130,7 @@ namespace Agrotics
             Ventas1 mensajero = new Ventas1();
             label1.Text = ValorCelda;
             mensajero.ValorCelda = this.ValorCelda;
-            mensajero.Show();
+            mensajero.Show(); 
         }
     }
 }
