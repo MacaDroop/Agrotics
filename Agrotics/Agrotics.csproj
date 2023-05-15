@@ -254,5 +254,11 @@
   <ItemGroup>
     <None Include="Resources\Imagen de WhatsApp 2023-05-13 a las 13.52.20.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-add.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

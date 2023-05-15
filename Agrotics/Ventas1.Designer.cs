@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.txtBuscarProVen = new System.Windows.Forms.TextBox();
-            this.btnBuscarProVent = new System.Windows.Forms.Button();
             this.listaProductos = new System.Windows.Forms.ListBox();
             this.ListaPrecios = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.lstCantidad = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCantVen = new System.Windows.Forms.TextBox();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -62,27 +60,23 @@
             this.txtBuscarPresentacion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCultivos = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblPrueba = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtReferVen = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnBuscarProVent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtBuscarProVen
             // 
+            this.txtBuscarProVen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarProVen.ForeColor = System.Drawing.Color.Lime;
             this.txtBuscarProVen.Location = new System.Drawing.Point(48, 56);
             this.txtBuscarProVen.Name = "txtBuscarProVen";
             this.txtBuscarProVen.Size = new System.Drawing.Size(186, 20);
             this.txtBuscarProVen.TabIndex = 0;
+            this.txtBuscarProVen.Text = "Nombre del Producto";
+            this.txtBuscarProVen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtBuscarProVen.TextChanged += new System.EventHandler(this.txtBuscarProVen_TextChanged);
-            // 
-            // btnBuscarProVent
-            // 
-            this.btnBuscarProVent.Location = new System.Drawing.Point(272, 56);
-            this.btnBuscarProVent.Name = "btnBuscarProVent";
-            this.btnBuscarProVent.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarProVent.TabIndex = 1;
-            this.btnBuscarProVent.Text = "Buscar";
-            this.btnBuscarProVent.UseVisualStyleBackColor = true;
-            this.btnBuscarProVent.Click += new System.EventHandler(this.btnBuscarProVent_Click);
             // 
             // listaProductos
             // 
@@ -103,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 292);
+            this.label1.Location = new System.Drawing.Point(93, 295);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 4;
@@ -156,7 +150,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(192, 295);
+            this.label6.Location = new System.Drawing.Point(201, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 11;
@@ -164,20 +158,10 @@
             // 
             // txtCantVen
             // 
-            this.txtCantVen.Location = new System.Drawing.Point(107, 250);
+            this.txtCantVen.Location = new System.Drawing.Point(122, 250);
             this.txtCantVen.Name = "txtCantVen";
             this.txtCantVen.Size = new System.Drawing.Size(100, 20);
             this.txtCantVen.TabIndex = 12;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(219, 247);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 13;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtName
             // 
@@ -201,9 +185,8 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(0, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 16;
-            this.label8.Text = "label8";
             // 
             // label9
             // 
@@ -220,14 +203,14 @@
             this.txtDescription.Location = new System.Drawing.Point(122, 163);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(351, 50);
+            this.txtDescription.Size = new System.Drawing.Size(312, 50);
             this.txtDescription.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(645, 131);
+            this.label10.Location = new System.Drawing.Point(626, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 19;
@@ -235,7 +218,7 @@
             // 
             // txtPrecioVentas
             // 
-            this.txtPrecioVentas.Location = new System.Drawing.Point(720, 128);
+            this.txtPrecioVentas.Location = new System.Drawing.Point(701, 131);
             this.txtPrecioVentas.Name = "txtPrecioVentas";
             this.txtPrecioVentas.Size = new System.Drawing.Size(68, 20);
             this.txtPrecioVentas.TabIndex = 20;
@@ -244,7 +227,7 @@
             // 
             this.label11.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(494, 131);
+            this.label11.Location = new System.Drawing.Point(475, 134);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 21;
@@ -252,7 +235,7 @@
             // 
             // txtLabVentas
             // 
-            this.txtLabVentas.Location = new System.Drawing.Point(563, 128);
+            this.txtLabVentas.Location = new System.Drawing.Point(544, 131);
             this.txtLabVentas.Name = "txtLabVentas";
             this.txtLabVentas.Size = new System.Drawing.Size(68, 20);
             this.txtLabVentas.TabIndex = 22;
@@ -261,7 +244,7 @@
             // 
             this.label12.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(492, 162);
+            this.label12.Location = new System.Drawing.Point(473, 165);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 13);
             this.label12.TabIndex = 23;
@@ -269,14 +252,14 @@
             // 
             // txtCadVentas
             // 
-            this.txtCadVentas.Location = new System.Drawing.Point(563, 160);
+            this.txtCadVentas.Location = new System.Drawing.Point(544, 163);
             this.txtCadVentas.Name = "txtCadVentas";
             this.txtCadVentas.Size = new System.Drawing.Size(68, 20);
             this.txtCadVentas.TabIndex = 24;
             // 
             // txtStockVentas
             // 
-            this.txtStockVentas.Location = new System.Drawing.Point(720, 159);
+            this.txtStockVentas.Location = new System.Drawing.Point(701, 162);
             this.txtStockVentas.Name = "txtStockVentas";
             this.txtStockVentas.Size = new System.Drawing.Size(68, 20);
             this.txtStockVentas.TabIndex = 26;
@@ -285,7 +268,7 @@
             // 
             this.label19.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(647, 162);
+            this.label19.Location = new System.Drawing.Point(628, 165);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 13);
             this.label19.TabIndex = 25;
@@ -293,7 +276,7 @@
             // 
             // txtTipoPVentas
             // 
-            this.txtTipoPVentas.Location = new System.Drawing.Point(563, 192);
+            this.txtTipoPVentas.Location = new System.Drawing.Point(544, 195);
             this.txtTipoPVentas.Name = "txtTipoPVentas";
             this.txtTipoPVentas.Size = new System.Drawing.Size(68, 20);
             this.txtTipoPVentas.TabIndex = 28;
@@ -302,7 +285,7 @@
             // 
             this.label13.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(494, 195);
+            this.label13.Location = new System.Drawing.Point(475, 198);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(31, 13);
             this.label13.TabIndex = 27;
@@ -310,7 +293,7 @@
             // 
             // txtPresentacionVentas
             // 
-            this.txtPresentacionVentas.Location = new System.Drawing.Point(720, 193);
+            this.txtPresentacionVentas.Location = new System.Drawing.Point(701, 196);
             this.txtPresentacionVentas.Name = "txtPresentacionVentas";
             this.txtPresentacionVentas.Size = new System.Drawing.Size(68, 20);
             this.txtPresentacionVentas.TabIndex = 30;
@@ -319,7 +302,7 @@
             // 
             this.label14.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(647, 196);
+            this.label14.Location = new System.Drawing.Point(628, 199);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 13);
             this.label14.TabIndex = 29;
@@ -329,7 +312,7 @@
             // 
             this.txtVender.Location = new System.Drawing.Point(435, 311);
             this.txtVender.Name = "txtVender";
-            this.txtVender.Size = new System.Drawing.Size(75, 23);
+            this.txtVender.Size = new System.Drawing.Size(71, 30);
             this.txtVender.TabIndex = 31;
             this.txtVender.Text = "Vender";
             this.txtVender.UseVisualStyleBackColor = true;
@@ -346,16 +329,20 @@
             "1L"});
             this.txtBuscarPresentacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtBuscarPresentacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtBuscarPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarPresentacion.ForeColor = System.Drawing.Color.Lime;
             this.txtBuscarPresentacion.Location = new System.Drawing.Point(48, 92);
             this.txtBuscarPresentacion.Name = "txtBuscarPresentacion";
             this.txtBuscarPresentacion.Size = new System.Drawing.Size(100, 20);
             this.txtBuscarPresentacion.TabIndex = 32;
-            this.txtBuscarPresentacion.Tag = "";
+            this.txtBuscarPresentacion.Tag = "Presentacion";
+            this.txtBuscarPresentacion.Text = "Presentación";
+            this.txtBuscarPresentacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(494, 229);
+            this.label4.Location = new System.Drawing.Point(475, 232);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 34;
@@ -363,28 +350,56 @@
             // 
             // txtCultivos
             // 
-            this.txtCultivos.Location = new System.Drawing.Point(563, 229);
+            this.txtCultivos.Location = new System.Drawing.Point(544, 232);
             this.txtCultivos.Name = "txtCultivos";
-            this.txtCultivos.Size = new System.Drawing.Size(225, 20);
+            this.txtCultivos.Size = new System.Drawing.Size(68, 20);
             this.txtCultivos.TabIndex = 35;
             // 
-            // label15
+            // label16
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 13);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "label15";
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(628, 235);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(62, 13);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Referencia:";
             // 
-            // lblPrueba
+            // txtReferVen
             // 
-            this.lblPrueba.AutoSize = true;
-            this.lblPrueba.Location = new System.Drawing.Point(431, 56);
-            this.lblPrueba.Name = "lblPrueba";
-            this.lblPrueba.Size = new System.Drawing.Size(41, 13);
-            this.lblPrueba.TabIndex = 37;
-            this.lblPrueba.Text = "label16";
+            this.txtReferVen.Location = new System.Drawing.Point(701, 232);
+            this.txtReferVen.Name = "txtReferVen";
+            this.txtReferVen.Size = new System.Drawing.Size(68, 20);
+            this.txtReferVen.TabIndex = 38;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackgroundImage = global::Agrotics.Properties.Resources.icon_add;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Location = new System.Drawing.Point(241, 247);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(35, 23);
+            this.btnAgregar.TabIndex = 13;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnBuscarProVent
+            // 
+            this.btnBuscarProVent.BackgroundImage = global::Agrotics.Properties.Resources.icon_lupa;
+            this.btnBuscarProVent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarProVent.FlatAppearance.BorderSize = 0;
+            this.btnBuscarProVent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarProVent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarProVent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProVent.Location = new System.Drawing.Point(248, 53);
+            this.btnBuscarProVent.Name = "btnBuscarProVent";
+            this.btnBuscarProVent.Size = new System.Drawing.Size(28, 23);
+            this.btnBuscarProVent.TabIndex = 1;
+            this.btnBuscarProVent.UseVisualStyleBackColor = true;
+            this.btnBuscarProVent.Click += new System.EventHandler(this.btnBuscarProVent_Click);
             // 
             // Ventas1
             // 
@@ -392,8 +407,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblPrueba);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtReferVen);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.txtCultivos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtBuscarPresentacion);
@@ -472,7 +487,7 @@
         private System.Windows.Forms.TextBox txtBuscarPresentacion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCultivos;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label lblPrueba;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtReferVen;
     }
 }

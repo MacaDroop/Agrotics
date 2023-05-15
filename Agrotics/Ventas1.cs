@@ -38,10 +38,12 @@ namespace Agrotics.Resources
            txtPresentacionVentas.Clear();
             txtCultivos.Clear();
             txtStockVentas.Clear();
+            txtCantVen.Clear();
+            txtReferVen.Clear();
         }
         private void btnBuscarProVent_Click(object sender, EventArgs e)
         {
-            if (btnBuscarProVent.Text.Length == 0)
+            if (txtBuscarProVen.Text.Length == 0)
             {
                 MessageBox.Show("El campo de busqueda esta vacio");
             }
@@ -50,7 +52,7 @@ namespace Agrotics.Resources
                 string buscar = txtBuscarProVen.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto = '" + buscar + "' AND Presentacion = '"+txtBuscarPresentacion.Text+"'  LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia FROM productos WHERE NombreProducto = '" + buscar + "' AND Presentacion = '"+txtBuscarPresentacion.Text+"'  LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -72,6 +74,7 @@ namespace Agrotics.Resources
                             txtTipoPVentas.Text = reader.GetString(6);
                             txtPresentacionVentas.Text = reader.GetString(7);
                             txtCultivos.Text = reader.GetString(8);
+                            txtReferVen.Text = reader.GetString(9);
 
                         }
                     }
@@ -173,38 +176,46 @@ namespace Agrotics.Resources
 
         private void txtVender_Click(object sender, EventArgs e)
         {
-            // Creamos el documento PDF
-            Document doc = new Document(PageSize.A4, 50, 50, 50, 50);
+            // Crear y configurar el objeto SaveFileDialog
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Filter = "Archivo PDF|*.pdf"; // Filtro para mostrar solo archivos PDF
+            saveDialog.Title = "Guardar como...";
+            saveDialog.FileName = "Tabla.pdf"; // Nombre predeterminado del archivo
 
-            // Creamos un objeto PDFWriter para escribir el PDF
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Tabla.pdf", FileMode.Create));
-
-            // Abrimos el documento
-            doc.Open();
-
-            // Creamos una tabla con tres columnas
-            PdfPTable table = new PdfPTable(3);
-
-            // Agregamos los encabezados de las columnas
-            table.AddCell("ListBox 1");
-            table.AddCell("ListBox 2");
-            table.AddCell("ListBox 3");
-
-            // Agregamos las filas de la tabla con la información de los ListBox
-            for (int i = 0; i < Math.Max(ListaPrecios.Items.Count, Math.Max(lstCantidad.Items.Count, ListaPrecios.Items.Count)); i++)
+            // Mostrar el cuadro de diálogo para guardar el archivo
+            if (saveDialog.ShowDialog() == DialogResult.OK)
             {
-                table.AddCell(i < listaProductos.Items.Count ? listaProductos.Items[i].ToString() : "");
-                table.AddCell(i < lstCantidad.Items.Count ? lstCantidad.Items[i].ToString() : "");
-                table.AddCell(i < ListaPrecios.Items.Count ? ListaPrecios.Items[i].ToString() : "");
+                // Obtener la ruta y el nombre del archivo seleccionado
+                string rutaArchivo = saveDialog.FileName;
+
+                // Generar el PDF con la información de la tabla y guardar en la ruta seleccionada
+                Document doc = new Document(PageSize.A4, 50, 50, 50, 50);
+                PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
+                doc.Open();
+
+
+                // Añadir la tabla con los datos
+                PdfPTable table = new PdfPTable(3);
+                table.AddCell("Productos");
+                table.AddCell("Cantidad");
+                table.AddCell("Precio Unitario");
+
+                for (int i = 0; i < Math.Max(ListaPrecios.Items.Count, Math.Max(lstCantidad.Items.Count, listaProductos.Items.Count)); i++)
+                {
+                    table.AddCell(i < listaProductos.Items.Count ? listaProductos.Items[i].ToString() : "");
+                    table.AddCell(i < lstCantidad.Items.Count ? lstCantidad.Items[i].ToString() : "");
+                    table.AddCell(i < ListaPrecios.Items.Count ? ListaPrecios.Items[i].ToString() : "");
+                }
+
+                doc.Add(table);
+
+
+
+                // Cerrar el documento
+                doc.Close();
+
+                MessageBox.Show("PDF generado exitosamente.");
             }
-
-            // Agregamos la tabla al documento
-            doc.Add(table);
-
-            // Cerramos el documento
-            doc.Close();
-
-            MessageBox.Show("PDF generado exitosamente.");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -214,51 +225,58 @@ namespace Agrotics.Resources
 
         private void txtBuscarProVen_TextChanged(object sender, EventArgs e)
         {
-            string buscar = txtBuscarProVen.Text;
-            MySqlDataReader reader = null;
 
-
-            string sql = "SELECT * FROM productos WHERE NombreProducto  LIKE '" + buscar.Replace("'", "''") + "%'";
-            MySqlConnection conexionBD = Conexion2.conexion();
-            conexionBD.Open();
-
-            try
+            if (!string.IsNullOrEmpty(txtBuscarProVen.Text))
             {
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                reader = comando.ExecuteReader();
-                if (reader.HasRows)
+                string buscar = txtBuscarProVen.Text;
+                MySqlDataReader reader = null;
+
+
+                string sql = "SELECT * FROM productos WHERE NombreProducto  LIKE '" + buscar.Replace("'", "''") + "%'";
+                MySqlConnection conexionBD = Conexion2.conexion();
+                conexionBD.Open();
+
+                try
                 {
-                    while (reader.Read())
+                    MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                    reader = comando.ExecuteReader();
+                    if (reader.HasRows)
                     {
+                        while (reader.Read())
+                        {
 
-                        txtName.Text = reader.GetString(0);
-                        txtDescription.Text = reader.GetString(1);
-                        txtLabVentas.Text = reader.GetString(2);
-                        txtPrecioVentas.Text = reader.GetString(3);
-                        txtCadVentas.Text = reader.GetString(4);
-                        txtStockVentas.Text = reader.GetString(5);
-                        txtTipoPVentas.Text = reader.GetString(6);
-                        txtPresentacionVentas.Text = reader.GetString(7);
-                        txtCultivos.Text = reader.GetString(8);
+                            txtName.Text = reader.GetString(0);
+                            txtDescription.Text = reader.GetString(1);
+                            txtLabVentas.Text = reader.GetString(2);
+                            txtPrecioVentas.Text = reader.GetString(3);
+                            txtCadVentas.Text = reader.GetString(4);
+                            txtStockVentas.Text = reader.GetString(5);
+                            txtTipoPVentas.Text = reader.GetString(6);
+                            txtPresentacionVentas.Text = reader.GetString(7);
+                            txtCultivos.Text = reader.GetString(8);
+                            txtReferVen.Text = reader.GetString(9);
 
+                        }
                     }
+
+
                 }
-                else
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show("No se encontraron los registros");
+                    MessageBox.Show("Error al buscar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionBD.Close();
                 }
 
+            }
+            else
+            {
+                limpiar();
+            }
 
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Error al buscar: " + ex.Message);
-            }
-            finally
-            {
-                conexionBD.Close();
-            }
-           
         }
     }
+            
 }

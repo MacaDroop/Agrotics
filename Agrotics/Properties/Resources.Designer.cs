@@ -113,6 +113,16 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_add {
+            get {
+                object obj = ResourceManager.GetObject("icon-add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_chile {
             get {
                 object obj = ResourceManager.GetObject("icon-chile", resourceCulture);
@@ -136,6 +146,16 @@ namespace Agrotics.Properties {
         internal static System.Drawing.Bitmap icon_frijol {
             get {
                 object obj = ResourceManager.GetObject("icon-frijol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_lupa {
+            get {
+                object obj = ResourceManager.GetObject("icon-lupa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

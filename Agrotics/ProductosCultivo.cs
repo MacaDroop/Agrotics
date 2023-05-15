@@ -128,7 +128,7 @@ namespace Agrotics
         {
             
             Ventas1 mensajero = new Ventas1();
-            label1.Text = ValorCelda;
+           
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show(); 
         }
@@ -136,7 +136,7 @@ namespace Agrotics
         private void btnPesticidas_Click(object sender, EventArgs e)
         {
             Ventas1 mensajero = new Ventas1();
-            label1.Text = ValorCelda;
+           
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show();
         }
@@ -154,7 +154,7 @@ namespace Agrotics
         private void btnFungicidas_Click(object sender, EventArgs e)
         {
             Ventas1 mensajero = new Ventas1();
-            label1.Text = ValorCelda;
+
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show();
         }
@@ -172,7 +172,7 @@ namespace Agrotics
         private void btnInsecticidas_Click(object sender, EventArgs e)
         {
             Ventas1 mensajero = new Ventas1();
-            label1.Text = ValorCelda;
+            
             mensajero.ValorCelda = this.ValorCelda;
             mensajero.Show();
         }

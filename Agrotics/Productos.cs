@@ -49,7 +49,7 @@ namespace Agrotics
             else
             {
                 //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
-                string sql = "INSERT INTO productos (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos) VALUES ('" + nombrePro + "', '" + descripcionPro + "', '" + laboratorioPro + "', '"  + precio + "', '" + fechaCad + "', '" + txtStock.Text + "', '" + txtTipo.Text + "', '" + txtPresentacion.Text + "', '" + txtCultivos.Text + "')";
+                string sql = "INSERT INTO productos (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia) VALUES ('" + nombrePro + "', '" + descripcionPro + "', '" + laboratorioPro + "', '"  + precio + "', '" + fechaCad + "', '" + txtStock.Text + "', '" + txtTipo.Text + "', '" + txtPresentacion.Text + "', '" + txtCultivos.Text + "','"+txtReferencia.Text+"')";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -83,7 +83,7 @@ namespace Agrotics
             string fechaCad =txtCaducidad.Text;
             
 
-            string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "', Stock='" + txtStock.Text + "', Tipo='" + txtTipo.Text + "', Presentacion='" + txtPresentacion.Text + "', Cultivos='" + txtCultivos.Text + "' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
+            string sql = "UPDATE productos SET NombreProducto= '" + nombrePro + "', DescripcionCultivos='" + descripcion + "', ='" + Laboratorio + "', Precio='" + Precio + "', FechaCaducidad='" + fechaCad + "', Stock='" + txtStock.Text + "', Tipo='" + txtTipo.Text + "', Presentacion='" + txtPresentacion.Text + "', Cultivos='" + txtCultivos.Text + "', Referencia='"+txtReferencia.Text+"' WHERE NombreProducto='" + txtBuscarpro.Text + "'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
 
@@ -160,7 +160,7 @@ namespace Agrotics
                 string buscar =txtBuscarpro.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto LIKE '" + buscar + "' LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia FROM productos WHERE NombreProducto LIKE '" + buscar + "' LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -182,6 +182,7 @@ namespace Agrotics
                             txtTipo.Text = reader.GetString(6);
                             txtPresentacion.Text = reader.GetString(7);
                             txtCultivos.Text =reader.GetString(8);
+                            txtReferencia.Text = reader.GetString(9);
                             
 
                         }
@@ -226,6 +227,11 @@ namespace Agrotics
         }
 
         private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvProductos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
