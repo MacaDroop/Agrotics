@@ -19,9 +19,14 @@ namespace Agrotics.Resources
     public partial class Ventas1 : Form
     {
         public String ValorCelda { get; set; }
+        int total = 0;
+
+
         public Ventas1()
         {
             InitializeComponent();
+            
+
 
         }
 
@@ -117,7 +122,8 @@ namespace Agrotics.Resources
                 string nproduc = txtName.Text; // Obtener el texto ingresado en un cuadro de texto
                 string cantidad = txtCantVen.Text;
                 string precio = txtPrecioVentas.Text;
-                int total;
+                
+
 
                 if (!string.IsNullOrEmpty(nproduc) && !string.IsNullOrEmpty(cantidad) && !string.IsNullOrEmpty(precio)) // Verificar que el texto no esté vacío
                 {
@@ -125,8 +131,9 @@ namespace Agrotics.Resources
                     lstCantidad.Items.Add(cantidad); // Limpiar el cuadro de texto
                     ListaPrecios.Items.Add(precio);
                     limpiar();
-                    total = Convert.ToInt32(precio) * Convert.ToInt32(cantidad);
-                    lblTotal.Text = "$" + Convert.ToString(total);
+                    
+                    total += Convert.ToInt32(precio) * Convert.ToInt32(cantidad);
+                    lblTotal.Text = Convert.ToString("Total: "+total);
                 }
             }
         }
@@ -185,6 +192,11 @@ namespace Agrotics.Resources
 
         private void txtVender_Click(object sender, EventArgs e)
         {
+
+            DateTime fechaActual = DateTime.Now;
+            string fechaFormateada = fechaActual.ToString("dd-MMM-yyyy");
+
+
             // Crear y configurar el objeto SaveFileDialog
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.Filter = "Archivo PDF|*.pdf"; // Filtro para mostrar solo archivos PDF
@@ -202,8 +214,12 @@ namespace Agrotics.Resources
                 PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
                 doc.Open();
 
+              
+
+
+
                 //TITULO EN EL PFF
-                iTextSharp.text.Font tituloFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 18, iTextSharp.text.Font.BOLD);
+                iTextSharp.text.Font tituloFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 22, iTextSharp.text.Font.BOLD);
                 Paragraph titulo = new Paragraph("Agrotics", tituloFont);
                 titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
                 doc.Add(titulo);
@@ -213,11 +229,32 @@ namespace Agrotics.Resources
                 subtitulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
                 doc.Add(subtitulo);
 
+                iTextSharp.text.Font espacioFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                Paragraph espacio = new Paragraph(" ", espacioFont);
+                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(espacio);
+
+                iTextSharp.text.Font fechaFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                Paragraph fecha = new Paragraph("Fecha:"+fechaFormateada, fechaFont);
+                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(fecha);
+
+                iTextSharp.text.Font lugarFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                Paragraph lugar = new Paragraph("JUAN RODRIGUEZ CLARA VERACRUZ", lugarFont);
+                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(lugar);
+
+                iTextSharp.text.Font espacioFont2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                Paragraph espacio2 = new Paragraph(" ", espacioFont2);
+                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(espacio2);
+
                 // Añadir la tabla con los datos
                 PdfPTable table = new PdfPTable(3);
                 table.AddCell("Productos");
                 table.AddCell("Cantidad");
                 table.AddCell("Precio Unitario");
+              
 
                 for (int i = 0; i < Math.Max(ListaPrecios.Items.Count, Math.Max(lstCantidad.Items.Count, listaProductos.Items.Count)); i++)
                 {
