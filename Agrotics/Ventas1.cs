@@ -25,6 +25,15 @@ namespace Agrotics.Resources
 
         }
 
+        public void manita()
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        public void cursorDefec()
+        {
+            Cursor = Cursors.Default;
+        }
         public void limpiar()
         {
             txtBuscarProVen.Clear();
@@ -193,6 +202,16 @@ namespace Agrotics.Resources
                 PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
                 doc.Open();
 
+                //TITULO EN EL PFF
+                iTextSharp.text.Font tituloFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 18, iTextSharp.text.Font.BOLD);
+                Paragraph titulo = new Paragraph("Agrotics", tituloFont);
+                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(titulo);
+
+                iTextSharp.text.Font subtituloFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 14, iTextSharp.text.Font.NORMAL);
+                Paragraph subtitulo = new Paragraph("Ventas", subtituloFont);
+                subtitulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(subtitulo);
 
                 // Añadir la tabla con los datos
                 PdfPTable table = new PdfPTable(3);
@@ -276,6 +295,36 @@ namespace Agrotics.Resources
                 limpiar();
             }
 
+        }
+
+        private void btnBuscarProVent_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnBuscarProVent_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
+        }
+
+        private void btnAgregar_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnAgregar_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
+        }
+
+        private void txtVender_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void txtVender_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
         }
     }
             

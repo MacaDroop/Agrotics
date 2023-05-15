@@ -60,7 +60,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-3, -2);
+            this.tabControl1.Location = new System.Drawing.Point(-3, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(805, 456);
@@ -68,6 +68,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.SpringGreen;
             this.tabPage1.Controls.Add(this.btnAddFert);
             this.tabPage1.Controls.Add(this.dgvFertilizantes);
             this.tabPage1.Controls.Add(this.label2);
@@ -77,14 +78,13 @@
             this.tabPage1.Size = new System.Drawing.Size(797, 427);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "FERTILIZANTES";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // btnAddFert
             // 
-            this.btnAddFert.Location = new System.Drawing.Point(460, 13);
+            this.btnAddFert.Location = new System.Drawing.Point(695, 13);
             this.btnAddFert.Name = "btnAddFert";
-            this.btnAddFert.Size = new System.Drawing.Size(75, 30);
+            this.btnAddFert.Size = new System.Drawing.Size(75, 31);
             this.btnAddFert.TabIndex = 3;
             this.btnAddFert.Text = "Agregar Producto";
             this.btnAddFert.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.dgvFertilizantes.Location = new System.Drawing.Point(23, 56);
             this.dgvFertilizantes.Name = "dgvFertilizantes";
             this.dgvFertilizantes.ReadOnly = true;
-            this.dgvFertilizantes.Size = new System.Drawing.Size(747, 221);
+            this.dgvFertilizantes.Size = new System.Drawing.Size(747, 324);
             this.dgvFertilizantes.TabIndex = 2;
             this.dgvFertilizantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFertilizantes_CellClick);
             // 
@@ -111,6 +111,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.SpringGreen;
             this.tabPage2.Controls.Add(this.btnPesticidas);
             this.tabPage2.Controls.Add(this.dgvPesticidas);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -118,14 +119,13 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(797, 427);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "PESTICIDAS";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Text = "HERBICIDAS";
             // 
             // btnPesticidas
             // 
-            this.btnPesticidas.Location = new System.Drawing.Point(475, 32);
+            this.btnPesticidas.Location = new System.Drawing.Point(695, 13);
             this.btnPesticidas.Name = "btnPesticidas";
-            this.btnPesticidas.Size = new System.Drawing.Size(75, 23);
+            this.btnPesticidas.Size = new System.Drawing.Size(75, 31);
             this.btnPesticidas.TabIndex = 1;
             this.btnPesticidas.Text = "Agregar";
             this.btnPesticidas.UseVisualStyleBackColor = true;
@@ -134,14 +134,15 @@
             // dgvPesticidas
             // 
             this.dgvPesticidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPesticidas.Location = new System.Drawing.Point(111, 84);
+            this.dgvPesticidas.Location = new System.Drawing.Point(23, 56);
             this.dgvPesticidas.Name = "dgvPesticidas";
-            this.dgvPesticidas.Size = new System.Drawing.Size(583, 295);
+            this.dgvPesticidas.Size = new System.Drawing.Size(747, 324);
             this.dgvPesticidas.TabIndex = 0;
             this.dgvPesticidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesticidas_CellClick);
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.SpringGreen;
             this.tabPage3.Controls.Add(this.btnFungicidas);
             this.tabPage3.Controls.Add(this.dgvFungicidas);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
@@ -150,13 +151,12 @@
             this.tabPage3.Size = new System.Drawing.Size(797, 427);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "FUNGICIDAS";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btnFungicidas
             // 
-            this.btnFungicidas.Location = new System.Drawing.Point(496, 39);
+            this.btnFungicidas.Location = new System.Drawing.Point(695, 13);
             this.btnFungicidas.Name = "btnFungicidas";
-            this.btnFungicidas.Size = new System.Drawing.Size(75, 23);
+            this.btnFungicidas.Size = new System.Drawing.Size(75, 31);
             this.btnFungicidas.TabIndex = 1;
             this.btnFungicidas.Text = "Agregar";
             this.btnFungicidas.UseVisualStyleBackColor = true;
@@ -165,29 +165,29 @@
             // dgvFungicidas
             // 
             this.dgvFungicidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFungicidas.Location = new System.Drawing.Point(78, 101);
+            this.dgvFungicidas.Location = new System.Drawing.Point(23, 56);
             this.dgvFungicidas.Name = "dgvFungicidas";
-            this.dgvFungicidas.Size = new System.Drawing.Size(636, 289);
+            this.dgvFungicidas.Size = new System.Drawing.Size(747, 324);
             this.dgvFungicidas.TabIndex = 0;
             this.dgvFungicidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFungicidas_CellClick);
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.SpringGreen;
             this.tabPage4.Controls.Add(this.btnInsecticidas);
             this.tabPage4.Controls.Add(this.dgvInsecticidas);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(797, 430);
+            this.tabPage4.Size = new System.Drawing.Size(797, 427);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "INSECTICIDAS";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // btnInsecticidas
             // 
-            this.btnInsecticidas.Location = new System.Drawing.Point(549, 48);
+            this.btnInsecticidas.Location = new System.Drawing.Point(695, 13);
             this.btnInsecticidas.Name = "btnInsecticidas";
-            this.btnInsecticidas.Size = new System.Drawing.Size(75, 23);
+            this.btnInsecticidas.Size = new System.Drawing.Size(75, 31);
             this.btnInsecticidas.TabIndex = 1;
             this.btnInsecticidas.Text = "Agregar";
             this.btnInsecticidas.UseVisualStyleBackColor = true;
@@ -196,9 +196,9 @@
             // dgvInsecticidas
             // 
             this.dgvInsecticidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInsecticidas.Location = new System.Drawing.Point(27, 146);
+            this.dgvInsecticidas.Location = new System.Drawing.Point(23, 56);
             this.dgvInsecticidas.Name = "dgvInsecticidas";
-            this.dgvInsecticidas.Size = new System.Drawing.Size(735, 180);
+            this.dgvInsecticidas.Size = new System.Drawing.Size(747, 324);
             this.dgvInsecticidas.TabIndex = 0;
             this.dgvInsecticidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellClick);
             this.dgvInsecticidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellContentClick);
@@ -209,6 +209,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
+            this.MaximizeBox = false;
             this.Name = "ProductosCultivo";
             this.Text = "ProductosCultivo";
             this.Load += new System.EventHandler(this.ProductosCultivo_Load);

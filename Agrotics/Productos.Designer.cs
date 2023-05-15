@@ -216,8 +216,12 @@ namespace Agrotics
             // txtTipo
             // 
             this.txtTipo.AutoCompleteCustomSource.AddRange(new string[] {
-            "HERBICIDA",
-            "FERTILIZANTE"});
+            "Herbicida",
+            "Fertilizantes",
+            "Insecticida",
+            "Fungicida"});
+            this.txtTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.txtTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtTipo.Location = new System.Drawing.Point(136, 312);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(168, 20);

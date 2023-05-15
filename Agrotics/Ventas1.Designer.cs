@@ -317,6 +317,8 @@
             this.txtVender.Text = "Vender";
             this.txtVender.UseVisualStyleBackColor = true;
             this.txtVender.Click += new System.EventHandler(this.txtVender_Click);
+            this.txtVender.MouseEnter += new System.EventHandler(this.txtVender_MouseEnter);
+            this.txtVender.MouseLeave += new System.EventHandler(this.txtVender_MouseLeave);
             // 
             // txtBuscarPresentacion
             // 
@@ -385,6 +387,8 @@
             this.btnAgregar.TabIndex = 13;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.MouseEnter += new System.EventHandler(this.btnAgregar_MouseEnter);
+            this.btnAgregar.MouseLeave += new System.EventHandler(this.btnAgregar_MouseLeave);
             // 
             // btnBuscarProVent
             // 
@@ -400,6 +404,8 @@
             this.btnBuscarProVent.TabIndex = 1;
             this.btnBuscarProVent.UseVisualStyleBackColor = true;
             this.btnBuscarProVent.Click += new System.EventHandler(this.btnBuscarProVent_Click);
+            this.btnBuscarProVent.MouseEnter += new System.EventHandler(this.btnBuscarProVent_MouseEnter);
+            this.btnBuscarProVent.MouseLeave += new System.EventHandler(this.btnBuscarProVent_MouseLeave);
             // 
             // Ventas1
             // 
@@ -443,6 +449,7 @@
             this.Controls.Add(this.listaProductos);
             this.Controls.Add(this.btnBuscarProVent);
             this.Controls.Add(this.txtBuscarProVen);
+            this.MaximizeBox = false;
             this.Name = "Ventas1";
             this.Text = "Ventas1";
             this.Load += new System.EventHandler(this.Ventas1_Load);

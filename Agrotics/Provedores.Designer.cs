@@ -53,7 +53,7 @@ namespace Agrotics
             // 
             // txtBusquedaPro
             // 
-            this.txtBusquedaPro.Location = new System.Drawing.Point(428, 30);
+            this.txtBusquedaPro.Location = new System.Drawing.Point(351, 30);
             this.txtBusquedaPro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtBusquedaPro.Name = "txtBusquedaPro";
             this.txtBusquedaPro.Size = new System.Drawing.Size(292, 20);
@@ -65,10 +65,10 @@ namespace Agrotics
             // dgvprovedores
             // 
             this.dgvprovedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvprovedores.Location = new System.Drawing.Point(428, 72);
+            this.dgvprovedores.Location = new System.Drawing.Point(351, 72);
             this.dgvprovedores.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvprovedores.Name = "dgvprovedores";
-            this.dgvprovedores.Size = new System.Drawing.Size(292, 224);
+            this.dgvprovedores.Size = new System.Drawing.Size(470, 224);
             this.dgvprovedores.TabIndex = 2;
             this.dgvprovedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvprovedores_CellContentClick);
             // 
@@ -191,7 +191,7 @@ namespace Agrotics
             this.btteditar.FlatAppearance.BorderSize = 0;
             this.btteditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btteditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btteditar.Location = new System.Drawing.Point(645, 302);
+            this.btteditar.Location = new System.Drawing.Point(687, 302);
             this.btteditar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btteditar.Name = "btteditar";
             this.btteditar.Size = new System.Drawing.Size(75, 48);
@@ -207,7 +207,7 @@ namespace Agrotics
             this.bttEliminar.FlatAppearance.BorderSize = 0;
             this.bttEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttEliminar.Location = new System.Drawing.Point(539, 302);
+            this.bttEliminar.Location = new System.Drawing.Point(555, 302);
             this.bttEliminar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bttEliminar.Name = "bttEliminar";
             this.bttEliminar.Size = new System.Drawing.Size(88, 48);
@@ -238,7 +238,7 @@ namespace Agrotics
             this.bttbusqueda.FlatAppearance.BorderSize = 0;
             this.bttbusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttbusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttbusqueda.Location = new System.Drawing.Point(728, 12);
+            this.bttbusqueda.Location = new System.Drawing.Point(669, 12);
             this.bttbusqueda.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bttbusqueda.Name = "bttbusqueda";
             this.bttbusqueda.Size = new System.Drawing.Size(93, 54);
@@ -284,6 +284,7 @@ namespace Agrotics
             this.Controls.Add(this.txtBusquedaPro);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
             this.Name = "Provedores";
             this.Text = "Provedores";
             this.Load += new System.EventHandler(this.Provedores_Load);

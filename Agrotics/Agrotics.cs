@@ -17,7 +17,15 @@ namespace Agrotics
         {
             InitializeComponent();
         }
+        public void manita()
+        {
+            Cursor = Cursors.Hand;
+        }
 
+        public void cursorDefec()
+        {
+            Cursor = Cursors.Default;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Provedores form = new Provedores();
@@ -71,6 +79,46 @@ namespace Agrotics
         private void toolTip3_Popup(object sender, PopupEventArgs e)
         {
 
+        }
+
+        private void btnventas_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnventas_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
+        }
+
+        private void btnProveedores_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnProveedores_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
+        }
+
+        private void btnCultivos_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnCultivos_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
+        }
+
+        private void btnProductos_MouseEnter(object sender, EventArgs e)
+        {
+            manita();
+        }
+
+        private void btnProductos_MouseLeave(object sender, EventArgs e)
+        {
+            cursorDefec();
         }
     }
 }

@@ -54,6 +54,8 @@ namespace Agrotics
             this.toolTip4.SetToolTip(this.btnProveedores, resources.GetString("btnProveedores.ToolTip3"));
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.button1_Click);
+            this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
+            this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
             this.btnProveedores.MouseHover += new System.EventHandler(this.btnProveedores_MouseHover);
             // 
             // btnProductos
@@ -69,6 +71,8 @@ namespace Agrotics
             this.toolTip4.SetToolTip(this.btnProductos, resources.GetString("btnProductos.ToolTip3"));
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.button2_Click);
+            this.btnProductos.MouseEnter += new System.EventHandler(this.btnProductos_MouseEnter);
+            this.btnProductos.MouseLeave += new System.EventHandler(this.btnProductos_MouseLeave);
             this.btnProductos.MouseHover += new System.EventHandler(this.btnProductos_MouseHover);
             // 
             // btnCultivos
@@ -84,6 +88,8 @@ namespace Agrotics
             this.toolTip4.SetToolTip(this.btnCultivos, resources.GetString("btnCultivos.ToolTip3"));
             this.btnCultivos.UseVisualStyleBackColor = false;
             this.btnCultivos.Click += new System.EventHandler(this.button3_Click);
+            this.btnCultivos.MouseEnter += new System.EventHandler(this.btnCultivos_MouseEnter);
+            this.btnCultivos.MouseLeave += new System.EventHandler(this.btnCultivos_MouseLeave);
             this.btnCultivos.MouseHover += new System.EventHandler(this.btnCultivos_MouseHover);
             // 
             // toolTip1
@@ -104,6 +110,8 @@ namespace Agrotics
             this.toolTip4.SetToolTip(this.btnventas, resources.GetString("btnventas.ToolTip3"));
             this.btnventas.UseVisualStyleBackColor = false;
             this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
+            this.btnventas.MouseEnter += new System.EventHandler(this.btnventas_MouseEnter);
+            this.btnventas.MouseLeave += new System.EventHandler(this.btnventas_MouseLeave);
             this.btnventas.MouseHover += new System.EventHandler(this.btnventas_MouseHover);
             // 
             // toolTip2

@@ -24,12 +24,28 @@ namespace Agrotics
             
         }
 
+        public void buttonAgregar()
+        {
+            if (!string.IsNullOrEmpty(ValorCelda))
+            {
+                Ventas1 mensajero = new Ventas1();
+
+                mensajero.ValorCelda = this.ValorCelda;
+                mensajero.Show();
+            }
+            else
+            {
+                MessageBox.Show("Primero selecciona un producto para vender");
+            }
+        }
+
+
         public void consulta2()
         {
             MySqlDataReader reader = null;
 
             //REVISAR LA CADENA DE CONSULTA Y LA CONCATENACION DE LA VARIABLE
-            string sql = "SELECT * FROM productos WHERE Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%' AND Tipo = 'Pesticida'";
+            string sql = "SELECT * FROM productos WHERE Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%' AND Tipo = 'Herbicida'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand(sql, conexionBD);
@@ -93,7 +109,7 @@ namespace Agrotics
             MySqlDataReader reader = null;
 
             //REVISAR LA CADENA DE CONSULTA Y LA CONCATENACION DE LA VARIABLE
-            string sql = "SELECT * FROM productos WHERE Tipo='Fertilizante' AND Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%'";
+            string sql = "SELECT * FROM productos WHERE Tipo='Fertilizantes' AND Cultivos LIKE '%" + ValorEnviado.Replace("'", "''") + "%'";
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
             MySqlCommand comando = new MySqlCommand(sql, conexionBD);
@@ -126,19 +142,12 @@ namespace Agrotics
 
         private void btnAddFert_Click(object sender, EventArgs e)
         {
-            
-            Ventas1 mensajero = new Ventas1();
-           
-            mensajero.ValorCelda = this.ValorCelda;
-            mensajero.Show(); 
-        }
+            buttonAgregar(); 
+         }
 
         private void btnPesticidas_Click(object sender, EventArgs e)
         {
-            Ventas1 mensajero = new Ventas1();
-           
-            mensajero.ValorCelda = this.ValorCelda;
-            mensajero.Show();
+            buttonAgregar();
         }
 
         private void dgvPesticidas_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -153,10 +162,7 @@ namespace Agrotics
 
         private void btnFungicidas_Click(object sender, EventArgs e)
         {
-            Ventas1 mensajero = new Ventas1();
-
-            mensajero.ValorCelda = this.ValorCelda;
-            mensajero.Show();
+            buttonAgregar();
         }
 
         private void dgvInsecticidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -171,10 +177,7 @@ namespace Agrotics
 
         private void btnInsecticidas_Click(object sender, EventArgs e)
         {
-            Ventas1 mensajero = new Ventas1();
-            
-            mensajero.ValorCelda = this.ValorCelda;
-            mensajero.Show();
+            buttonAgregar();
         }
         private void tabPage3_Click(object sender, EventArgs e)
         {
