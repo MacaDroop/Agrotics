@@ -33,7 +33,6 @@
             this.ListaPrecios = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lstCantidad = new System.Windows.Forms.ListBox();
@@ -56,12 +55,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtPresentacionVentas = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtVender = new System.Windows.Forms.Button();
             this.txtBuscarPresentacion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCultivos = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtReferVen = new System.Windows.Forms.TextBox();
+            this.txtVender = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscarProVent = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -112,21 +111,13 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Precios";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(294, 421);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Total:";
-            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(334, 421);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(19, 13);
+            this.lblTotal.Size = new System.Drawing.Size(21, 13);
             this.lblTotal.TabIndex = 7;
             this.lblTotal.Text = "$0";
             // 
@@ -308,18 +299,6 @@
             this.label14.TabIndex = 29;
             this.label14.Text = "Presentacion:";
             // 
-            // txtVender
-            // 
-            this.txtVender.Location = new System.Drawing.Point(435, 311);
-            this.txtVender.Name = "txtVender";
-            this.txtVender.Size = new System.Drawing.Size(71, 30);
-            this.txtVender.TabIndex = 31;
-            this.txtVender.Text = "Vender";
-            this.txtVender.UseVisualStyleBackColor = true;
-            this.txtVender.Click += new System.EventHandler(this.txtVender_Click);
-            this.txtVender.MouseEnter += new System.EventHandler(this.txtVender_MouseEnter);
-            this.txtVender.MouseLeave += new System.EventHandler(this.txtVender_MouseLeave);
-            // 
             // txtBuscarPresentacion
             // 
             this.txtBuscarPresentacion.AutoCompleteCustomSource.AddRange(new string[] {
@@ -373,6 +352,22 @@
             this.txtReferVen.Size = new System.Drawing.Size(68, 20);
             this.txtReferVen.TabIndex = 38;
             // 
+            // txtVender
+            // 
+            this.txtVender.BackColor = System.Drawing.Color.Transparent;
+            this.txtVender.BackgroundImage = global::Agrotics.Properties.Resources.check_buy;
+            this.txtVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtVender.FlatAppearance.BorderSize = 0;
+            this.txtVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtVender.Location = new System.Drawing.Point(459, 325);
+            this.txtVender.Name = "txtVender";
+            this.txtVender.Size = new System.Drawing.Size(47, 46);
+            this.txtVender.TabIndex = 31;
+            this.txtVender.UseVisualStyleBackColor = false;
+            this.txtVender.Click += new System.EventHandler(this.txtVender_Click);
+            this.txtVender.MouseEnter += new System.EventHandler(this.txtVender_MouseEnter);
+            this.txtVender.MouseLeave += new System.EventHandler(this.txtVender_MouseLeave);
+            // 
             // btnAgregar
             // 
             this.btnAgregar.BackgroundImage = global::Agrotics.Properties.Resources.icon_add;
@@ -412,7 +407,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(791, 450);
             this.Controls.Add(this.txtReferVen);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtCultivos);
@@ -442,7 +437,6 @@
             this.Controls.Add(this.lstCantidad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblTotal);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ListaPrecios);
@@ -466,7 +460,6 @@
         private System.Windows.Forms.ListBox ListaPrecios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox lstCantidad;

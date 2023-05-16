@@ -103,7 +103,7 @@ namespace Agrotics
 
         private void ProductosCultivo_Load(object sender, EventArgs e)
         {
-            label2.Text = ValorEnviado;
+            
 
 
             MySqlDataReader reader = null;

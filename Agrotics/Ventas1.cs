@@ -109,6 +109,35 @@ namespace Agrotics.Resources
 
         }
 
+        public void actualizarStock(string nombreProducto, int cantid)
+        {
+           
+
+                MySqlDataReader reader = null;
+
+                string sql = $"UPDATE productos SET Stock = Stock - {cantid} WHERE NombreProducto = '{nombreProducto}'";
+
+                MySqlConnection conexionBD = Conexion2.conexion();
+                conexionBD.Open();
+
+                try
+                {
+                    MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                    reader = comando.ExecuteReader();     
+                   
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show("Error al buscar: " + ex.Message);
+                }
+                finally
+                {
+                    conexionBD.Close();
+                }
+            
+
+        
+    }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             if (txtCantVen.TextLength == 0) {
@@ -333,6 +362,17 @@ namespace Agrotics.Resources
                 doc.Close();
 
                 MessageBox.Show("PDF generado exitosamente.");
+            }
+
+            //RECORRER LOS LISTBOX PARA ACTUALIZAR EL STOCK EN LA BASE DE DATOS
+            int cantidadProductos = listaProductos.Items.Count;
+
+            for (int i = 0; i < cantidadProductos; i++)
+            {
+                string nombreProducto = listaProductos.Items[i].ToString();
+                int cantidad = Convert.ToInt32(lstCantidad.Items[i]);
+
+                actualizarStock(nombreProducto, cantidad);
             }
         }
 

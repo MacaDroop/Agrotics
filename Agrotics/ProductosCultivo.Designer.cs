@@ -30,9 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnAddFert = new System.Windows.Forms.Button();
             this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnPesticidas = new System.Windows.Forms.Button();
             this.dgvPesticidas = new System.Windows.Forms.DataGridView();
@@ -42,6 +40,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnInsecticidas = new System.Windows.Forms.Button();
             this.dgvInsecticidas = new System.Windows.Forms.DataGridView();
+            this.btnAddFert = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
@@ -71,7 +70,6 @@
             this.tabPage1.BackColor = System.Drawing.Color.SpringGreen;
             this.tabPage1.Controls.Add(this.btnAddFert);
             this.tabPage1.Controls.Add(this.dgvFertilizantes);
-            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -79,16 +77,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "FERTILIZANTES";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // btnAddFert
-            // 
-            this.btnAddFert.Location = new System.Drawing.Point(695, 13);
-            this.btnAddFert.Name = "btnAddFert";
-            this.btnAddFert.Size = new System.Drawing.Size(75, 31);
-            this.btnAddFert.TabIndex = 3;
-            this.btnAddFert.Text = "Agregar Producto";
-            this.btnAddFert.UseVisualStyleBackColor = true;
-            this.btnAddFert.Click += new System.EventHandler(this.btnAddFert_Click);
             // 
             // dgvFertilizantes
             // 
@@ -99,15 +87,6 @@
             this.dgvFertilizantes.Size = new System.Drawing.Size(747, 324);
             this.dgvFertilizantes.TabIndex = 2;
             this.dgvFertilizantes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFertilizantes_CellClick);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(392, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
             // 
             // tabPage2
             // 
@@ -123,12 +102,16 @@
             // 
             // btnPesticidas
             // 
-            this.btnPesticidas.Location = new System.Drawing.Point(695, 13);
+            this.btnPesticidas.BackColor = System.Drawing.Color.Transparent;
+            this.btnPesticidas.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
+            this.btnPesticidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPesticidas.FlatAppearance.BorderSize = 0;
+            this.btnPesticidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesticidas.Location = new System.Drawing.Point(719, 6);
             this.btnPesticidas.Name = "btnPesticidas";
-            this.btnPesticidas.Size = new System.Drawing.Size(75, 31);
+            this.btnPesticidas.Size = new System.Drawing.Size(51, 44);
             this.btnPesticidas.TabIndex = 1;
-            this.btnPesticidas.Text = "Agregar";
-            this.btnPesticidas.UseVisualStyleBackColor = true;
+            this.btnPesticidas.UseVisualStyleBackColor = false;
             this.btnPesticidas.Click += new System.EventHandler(this.btnPesticidas_Click);
             // 
             // dgvPesticidas
@@ -154,12 +137,16 @@
             // 
             // btnFungicidas
             // 
-            this.btnFungicidas.Location = new System.Drawing.Point(695, 13);
+            this.btnFungicidas.BackColor = System.Drawing.Color.Transparent;
+            this.btnFungicidas.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
+            this.btnFungicidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFungicidas.FlatAppearance.BorderSize = 0;
+            this.btnFungicidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFungicidas.Location = new System.Drawing.Point(719, 6);
             this.btnFungicidas.Name = "btnFungicidas";
-            this.btnFungicidas.Size = new System.Drawing.Size(75, 31);
+            this.btnFungicidas.Size = new System.Drawing.Size(51, 44);
             this.btnFungicidas.TabIndex = 1;
-            this.btnFungicidas.Text = "Agregar";
-            this.btnFungicidas.UseVisualStyleBackColor = true;
+            this.btnFungicidas.UseVisualStyleBackColor = false;
             this.btnFungicidas.Click += new System.EventHandler(this.btnFungicidas_Click);
             // 
             // dgvFungicidas
@@ -185,12 +172,16 @@
             // 
             // btnInsecticidas
             // 
-            this.btnInsecticidas.Location = new System.Drawing.Point(695, 13);
+            this.btnInsecticidas.BackColor = System.Drawing.Color.Transparent;
+            this.btnInsecticidas.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
+            this.btnInsecticidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnInsecticidas.FlatAppearance.BorderSize = 0;
+            this.btnInsecticidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInsecticidas.Location = new System.Drawing.Point(719, 6);
             this.btnInsecticidas.Name = "btnInsecticidas";
-            this.btnInsecticidas.Size = new System.Drawing.Size(75, 31);
+            this.btnInsecticidas.Size = new System.Drawing.Size(51, 44);
             this.btnInsecticidas.TabIndex = 1;
-            this.btnInsecticidas.Text = "Agregar";
-            this.btnInsecticidas.UseVisualStyleBackColor = true;
+            this.btnInsecticidas.UseVisualStyleBackColor = false;
             this.btnInsecticidas.Click += new System.EventHandler(this.btnInsecticidas_Click);
             // 
             // dgvInsecticidas
@@ -202,6 +193,19 @@
             this.dgvInsecticidas.TabIndex = 0;
             this.dgvInsecticidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellClick);
             this.dgvInsecticidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellContentClick);
+            // 
+            // btnAddFert
+            // 
+            this.btnAddFert.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
+            this.btnAddFert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddFert.FlatAppearance.BorderSize = 0;
+            this.btnAddFert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFert.Location = new System.Drawing.Point(719, 6);
+            this.btnAddFert.Name = "btnAddFert";
+            this.btnAddFert.Size = new System.Drawing.Size(51, 44);
+            this.btnAddFert.TabIndex = 3;
+            this.btnAddFert.UseVisualStyleBackColor = true;
+            this.btnAddFert.Click += new System.EventHandler(this.btnAddFert_Click);
             // 
             // ProductosCultivo
             // 
@@ -215,7 +219,6 @@
             this.Load += new System.EventHandler(this.ProductosCultivo_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesticidas)).EndInit();
@@ -233,7 +236,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvFertilizantes;
         private System.Windows.Forms.Button btnAddFert;
         private System.Windows.Forms.DataGridView dgvPesticidas;
