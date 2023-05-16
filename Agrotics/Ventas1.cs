@@ -19,15 +19,13 @@ namespace Agrotics.Resources
     public partial class Ventas1 : Form
     {
         public String ValorCelda { get; set; }
-        int total = 0;
+         public int total = 0;
 
 
         public Ventas1()
         {
             InitializeComponent();
             
-
-
         }
 
         public void manita()
@@ -208,15 +206,26 @@ namespace Agrotics.Resources
             {
                 // Obtener la ruta y el nombre del archivo seleccionado
                 string rutaArchivo = saveDialog.FileName;
+                float ticketWidth = 250;
+                float ticketHeight = 350;
 
                 // Generar el PDF con la información de la tabla y guardar en la ruta seleccionada
-                Document doc = new Document(PageSize.A4, 50, 50, 50, 50);
+               
+                iTextSharp.text.Rectangle ticketSize = new iTextSharp.text.Rectangle(ticketWidth, ticketHeight);
+                Document doc = new Document(ticketSize, 50, 50, 50, 50);
                 PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(rutaArchivo, FileMode.Create));
                 doc.Open();
 
-              
 
-
+                string rutaImagen = "logotick.jpg"; // Reemplaza esto con la ruta de tu imagen
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(rutaImagen);
+                imagen.Alignment = Element.ALIGN_CENTER;
+                imagen.ScaleToFit(45, 45); // Ajusta el tamaño de la imagen según tus necesidades
+                                           // Establecer la posición de la imagen
+                float x = (doc.PageSize.Width - imagen.ScaledWidth) / 2; // Centrar horizontalmente
+                float y = doc.PageSize.Height - 60; // Ajustar la posición vertical aquí (por ejemplo, 50 es la distancia desde la parte superior)
+                imagen.SetAbsolutePosition(x, y);
+                doc.Add(imagen);
 
                 //TITULO EN EL PFF
                 iTextSharp.text.Font tituloFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 22, iTextSharp.text.Font.BOLD);
@@ -229,42 +238,95 @@ namespace Agrotics.Resources
                 subtitulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
                 doc.Add(subtitulo);
 
-                iTextSharp.text.Font espacioFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                iTextSharp.text.Font espacioFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.NORMAL);
                 Paragraph espacio = new Paragraph(" ", espacioFont);
-                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                espacio.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
                 doc.Add(espacio);
 
-                iTextSharp.text.Font fechaFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                iTextSharp.text.Font fechaFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
                 Paragraph fecha = new Paragraph("Fecha:"+fechaFormateada, fechaFont);
-                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                fecha.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
                 doc.Add(fecha);
 
-                iTextSharp.text.Font lugarFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
-                Paragraph lugar = new Paragraph("JUAN RODRIGUEZ CLARA VERACRUZ", lugarFont);
-                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                iTextSharp.text.Font lugarFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
+                Paragraph lugar = new Paragraph("Juan Rodriguez Clara, Ver", lugarFont);
+                lugar.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
                 doc.Add(lugar);
 
-                iTextSharp.text.Font espacioFont2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL);
+                iTextSharp.text.Font direccionFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
+                Paragraph direccion = new Paragraph("Col. Las Bodegas", direccionFont);
+                direccion.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
+                doc.Add(direccion);
+
+                iTextSharp.text.Font espacioFont2 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.NORMAL);
                 Paragraph espacio2 = new Paragraph(" ", espacioFont2);
-                titulo.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                espacio2.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
                 doc.Add(espacio2);
+
 
                 // Añadir la tabla con los datos
                 PdfPTable table = new PdfPTable(3);
-                table.AddCell("Productos");
-                table.AddCell("Cantidad");
-                table.AddCell("Precio Unitario");
-              
+                table.DefaultCell.Padding = 5;
+                table.DefaultCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
 
+                // Establecer el tamaño de fuente para las celdas de la tabla
+                iTextSharp.text.Font font = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 7, iTextSharp.text.Font.NORMAL);
+
+                // Agregar las celdas de encabezado
+                PdfPCell productosHeader = new PdfPCell(new Phrase("Producto", font));
+                PdfPCell cantidadHeader = new PdfPCell(new Phrase("Cantidad", font));
+                PdfPCell precioHeader = new PdfPCell(new Phrase("Precio Unitario", font));
+
+                // Establecer el estilo de las celdas de encabezado
+                productosHeader.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                cantidadHeader.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                precioHeader.Border = iTextSharp.text.Rectangle.NO_BORDER;
+
+                // Agregar las celdas de encabezado a la tabla
+                table.AddCell(productosHeader);
+                table.AddCell(cantidadHeader);
+                table.AddCell(precioHeader);
+
+                // Agregar las celdas con la información correspondiente
                 for (int i = 0; i < Math.Max(ListaPrecios.Items.Count, Math.Max(lstCantidad.Items.Count, listaProductos.Items.Count)); i++)
                 {
-                    table.AddCell(i < listaProductos.Items.Count ? listaProductos.Items[i].ToString() : "");
-                    table.AddCell(i < lstCantidad.Items.Count ? lstCantidad.Items[i].ToString() : "");
-                    table.AddCell(i < ListaPrecios.Items.Count ? ListaPrecios.Items[i].ToString() : "");
+                    PdfPCell productoCell = new PdfPCell(new Phrase(i < listaProductos.Items.Count ? listaProductos.Items[i].ToString() : "", font));
+                    PdfPCell cantidadCell = new PdfPCell(new Phrase(i < lstCantidad.Items.Count ? lstCantidad.Items[i].ToString() : "", font));
+                    PdfPCell precioCell = new PdfPCell(new Phrase(i < ListaPrecios.Items.Count ? ListaPrecios.Items[i].ToString() : "", font));
+
+                    // Establecer el estilo de las celdas de información
+                    productoCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                    cantidadCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                    precioCell.Border = iTextSharp.text.Rectangle.NO_BORDER;
+
+                    // Agregar las celdas de información a la tabla
+                    table.AddCell(productoCell);
+                    table.AddCell(cantidadCell);
+                    table.AddCell(precioCell);
                 }
 
+                PdfPCell celdanull = new PdfPCell(new Phrase("", font));
+                PdfPCell totaltxt = new PdfPCell(new Phrase("Total:", font));
+                PdfPCell totalCant = new PdfPCell(new Phrase(total.ToString(), font));
+                
+                celdanull.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                totaltxt.Border = iTextSharp.text.Rectangle.NO_BORDER;
+                totalCant.Border = iTextSharp.text.Rectangle.NO_BORDER;
+
+                table.AddCell(celdanull);
+                table.AddCell(totaltxt);
+                table.AddCell(totalCant);
                 doc.Add(table);
 
+                iTextSharp.text.Font espacioFont3 = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, iTextSharp.text.Font.NORMAL);
+                Paragraph espacio3 = new Paragraph(" ", espacioFont3);
+                espacio.Alignment = iTextSharp.text.Element.ALIGN_LEFT;
+                doc.Add(espacio3);
+
+                iTextSharp.text.Font esloganFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
+                Paragraph eslogan = new Paragraph("ORGANIZAMOS TU CAMPO", esloganFont);
+                eslogan.Alignment = iTextSharp.text.Element.ALIGN_CENTER;
+                doc.Add(eslogan);
 
 
                 // Cerrar el documento
