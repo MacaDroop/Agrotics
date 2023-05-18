@@ -174,7 +174,7 @@ namespace Agrotics.Resources
                 string buscar = txtBuscarProVen.Text;
                 MySqlDataReader reader = null;
 
-                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos FROM productos WHERE NombreProducto = '" + ValorCelda + "'LIMIT 1";
+                string sql = "SELECT NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia FROM productos WHERE NombreProducto = '" + ValorCelda + "'LIMIT 1";
                 MySqlConnection conexionBD = Conexion2.conexion();
                 conexionBD.Open();
 
@@ -196,6 +196,7 @@ namespace Agrotics.Resources
                             txtTipoPVentas.Text = reader.GetString(6);
                             txtPresentacionVentas.Text = reader.GetString(7);
                             txtCultivos.Text = reader.GetString(8);
+                            txtReferVen.Text = reader.GetString(9);
 
                         }
                     }
