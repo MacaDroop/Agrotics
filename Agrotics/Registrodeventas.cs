@@ -16,5 +16,10 @@ namespace Agrotics
         {
             InitializeComponent();
         }
+
+        private void Registrodeventas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

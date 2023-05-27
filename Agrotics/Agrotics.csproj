@@ -162,6 +162,9 @@
     <EmbeddedResource Include="Provedores.resx">
       <DependentUpon>Provedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrodeventas.resx">
+      <DependentUpon>Registrodeventas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ventas1.resx">
       <DependentUpon>Ventas1.cs</DependentUpon>
     </EmbeddedResource>
