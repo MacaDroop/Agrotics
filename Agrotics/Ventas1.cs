@@ -391,7 +391,7 @@ namespace Agrotics.Resources
                 comando.ExecuteNonQuery();
 
 
-                MessageBox.Show("Registro Eliminado");
+                MessageBox.Show("Registro Ingresado");
 
 
             }
