@@ -157,7 +157,7 @@ namespace Agrotics.Resources
                     listaProductos.Items.Add(nproduc); // Agregar el elemento a la lista
                     lstCantidad.Items.Add(cantidad); // Limpiar el cuadro de texto
                     ListaPrecios.Items.Add(precio);
-                    limpiar();
+                    //limpiar();
                     
                     total += Convert.ToInt32(precio) * Convert.ToInt32(cantidad);
                     lblTotal.Text = Convert.ToString("Total: "+total);
@@ -375,6 +375,35 @@ namespace Agrotics.Resources
 
                 actualizarStock(nombreProducto, cantidad);
             }
+
+
+            //AGREGAR A LA BASE DE DATOS LOS REGISTROS DEL PRODUCTO VENDIDO
+            DateTime horaActual = DateTime.Now;
+            string horaActualString = horaActual.ToString("HH:mm:ss");
+            //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
+            string sql = "INSERT INTO registroventas (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia,  Hora) VALUES ('" + txtName.Text + "', '" + txtDescription.Text + "', '" + "', '" + txtLabVentas.Text + "', '" + txtCadVentas + "', '" + txtTipoPVentas.Text + "', '" + txtCultivos.Text + "', '" + txtPrecioVentas.Text + "', '" + txtStockVentas.Text + "','" + txtPresentacionVentas.Text + "' + '"+txtReferVen.Text+"', '"+horaActualString+"')";
+            MySqlConnection conexionBD = Conexion2.conexion();
+            conexionBD.Open();
+            
+            try
+            {
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+
+
+                MessageBox.Show("Registro Eliminado");
+
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error al Eliminar: " + ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close();
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
