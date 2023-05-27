@@ -122,6 +122,12 @@
     <Compile Include="Provedores.Designer.cs">
       <DependentUpon>Provedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registrodeventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrodeventas.Designer.cs">
+      <DependentUpon>Registrodeventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -44,10 +44,10 @@ namespace Agrotics
             // 
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.Transparent;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Font = new System.Drawing.Font("Cooper Black", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label1.Location = new System.Drawing.Point(93, 27);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(472, 30);
+            label1.Size = new System.Drawing.Size(465, 29);
             label1.TabIndex = 6;
             label1.Text = "SELECCIONA EL TIPO DE CULTIVO";
             // 

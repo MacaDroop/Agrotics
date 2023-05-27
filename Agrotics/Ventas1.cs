@@ -466,6 +466,11 @@ namespace Agrotics.Resources
         {
             cursorDefec();
         }
+
+        private void txtDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
             
 }

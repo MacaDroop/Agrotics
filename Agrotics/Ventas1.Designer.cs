@@ -196,6 +196,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(312, 50);
             this.txtDescription.TabIndex = 18;
+            this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
             // label10
             // 
@@ -359,7 +360,7 @@
             this.txtVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtVender.FlatAppearance.BorderSize = 0;
             this.txtVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVender.Location = new System.Drawing.Point(459, 325);
+            this.txtVender.Location = new System.Drawing.Point(472, 329);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(47, 46);
             this.txtVender.TabIndex = 31;
