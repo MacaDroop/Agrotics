@@ -157,7 +157,7 @@ namespace Agrotics.Resources
                     listaProductos.Items.Add(nproduc); // Agregar el elemento a la lista
                     lstCantidad.Items.Add(cantidad); // Limpiar el cuadro de texto
                     ListaPrecios.Items.Add(precio);
-                    limpiar();
+                    //limpiar();
                     
                     total += Convert.ToInt32(precio) * Convert.ToInt32(cantidad);
                     lblTotal.Text = Convert.ToString("Total: "+total);
