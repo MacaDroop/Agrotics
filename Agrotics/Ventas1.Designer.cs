@@ -191,10 +191,10 @@
             // 
             // txtDescription
             // 
-            this.txtDescription.Location = new System.Drawing.Point(122, 163);
+            this.txtDescription.Location = new System.Drawing.Point(122, 157);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(312, 50);
+            this.txtDescription.Size = new System.Drawing.Size(312, 56);
             this.txtDescription.TabIndex = 18;
             // 
             // label10

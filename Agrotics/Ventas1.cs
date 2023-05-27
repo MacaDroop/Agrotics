@@ -76,7 +76,6 @@ namespace Agrotics.Resources
                     {
                         while (reader.Read())
                         {
-
                             txtName.Text = reader.GetString(0);
                             txtDescription.Text = reader.GetString(1);
                             txtLabVentas.Text = reader.GetString(2);
@@ -86,8 +85,7 @@ namespace Agrotics.Resources
                             txtTipoPVentas.Text = reader.GetString(6);
                             txtPresentacionVentas.Text = reader.GetString(7);
                             txtCultivos.Text = reader.GetString(8);
-                            txtReferVen.Text = reader.GetString(9);
-
+                            txtReferVen.Text = reader.GetString(9); 
                         }
                     }
                     else
@@ -196,7 +194,7 @@ namespace Agrotics.Resources
                             txtTipoPVentas.Text = reader.GetString(6);
                             txtPresentacionVentas.Text = reader.GetString(7);
                             txtCultivos.Text = reader.GetString(8);
-                            txtReferVen.Text = reader.GetString(9);
+                            txtReferVen.Text = reader.GetString(9); 
 
                         }
                     }
