@@ -171,7 +171,7 @@ namespace Agrotics
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_06_a_las_11_24_22;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(792, 471);
+            this.ClientSize = new System.Drawing.Size(881, 471);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnventas);
