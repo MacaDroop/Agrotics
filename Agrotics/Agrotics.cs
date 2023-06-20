@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace Agrotics
 {
     public partial class Form1 : Form
-    {
+    { 
         public Form1()
         {
             InitializeComponent();
@@ -119,6 +119,18 @@ namespace Agrotics
         private void btnProductos_MouseLeave(object sender, EventArgs e)
         {
             cursorDefec();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            s mensajero = new s();
+            mensajero.Show();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Asesoria mensajero = new Asesoria();
+            mensajero.Show();
         }
     }
 }

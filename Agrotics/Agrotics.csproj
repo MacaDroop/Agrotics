@@ -36,8 +36,8 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.22.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Protobuf.3.22.4\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.23.3.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.23.3\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
@@ -95,6 +95,12 @@
     <Compile Include="Agrotics.Designer.cs">
       <DependentUpon>Agrotics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Asesoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asesoria.Designer.cs">
+      <DependentUpon>Asesoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexion2.cs" />
     <Compile Include="Cultivos.cs">
       <SubType>Form</SubType>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agrotics.resx">
       <DependentUpon>Agrotics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asesoria.resx">
+      <DependentUpon>Asesoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cultivos.resx">
       <DependentUpon>Cultivos.cs</DependentUpon>

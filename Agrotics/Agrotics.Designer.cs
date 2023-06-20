@@ -40,6 +40,7 @@ namespace Agrotics
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProveedores
@@ -172,6 +173,29 @@ namespace Agrotics
             this.button2.Text = "Registro de Ventas";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = global::Agrotics.Properties.Resources.icon_proveedores;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(606, 276);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(174, 125);
+            this.button3.TabIndex = 6;
+            this.button3.TabStop = false;
+            this.button3.Text = "Asesoria";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.button3, "Aqui podras registrar la información de tus proveedores.");
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // Form1
             // 
@@ -181,6 +205,7 @@ namespace Agrotics
             this.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_06_a_las_11_24_22;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(881, 471);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnventas);
@@ -208,6 +233,7 @@ namespace Agrotics
         private System.Windows.Forms.ToolTip toolTip4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
