@@ -32,6 +32,9 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tcSintomas = new System.Windows.Forms.TabControl();
             this.tpPiña = new System.Windows.Forms.TabPage();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.tpMaiz = new System.Windows.Forms.TabPage();
             this.tpFrijol = new System.Windows.Forms.TabPage();
             this.tpCaña = new System.Windows.Forms.TabPage();
@@ -44,13 +47,30 @@
             this.cmbTipoCultivo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DIAGNOSTICO = new System.Windows.Forms.TabPage();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox11 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox12 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox13 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox14 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox15 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox16 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox17 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox18 = new System.Windows.Forms.CheckedListBox();
             this.AS.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tcSintomas.SuspendLayout();
             this.tpPiña.SuspendLayout();
+            this.tpMaiz.SuspendLayout();
+            this.tpFrijol.SuspendLayout();
+            this.tpCaña.SuspendLayout();
+            this.tpSandia.SuspendLayout();
+            this.tpChile.SuspendLayout();
             this.SuspendLayout();
             // 
             // AS
@@ -79,6 +99,7 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EVALUACION";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tcSintomas
             // 
@@ -109,8 +130,54 @@
             this.tpPiña.Text = "PIÑA";
             this.tpPiña.UseVisualStyleBackColor = true;
             // 
+            // checkedListBox3
+            // 
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox3.Location = new System.Drawing.Point(484, 30);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox3.TabIndex = 2;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox2.Location = new System.Drawing.Point(253, 30);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox2.TabIndex = 1;
+            this.checkedListBox2.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox1.Location = new System.Drawing.Point(33, 30);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.TabIndex = 0;
+            // 
             // tpMaiz
             // 
+            this.tpMaiz.Controls.Add(this.checkedListBox6);
+            this.tpMaiz.Controls.Add(this.checkedListBox5);
+            this.tpMaiz.Controls.Add(this.checkedListBox4);
             this.tpMaiz.Location = new System.Drawing.Point(4, 34);
             this.tpMaiz.Name = "tpMaiz";
             this.tpMaiz.Padding = new System.Windows.Forms.Padding(3);
@@ -121,6 +188,9 @@
             // 
             // tpFrijol
             // 
+            this.tpFrijol.Controls.Add(this.checkedListBox9);
+            this.tpFrijol.Controls.Add(this.checkedListBox8);
+            this.tpFrijol.Controls.Add(this.checkedListBox7);
             this.tpFrijol.Location = new System.Drawing.Point(4, 34);
             this.tpFrijol.Name = "tpFrijol";
             this.tpFrijol.Padding = new System.Windows.Forms.Padding(3);
@@ -131,6 +201,9 @@
             // 
             // tpCaña
             // 
+            this.tpCaña.Controls.Add(this.checkedListBox12);
+            this.tpCaña.Controls.Add(this.checkedListBox11);
+            this.tpCaña.Controls.Add(this.checkedListBox10);
             this.tpCaña.Location = new System.Drawing.Point(4, 34);
             this.tpCaña.Name = "tpCaña";
             this.tpCaña.Padding = new System.Windows.Forms.Padding(3);
@@ -141,6 +214,9 @@
             // 
             // tpSandia
             // 
+            this.tpSandia.Controls.Add(this.checkedListBox15);
+            this.tpSandia.Controls.Add(this.checkedListBox14);
+            this.tpSandia.Controls.Add(this.checkedListBox13);
             this.tpSandia.Location = new System.Drawing.Point(4, 34);
             this.tpSandia.Name = "tpSandia";
             this.tpSandia.Padding = new System.Windows.Forms.Padding(3);
@@ -151,6 +227,9 @@
             // 
             // tpChile
             // 
+            this.tpChile.Controls.Add(this.checkedListBox18);
+            this.tpChile.Controls.Add(this.checkedListBox17);
+            this.tpChile.Controls.Add(this.checkedListBox16);
             this.tpChile.Location = new System.Drawing.Point(4, 34);
             this.tpChile.Name = "tpChile";
             this.tpChile.Padding = new System.Windows.Forms.Padding(3);
@@ -226,47 +305,215 @@
             this.DIAGNOSTICO.Text = "DIAGNOSTICO";
             this.DIAGNOSTICO.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // checkedListBox4
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Items.AddRange(new object[] {
             "Sintoma 1",
             "Sintoma 2",
             "Sintoma 3",
             "Sintoma 4"});
-            this.checkedListBox1.Location = new System.Drawing.Point(41, 15);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox1.TabIndex = 0;
+            this.checkedListBox4.Location = new System.Drawing.Point(40, 35);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox4.TabIndex = 8;
             // 
-            // checkedListBox2
+            // checkedListBox5
             // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Items.AddRange(new object[] {
             "Sintoma 1",
             "Sintoma 2",
             "Sintoma 3",
             "Sintoma 4"});
-            this.checkedListBox2.Location = new System.Drawing.Point(256, 15);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox2.TabIndex = 1;
+            this.checkedListBox5.Location = new System.Drawing.Point(248, 35);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox5.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox5.TabIndex = 9;
             // 
-            // checkedListBox3
+            // checkedListBox6
             // 
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Items.AddRange(new object[] {
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.Items.AddRange(new object[] {
             "Sintoma 1",
             "Sintoma 2",
             "Sintoma 3",
             "Sintoma 4"});
-            this.checkedListBox3.Location = new System.Drawing.Point(457, 15);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
-            this.checkedListBox3.TabIndex = 2;
+            this.checkedListBox6.Location = new System.Drawing.Point(473, 35);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox6.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox6.TabIndex = 10;
+            // 
+            // checkedListBox7
+            // 
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox7.Location = new System.Drawing.Point(37, 34);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox7.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox7.TabIndex = 1;
+            // 
+            // checkedListBox8
+            // 
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox8.Location = new System.Drawing.Point(264, 34);
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox8.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox8.TabIndex = 2;
+            // 
+            // checkedListBox9
+            // 
+            this.checkedListBox9.FormattingEnabled = true;
+            this.checkedListBox9.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox9.Location = new System.Drawing.Point(490, 34);
+            this.checkedListBox9.Name = "checkedListBox9";
+            this.checkedListBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox9.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox9.TabIndex = 3;
+            // 
+            // checkedListBox10
+            // 
+            this.checkedListBox10.FormattingEnabled = true;
+            this.checkedListBox10.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox10.Location = new System.Drawing.Point(29, 36);
+            this.checkedListBox10.Name = "checkedListBox10";
+            this.checkedListBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox10.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox10.TabIndex = 1;
+            // 
+            // checkedListBox11
+            // 
+            this.checkedListBox11.FormattingEnabled = true;
+            this.checkedListBox11.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox11.Location = new System.Drawing.Point(261, 36);
+            this.checkedListBox11.Name = "checkedListBox11";
+            this.checkedListBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox11.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox11.TabIndex = 2;
+            // 
+            // checkedListBox12
+            // 
+            this.checkedListBox12.FormattingEnabled = true;
+            this.checkedListBox12.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox12.Location = new System.Drawing.Point(500, 36);
+            this.checkedListBox12.Name = "checkedListBox12";
+            this.checkedListBox12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox12.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox12.TabIndex = 3;
+            // 
+            // checkedListBox13
+            // 
+            this.checkedListBox13.FormattingEnabled = true;
+            this.checkedListBox13.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox13.Location = new System.Drawing.Point(41, 32);
+            this.checkedListBox13.Name = "checkedListBox13";
+            this.checkedListBox13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox13.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox13.TabIndex = 1;
+            // 
+            // checkedListBox14
+            // 
+            this.checkedListBox14.FormattingEnabled = true;
+            this.checkedListBox14.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox14.Location = new System.Drawing.Point(255, 32);
+            this.checkedListBox14.Name = "checkedListBox14";
+            this.checkedListBox14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox14.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox14.TabIndex = 2;
+            // 
+            // checkedListBox15
+            // 
+            this.checkedListBox15.FormattingEnabled = true;
+            this.checkedListBox15.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox15.Location = new System.Drawing.Point(480, 32);
+            this.checkedListBox15.Name = "checkedListBox15";
+            this.checkedListBox15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox15.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox15.TabIndex = 3;
+            // 
+            // checkedListBox16
+            // 
+            this.checkedListBox16.FormattingEnabled = true;
+            this.checkedListBox16.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox16.Location = new System.Drawing.Point(44, 33);
+            this.checkedListBox16.Name = "checkedListBox16";
+            this.checkedListBox16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox16.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox16.TabIndex = 1;
+            // 
+            // checkedListBox17
+            // 
+            this.checkedListBox17.FormattingEnabled = true;
+            this.checkedListBox17.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox17.Location = new System.Drawing.Point(264, 34);
+            this.checkedListBox17.Name = "checkedListBox17";
+            this.checkedListBox17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox17.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox17.TabIndex = 2;
+            // 
+            // checkedListBox18
+            // 
+            this.checkedListBox18.FormattingEnabled = true;
+            this.checkedListBox18.Items.AddRange(new object[] {
+            "Sintoma 1",
+            "Sintoma 2",
+            "Sintoma 3",
+            "Sintoma 4"});
+            this.checkedListBox18.Location = new System.Drawing.Point(495, 34);
+            this.checkedListBox18.Name = "checkedListBox18";
+            this.checkedListBox18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.checkedListBox18.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox18.TabIndex = 3;
             // 
             // Asesoria
             // 
@@ -281,6 +528,11 @@
             this.tabPage1.PerformLayout();
             this.tcSintomas.ResumeLayout(false);
             this.tpPiña.ResumeLayout(false);
+            this.tpMaiz.ResumeLayout(false);
+            this.tpFrijol.ResumeLayout(false);
+            this.tpCaña.ResumeLayout(false);
+            this.tpSandia.ResumeLayout(false);
+            this.tpChile.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -306,5 +558,20 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.CheckedListBox checkedListBox4;
+        private System.Windows.Forms.CheckedListBox checkedListBox6;
+        private System.Windows.Forms.CheckedListBox checkedListBox5;
+        private System.Windows.Forms.CheckedListBox checkedListBox9;
+        private System.Windows.Forms.CheckedListBox checkedListBox8;
+        private System.Windows.Forms.CheckedListBox checkedListBox7;
+        private System.Windows.Forms.CheckedListBox checkedListBox12;
+        private System.Windows.Forms.CheckedListBox checkedListBox11;
+        private System.Windows.Forms.CheckedListBox checkedListBox10;
+        private System.Windows.Forms.CheckedListBox checkedListBox15;
+        private System.Windows.Forms.CheckedListBox checkedListBox14;
+        private System.Windows.Forms.CheckedListBox checkedListBox13;
+        private System.Windows.Forms.CheckedListBox checkedListBox18;
+        private System.Windows.Forms.CheckedListBox checkedListBox17;
+        private System.Windows.Forms.CheckedListBox checkedListBox16;
     }
 }
