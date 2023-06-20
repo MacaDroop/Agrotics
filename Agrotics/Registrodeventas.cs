@@ -86,10 +86,5 @@ namespace Agrotics
         {
 
         }
-
-        private void cmbProducto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

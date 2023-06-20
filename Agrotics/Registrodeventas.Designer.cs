@@ -33,20 +33,20 @@
             this.txtFecha = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dtFecha = new System.Windows.Forms.DateTimePicker();
-            this.cmbProveedor = new System.Windows.Forms.ComboBox();
-            this.txtboton4 = new System.Windows.Forms.Label();
-            this.txtboton3 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.Label();
-            this.txtboton1 = new System.Windows.Forms.Label();
-            this.txtboton2 = new System.Windows.Forms.Label();
-            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.dgvBotton1 = new System.Windows.Forms.ListView();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.txtboton2 = new System.Windows.Forms.Label();
+            this.txtboton1 = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.Label();
+            this.txtboton3 = new System.Windows.Forms.Label();
+            this.txtboton4 = new System.Windows.Forms.Label();
+            this.cmbProveedor = new System.Windows.Forms.ComboBox();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,97 +104,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(529, 79);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(113, 90);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // dtFecha
-            // 
-            this.dtFecha.Location = new System.Drawing.Point(39, 130);
-            this.dtFecha.Name = "dtFecha";
-            this.dtFecha.Size = new System.Drawing.Size(274, 20);
-            this.dtFecha.TabIndex = 20;
-            // 
-            // cmbProveedor
-            // 
-            this.cmbProveedor.FormattingEnabled = true;
-            this.cmbProveedor.Location = new System.Drawing.Point(359, 41);
-            this.cmbProveedor.Name = "cmbProveedor";
-            this.cmbProveedor.Size = new System.Drawing.Size(274, 21);
-            this.cmbProveedor.TabIndex = 17;
-            // 
-            // txtboton4
-            // 
-            this.txtboton4.AutoSize = true;
-            this.txtboton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboton4.Location = new System.Drawing.Point(360, 17);
-            this.txtboton4.Name = "txtboton4";
-            this.txtboton4.Size = new System.Drawing.Size(80, 16);
-            this.txtboton4.TabIndex = 14;
-            this.txtboton4.Text = "Proveedor";
-            // 
-            // txtboton3
-            // 
-            this.txtboton3.AutoSize = true;
-            this.txtboton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboton3.Location = new System.Drawing.Point(36, 108);
-            this.txtboton3.Name = "txtboton3";
-            this.txtboton3.Size = new System.Drawing.Size(119, 16);
-            this.txtboton3.TabIndex = 13;
-            this.txtboton3.Text = "Fecha Estimada";
-            this.txtboton3.Click += new System.EventHandler(this.label2_Click_1);
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.AutoSize = true;
-            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad.Location = new System.Drawing.Point(345, 16);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(0, 16);
-            this.txtCantidad.TabIndex = 11;
-            this.txtCantidad.Click += new System.EventHandler(this.txtCantidad_Click);
-            // 
-            // txtboton1
-            // 
-            this.txtboton1.AutoSize = true;
-            this.txtboton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboton1.Location = new System.Drawing.Point(35, 16);
-            this.txtboton1.Name = "txtboton1";
-            this.txtboton1.Size = new System.Drawing.Size(69, 16);
-            this.txtboton1.TabIndex = 9;
-            this.txtboton1.Text = "Producto";
-            this.txtboton1.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // txtboton2
-            // 
-            this.txtboton2.AutoSize = true;
-            this.txtboton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboton2.Location = new System.Drawing.Point(35, 64);
-            this.txtboton2.Name = "txtboton2";
-            this.txtboton2.Size = new System.Drawing.Size(55, 16);
-            this.txtboton2.TabIndex = 8;
-            this.txtboton2.Text = "Cliente";
-            this.txtboton2.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // cmbProducto
-            // 
-            this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(38, 40);
-            this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(274, 21);
-            this.cmbProducto.TabIndex = 1;
-            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
-            // 
             // cmbCliente
             // 
             this.cmbCliente.FormattingEnabled = true;
@@ -203,6 +112,14 @@
             this.cmbCliente.Size = new System.Drawing.Size(274, 21);
             this.cmbCliente.TabIndex = 0;
             this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // cmbProducto
+            // 
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(38, 40);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(274, 21);
+            this.cmbProducto.TabIndex = 1;
             // 
             // dgvBotton1
             // 
@@ -260,6 +177,88 @@
             this.btnRegistrar.TabIndex = 7;
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // txtboton2
+            // 
+            this.txtboton2.AutoSize = true;
+            this.txtboton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboton2.Location = new System.Drawing.Point(35, 64);
+            this.txtboton2.Name = "txtboton2";
+            this.txtboton2.Size = new System.Drawing.Size(55, 16);
+            this.txtboton2.TabIndex = 8;
+            this.txtboton2.Text = "Cliente";
+            this.txtboton2.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtboton1
+            // 
+            this.txtboton1.AutoSize = true;
+            this.txtboton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboton1.Location = new System.Drawing.Point(35, 16);
+            this.txtboton1.Name = "txtboton1";
+            this.txtboton1.Size = new System.Drawing.Size(69, 16);
+            this.txtboton1.TabIndex = 9;
+            this.txtboton1.Text = "Producto";
+            this.txtboton1.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.AutoSize = true;
+            this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(345, 16);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(0, 16);
+            this.txtCantidad.TabIndex = 11;
+            this.txtCantidad.Click += new System.EventHandler(this.txtCantidad_Click);
+            // 
+            // txtboton3
+            // 
+            this.txtboton3.AutoSize = true;
+            this.txtboton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboton3.Location = new System.Drawing.Point(36, 108);
+            this.txtboton3.Name = "txtboton3";
+            this.txtboton3.Size = new System.Drawing.Size(119, 16);
+            this.txtboton3.TabIndex = 13;
+            this.txtboton3.Text = "Fecha Estimada";
+            this.txtboton3.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // txtboton4
+            // 
+            this.txtboton4.AutoSize = true;
+            this.txtboton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboton4.Location = new System.Drawing.Point(360, 17);
+            this.txtboton4.Name = "txtboton4";
+            this.txtboton4.Size = new System.Drawing.Size(80, 16);
+            this.txtboton4.TabIndex = 14;
+            this.txtboton4.Text = "Proveedor";
+            // 
+            // cmbProveedor
+            // 
+            this.cmbProveedor.FormattingEnabled = true;
+            this.cmbProveedor.Location = new System.Drawing.Point(359, 41);
+            this.cmbProveedor.Name = "cmbProveedor";
+            this.cmbProveedor.Size = new System.Drawing.Size(274, 21);
+            this.cmbProveedor.TabIndex = 17;
+            // 
+            // dtFecha
+            // 
+            this.dtFecha.Location = new System.Drawing.Point(39, 130);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(274, 20);
+            this.dtFecha.TabIndex = 20;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(529, 79);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(113, 90);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // s
             // 
