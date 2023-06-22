@@ -35,6 +35,7 @@ namespace Agrotics
                 else
                 {
                     tabPage.Enabled = false;
+                   
                 }
             }
         }

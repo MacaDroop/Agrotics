@@ -18,10 +18,13 @@ namespace Agrotics
             InitializeComponent();
            
         }
-
+        public string TextoBotonMaiz
+        {
+            get { return btnMaiz.Text; }
+        }
         private void Cultivos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button2_Paint(object sender, PaintEventArgs e)
@@ -33,6 +36,7 @@ namespace Agrotics
             ProductosCultivo mensajero = new ProductosCultivo();
             mensajero.ValorEnviado = "Piña";
             mensajero.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,7 +54,7 @@ namespace Agrotics
 
         private void button2_MouseHover(object sender, EventArgs e)
         {
-            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnMaiz.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
         private void button3_MouseHover(object sender, EventArgs e)
@@ -84,6 +88,11 @@ namespace Agrotics
             ProductosCultivo mensajero = new ProductosCultivo();
             mensajero.ValorEnviado = "Caña";
             mensajero.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

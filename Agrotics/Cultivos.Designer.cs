@@ -35,7 +35,7 @@ namespace Agrotics
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnMaiz = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
             btnPiña = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -44,10 +44,10 @@ namespace Agrotics
             // 
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.Transparent;
-            label1.Font = new System.Drawing.Font("Cooper Black", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(93, 27);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(119, 24);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(465, 29);
+            label1.Size = new System.Drawing.Size(432, 29);
             label1.TabIndex = 6;
             label1.Text = "SELECCIONA EL TIPO DE CULTIVO";
             // 
@@ -143,25 +143,26 @@ namespace Agrotics
             this.button3.Click += new System.EventHandler(this.button3_Click);
             this.button3.MouseHover += new System.EventHandler(this.button3_MouseHover);
             // 
-            // button2
+            // btnMaiz
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Agrotics.Properties.Resources.maiz;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(273, 87);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 89);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "MAIZ";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            this.btnMaiz.BackColor = System.Drawing.Color.Transparent;
+            this.btnMaiz.BackgroundImage = global::Agrotics.Properties.Resources.maiz;
+            this.btnMaiz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMaiz.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "ValorB1", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.btnMaiz.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btnMaiz.FlatAppearance.BorderSize = 0;
+            this.btnMaiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaiz.Location = new System.Drawing.Point(273, 87);
+            this.btnMaiz.Name = "btnMaiz";
+            this.btnMaiz.Size = new System.Drawing.Size(117, 89);
+            this.btnMaiz.TabIndex = 1;
+            this.btnMaiz.Text = global::Agrotics.Properties.Settings.Default.ValorB1;
+            this.btnMaiz.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMaiz.UseVisualStyleBackColor = false;
+            this.btnMaiz.Click += new System.EventHandler(this.button2_Click);
+            this.btnMaiz.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
+            this.btnMaiz.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
             // Cultivos
             // 
@@ -176,7 +177,7 @@ namespace Agrotics
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnMaiz);
             this.Controls.Add(btnPiña);
             this.Name = "Cultivos";
             this.Text = "Cultivos";
@@ -187,7 +188,7 @@ namespace Agrotics
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnMaiz;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
