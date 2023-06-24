@@ -84,7 +84,7 @@ namespace Agrotics
         }
         private void Registrodeventas_Load(object sender, EventArgs e)
         {
-            //MostrarTodasVentas();
+            MostrarTodasVentas();
         }
 
         private void label1_Click(object sender, EventArgs e)
