@@ -181,7 +181,7 @@ namespace Agrotics
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::Agrotics.Properties.Resources.RegistroVentas;
+            this.button2.BackgroundImage = global::Agrotics.Properties.Resources.registros_ventas;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;

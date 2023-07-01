@@ -373,6 +373,16 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap registros_ventas {
+            get {
+                object obj = ResourceManager.GetObject("registros ventas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RegistroVentas {
             get {
                 object obj = ResourceManager.GetObject("RegistroVentas", resourceCulture);
