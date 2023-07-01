@@ -63,6 +63,8 @@
             this.txtVender = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBuscarProVent = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBuscarProVen
@@ -115,7 +117,7 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(334, 421);
+            this.lblTotal.Location = new System.Drawing.Point(350, 419);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(21, 13);
             this.lblTotal.TabIndex = 7;
@@ -360,7 +362,7 @@
             this.txtVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtVender.FlatAppearance.BorderSize = 0;
             this.txtVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVender.Location = new System.Drawing.Point(472, 329);
+            this.txtVender.Location = new System.Drawing.Point(425, 335);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(47, 46);
             this.txtVender.TabIndex = 31;
@@ -403,12 +405,30 @@
             this.btnBuscarProVent.MouseEnter += new System.EventHandler(this.btnBuscarProVent_MouseEnter);
             this.btnBuscarProVent.MouseLeave += new System.EventHandler(this.btnBuscarProVent_MouseLeave);
             // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Location = new System.Drawing.Point(179, 416);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(162, 20);
+            this.txtNombreCliente.TabIndex = 39;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(74, 419);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 13);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Nombre del Cliente:";
+            // 
             // Ventas1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(791, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.txtReferVen);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtCultivos);
@@ -490,5 +510,7 @@
         private System.Windows.Forms.TextBox txtCultivos;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtReferVen;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.Label label3;
     }
 }

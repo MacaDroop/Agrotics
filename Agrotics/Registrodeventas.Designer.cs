@@ -33,6 +33,7 @@
             this.txtFecha = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNombrep = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbProveedor = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,6 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dgvRVentas = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtNombrep = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRVentas)).BeginInit();
             this.SuspendLayout();
@@ -105,6 +105,14 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtNombrep
+            // 
+            this.txtNombrep.Location = new System.Drawing.Point(38, 36);
+            this.txtNombrep.Name = "txtNombrep";
+            this.txtNombrep.Size = new System.Drawing.Size(274, 20);
+            this.txtNombrep.TabIndex = 21;
+            this.txtNombrep.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -228,11 +236,12 @@
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(80, 226);
+            this.btnCancelar.Location = new System.Drawing.Point(101, 226);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(69, 50);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnRegistrar
             // 
@@ -267,14 +276,6 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "label2";
-            // 
-            // txtNombrep
-            // 
-            this.txtNombrep.Location = new System.Drawing.Point(38, 36);
-            this.txtNombrep.Name = "txtNombrep";
-            this.txtNombrep.Size = new System.Drawing.Size(274, 20);
-            this.txtNombrep.TabIndex = 21;
-            this.txtNombrep.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // s
             // 

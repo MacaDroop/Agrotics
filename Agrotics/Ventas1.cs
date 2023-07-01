@@ -383,7 +383,7 @@ namespace Agrotics.Resources
             //sexo = Convert.ToString(cbHM.SelectedItem.ToString()); 
             string sql = "INSERT INTO registroventas (NombreProducto, DescripcionCultivos, LaboratorioP, Precio, FechaCaducidad, Stock, Tipo, Presentacion, Cultivos, Referencia, Hora) VALUES ('" + txtName.Text + "', '" + txtDescription.Text + "', '" + txtLabVentas.Text + "', '" + txtPrecioVentas.Text + "', '" + txtCadVentas.Text + "', '" + txtStockVentas.Text + "', '" + txtTipoPVentas.Text + "', '" + txtPresentacionVentas.Text + "', '" + txtCultivos.Text + "', '" + txtReferVen.Text + "', '" + horaActualString + "')";
             
-
+          
             MySqlConnection conexionBD = Conexion2.conexion();
             conexionBD.Open();
             
