@@ -34,5 +34,17 @@ namespace Agrotics.Properties {
                 this["ValorB1"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AcitvarBoton {
+            get {
+                return ((bool)(this["AcitvarBoton"]));
+            }
+            set {
+                this["AcitvarBoton"] = value;
+            }
+        }
     }
 }

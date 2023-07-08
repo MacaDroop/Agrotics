@@ -24,7 +24,10 @@ namespace Agrotics
         }
         private void Cultivos_Load(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, true);
+            }
         }
 
         private void button2_Paint(object sender, PaintEventArgs e)
@@ -91,6 +94,17 @@ namespace Agrotics
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            btnMaiz.Enabled = Properties.Settings.Default.AcitvarBoton = true; // Cambia el valor a false para desactivar el botón
+            Properties.Settings.Default.Save();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
             
         }
