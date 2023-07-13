@@ -16,7 +16,7 @@ namespace Agrotics
         public Cultivos()
         {
             InitializeComponent();
-           
+
         }
         public string TextoBotonMaiz
         {
@@ -28,8 +28,15 @@ namespace Agrotics
             {
                 checkedListBox1.SetItemChecked(i, true);
             }
-        }
 
+
+            //SE LE ASIGNA EL VALOR POR DEFECTO AL BOTON DE PIÑA
+            btnMaiz.Text = Properties.Settings.Default.Maiz = "MAIZ"; 
+            Properties.Settings.Default.Save();
+
+            txtCultivo1.Text = Properties.Settings.Default.Maiz;
+        }
+    
         private void button2_Paint(object sender, PaintEventArgs e)
         {
         }

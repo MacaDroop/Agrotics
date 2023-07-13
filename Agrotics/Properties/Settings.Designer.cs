@@ -82,5 +82,17 @@ namespace Agrotics.Properties {
                 this["ActivarChile"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Maiz {
+            get {
+                return ((string)(this["Maiz"]));
+            }
+            set {
+                this["Maiz"] = value;
+            }
+        }
     }
 }
