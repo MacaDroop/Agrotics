@@ -18,7 +18,10 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Maiz" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">MAIZ</Value>
+    </Setting>
+    <Setting Name="Caña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CAÑA</Value>
     </Setting>
   </Settings>
 </SettingsFile>

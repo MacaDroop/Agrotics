@@ -47,8 +47,9 @@ namespace Agrotics
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCultivo3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCultivo1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,11 +57,11 @@ namespace Agrotics
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnChile = new System.Windows.Forms.Button();
             this.btnFrijol = new System.Windows.Forms.Button();
             this.btnCaña = new System.Windows.Forms.Button();
             this.btnMaiz = new System.Windows.Forms.Button();
-            this.txtCultivo1 = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
             btnPina = new System.Windows.Forms.Button();
             this.Principal.SuspendLayout();
@@ -162,6 +163,7 @@ namespace Agrotics
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnGuardar);
             this.tabPage2.Controls.Add(this.btnList);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label8);
@@ -174,7 +176,7 @@ namespace Agrotics
             this.tabPage2.Controls.Add(this.textBox6);
             this.tabPage2.Controls.Add(this.textBox5);
             this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.txtCultivo3);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.txtCultivo1);
             this.tabPage2.Controls.Add(this.label7);
@@ -314,12 +316,12 @@ namespace Agrotics
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 10;
             // 
-            // textBox3
+            // txtCultivo3
             // 
-            this.textBox3.Location = new System.Drawing.Point(110, 264);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtCultivo3.Location = new System.Drawing.Point(110, 269);
+            this.txtCultivo3.Name = "txtCultivo3";
+            this.txtCultivo3.Size = new System.Drawing.Size(100, 20);
+            this.txtCultivo3.TabIndex = 9;
             // 
             // textBox2
             // 
@@ -327,6 +329,13 @@ namespace Agrotics
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 8;
+            // 
+            // txtCultivo1
+            // 
+            this.txtCultivo1.Location = new System.Drawing.Point(110, 179);
+            this.txtCultivo1.Name = "txtCultivo1";
+            this.txtCultivo1.Size = new System.Drawing.Size(100, 20);
+            this.txtCultivo1.TabIndex = 7;
             // 
             // label7
             // 
@@ -358,7 +367,7 @@ namespace Agrotics
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 267);
+            this.label4.Location = new System.Drawing.Point(26, 272);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 3;
@@ -397,6 +406,16 @@ namespace Agrotics
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox1.TabIndex = 0;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(123, 417);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 22;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnChile
             // 
@@ -449,6 +468,7 @@ namespace Agrotics
             this.btnCaña.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCaña.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCaña.DataBindings.Add(new System.Windows.Forms.Binding("Enabled", global::Agrotics.Properties.Settings.Default, "ActivarCaña", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.btnCaña.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "Caña", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.btnCaña.Enabled = global::Agrotics.Properties.Settings.Default.ActivarCaña;
             this.btnCaña.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
             this.btnCaña.FlatAppearance.BorderSize = 0;
@@ -460,7 +480,7 @@ namespace Agrotics
             this.btnCaña.Name = "btnCaña";
             this.btnCaña.Size = new System.Drawing.Size(130, 89);
             this.btnCaña.TabIndex = 2;
-            this.btnCaña.Text = "CAÑA";
+            this.btnCaña.Text = global::Agrotics.Properties.Settings.Default.Caña;
             this.btnCaña.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCaña.UseVisualStyleBackColor = false;
             this.btnCaña.Click += new System.EventHandler(this.button3_Click);
@@ -491,13 +511,6 @@ namespace Agrotics
             this.btnMaiz.Click += new System.EventHandler(this.button2_Click);
             this.btnMaiz.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             this.btnMaiz.MouseHover += new System.EventHandler(this.button2_MouseHover);
-            // 
-            // txtCultivo1
-            // 
-            this.txtCultivo1.Location = new System.Drawing.Point(110, 179);
-            this.txtCultivo1.Name = "txtCultivo1";
-            this.txtCultivo1.Size = new System.Drawing.Size(100, 20);
-            this.txtCultivo1.TabIndex = 7;
             // 
             // Cultivos
             // 
@@ -551,11 +564,12 @@ namespace Agrotics
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCultivo3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox txtCultivo1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnList;
         public System.Windows.Forms.Button btnFrijol;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

@@ -18,6 +18,16 @@ namespace Agrotics
             InitializeComponent();
 
         }
+
+        //SE NECESITA TENER TODOS LOS BOTONES CONFIGURADOS PARA HABILITAR ESTE METODO Y NO TENER ERRORES
+      /*  public void CheckedListUpdate()
+        {
+            
+            string[] elementos = { Properties.Settings.Default.Caña, Properties.Settings.Default.Maiz};
+            //PIÑA SANDIA CAÑA CHILE MAIZ FRIJOL
+            checkedListBox1.Items.AddRange(elementos);
+
+        }*/
         public string TextoBotonMaiz
         {
             get { return btnMaiz.Text; }
@@ -29,12 +39,12 @@ namespace Agrotics
                 checkedListBox1.SetItemChecked(i, true);
             }
 
-
-            //SE LE ASIGNA EL VALOR POR DEFECTO AL BOTON DE PIÑA
-            btnMaiz.Text = Properties.Settings.Default.Maiz = "MAIZ"; 
-            Properties.Settings.Default.Save();
-
+            //SE OBTIENE EL VALOR POR DEFECTO DEL BOTON Y SE ALMACENA EN EL TXT
             txtCultivo1.Text = Properties.Settings.Default.Maiz;
+            txtCultivo3.Text = Properties.Settings.Default.Caña;
+            //CON PROPERTIES.RESOURCES SE ACCEDE A LAS IMAGENES QUE ESTAN EN RESOURCES
+
+            //CheckedListUpdate();
         }
     
         private void button2_Paint(object sender, PaintEventArgs e)
@@ -161,6 +171,14 @@ namespace Agrotics
         private void tabPage1_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            btnMaiz.Text = Properties.Settings.Default.Maiz = txtCultivo1.Text;
+            btnCaña.Text = Properties.Settings.Default.Maiz = txtCultivo3.Text;
+            Properties.Settings.Default.Save();
+
         }
     }
 }

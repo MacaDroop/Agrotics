@@ -85,13 +85,25 @@ namespace Agrotics.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("MAIZ")]
         public string Maiz {
             get {
                 return ((string)(this["Maiz"]));
             }
             set {
                 this["Maiz"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CAÑA")]
+        public string Caña {
+            get {
+                return ((string)(this["Caña"]));
+            }
+            set {
+                this["Caña"] = value;
             }
         }
     }
