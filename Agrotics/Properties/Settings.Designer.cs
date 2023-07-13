@@ -46,5 +46,41 @@ namespace Agrotics.Properties {
                 this["AcitvarBoton"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ActivarFrijol {
+            get {
+                return ((bool)(this["ActivarFrijol"]));
+            }
+            set {
+                this["ActivarFrijol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ActivarCaña {
+            get {
+                return ((bool)(this["ActivarCaña"]));
+            }
+            set {
+                this["ActivarCaña"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ActivarChile {
+            get {
+                return ((bool)(this["ActivarChile"]));
+            }
+            set {
+                this["ActivarChile"] = value;
+            }
+        }
     }
 }

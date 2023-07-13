@@ -47,6 +47,7 @@ namespace Agrotics
             ProductosCultivo mensajero = new ProductosCultivo();
             mensajero.ValorEnviado = "Maiz";
             mensajero.Show();
+            
         }
 
         private void button1_MouseHover(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace Agrotics
 
         private void button3_MouseHover(object sender, EventArgs e)
         {
-            button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnCaña.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -100,13 +101,59 @@ namespace Agrotics
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            btnMaiz.Enabled = Properties.Settings.Default.AcitvarBoton = true; // Cambia el valor a false para desactivar el botón
-            Properties.Settings.Default.Save();
+            //VERIFICAR SI ESTA ACTIVO EL BOTON DEL MAIZ
+            if (checkedListBox1.CheckedItems.Contains(checkedListBox1.Items[4]))
+            {
+                btnMaiz.Enabled = Properties.Settings.Default.AcitvarBoton = true; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                btnMaiz.Enabled = Properties.Settings.Default.AcitvarBoton = false; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+
+            //VERIFICAR SI ESTA ACTIVO EL BOTON DEL FRIJOL
+            if (checkedListBox1.CheckedItems.Contains(checkedListBox1.Items[5]))
+            {
+                btnFrijol.Enabled = Properties.Settings.Default.ActivarFrijol = true; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                btnFrijol.Enabled = Properties.Settings.Default.ActivarFrijol = false; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+
+            //VERIFICAR SI ESTA ACTIVO EL BOTON DE LA CAÑA
+            if (checkedListBox1.CheckedItems.Contains(checkedListBox1.Items[2]))
+            {
+                btnCaña.Enabled = Properties.Settings.Default.ActivarCaña = true; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                btnCaña.Enabled = Properties.Settings.Default.ActivarCaña = false; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+
+            //VERIFICAR SI ESTA ACTIVO EL BOTON DEL CHILE
+            if (checkedListBox1.CheckedItems.Contains(checkedListBox1.Items[3]))
+            {
+                btnChile.Enabled = Properties.Settings.Default.ActivarChile = true; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                btnChile.Enabled = Properties.Settings.Default.ActivarChile = false; // Cambia el valor a false para desactivar el botón
+                Properties.Settings.Default.Save();
+            }
+
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
-            
+           
         }
     }
 }
