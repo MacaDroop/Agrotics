@@ -126,7 +126,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 253);
+            this.label5.Location = new System.Drawing.Point(57, 253);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 9;
@@ -167,7 +167,7 @@
             // 
             this.label7.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 131);
+            this.label7.Location = new System.Drawing.Point(56, 131);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 15;
@@ -196,7 +196,7 @@
             this.txtDescription.Location = new System.Drawing.Point(122, 163);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(312, 50);
+            this.txtDescription.Size = new System.Drawing.Size(312, 63);
             this.txtDescription.TabIndex = 18;
             this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
             // 
@@ -204,7 +204,7 @@
             // 
             this.label10.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(626, 134);
+            this.label10.Location = new System.Drawing.Point(650, 134);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 19;
@@ -221,7 +221,7 @@
             // 
             this.label11.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(475, 134);
+            this.label11.Location = new System.Drawing.Point(453, 134);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 13);
             this.label11.TabIndex = 21;
@@ -229,7 +229,7 @@
             // 
             // txtLabVentas
             // 
-            this.txtLabVentas.Location = new System.Drawing.Point(544, 131);
+            this.txtLabVentas.Location = new System.Drawing.Point(522, 131);
             this.txtLabVentas.Name = "txtLabVentas";
             this.txtLabVentas.Size = new System.Drawing.Size(68, 20);
             this.txtLabVentas.TabIndex = 22;
@@ -238,7 +238,7 @@
             // 
             this.label12.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(473, 165);
+            this.label12.Location = new System.Drawing.Point(451, 165);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 13);
             this.label12.TabIndex = 23;
@@ -246,7 +246,7 @@
             // 
             // txtCadVentas
             // 
-            this.txtCadVentas.Location = new System.Drawing.Point(544, 163);
+            this.txtCadVentas.Location = new System.Drawing.Point(522, 163);
             this.txtCadVentas.Name = "txtCadVentas";
             this.txtCadVentas.Size = new System.Drawing.Size(68, 20);
             this.txtCadVentas.TabIndex = 24;
@@ -262,7 +262,7 @@
             // 
             this.label19.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(628, 165);
+            this.label19.Location = new System.Drawing.Point(652, 165);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 13);
             this.label19.TabIndex = 25;
@@ -270,7 +270,7 @@
             // 
             // txtTipoPVentas
             // 
-            this.txtTipoPVentas.Location = new System.Drawing.Point(544, 195);
+            this.txtTipoPVentas.Location = new System.Drawing.Point(522, 195);
             this.txtTipoPVentas.Name = "txtTipoPVentas";
             this.txtTipoPVentas.Size = new System.Drawing.Size(68, 20);
             this.txtTipoPVentas.TabIndex = 28;
@@ -279,7 +279,7 @@
             // 
             this.label13.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(475, 198);
+            this.label13.Location = new System.Drawing.Point(481, 198);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(31, 13);
             this.label13.TabIndex = 27;
@@ -296,7 +296,7 @@
             // 
             this.label14.AccessibleRole = System.Windows.Forms.AccessibleRole.Animation;
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(628, 199);
+            this.label14.Location = new System.Drawing.Point(618, 198);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 13);
             this.label14.TabIndex = 29;
@@ -326,15 +326,15 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(475, 232);
+            this.label4.Location = new System.Drawing.Point(468, 232);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 34;
-            this.label4.Text = "Cultivos";
+            this.label4.Text = "Cultivos:";
             // 
             // txtCultivos
             // 
-            this.txtCultivos.Location = new System.Drawing.Point(544, 232);
+            this.txtCultivos.Location = new System.Drawing.Point(522, 232);
             this.txtCultivos.Name = "txtCultivos";
             this.txtCultivos.Size = new System.Drawing.Size(68, 20);
             this.txtCultivos.TabIndex = 35;
@@ -362,7 +362,7 @@
             this.txtVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtVender.FlatAppearance.BorderSize = 0;
             this.txtVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVender.Location = new System.Drawing.Point(425, 335);
+            this.txtVender.Location = new System.Drawing.Point(421, 336);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(47, 46);
             this.txtVender.TabIndex = 31;
@@ -379,9 +379,9 @@
             this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(241, 247);
+            this.btnAgregar.Location = new System.Drawing.Point(228, 250);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(35, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(28, 23);
             this.btnAgregar.TabIndex = 13;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -396,7 +396,7 @@
             this.btnBuscarProVent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarProVent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarProVent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProVent.Location = new System.Drawing.Point(248, 53);
+            this.btnBuscarProVent.Location = new System.Drawing.Point(248, 56);
             this.btnBuscarProVent.Name = "btnBuscarProVent";
             this.btnBuscarProVent.Size = new System.Drawing.Size(28, 23);
             this.btnBuscarProVent.TabIndex = 1;
