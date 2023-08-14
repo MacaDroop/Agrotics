@@ -69,7 +69,7 @@
             // 
             // txtBuscarProVen
             // 
-            this.txtBuscarProVen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarProVen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarProVen.ForeColor = System.Drawing.Color.Lime;
             this.txtBuscarProVen.Location = new System.Drawing.Point(48, 56);
             this.txtBuscarProVen.Name = "txtBuscarProVen";
@@ -158,6 +158,7 @@
             // 
             // txtName
             // 
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtName.Location = new System.Drawing.Point(122, 131);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
@@ -313,7 +314,7 @@
             "1L"});
             this.txtBuscarPresentacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.txtBuscarPresentacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtBuscarPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarPresentacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscarPresentacion.ForeColor = System.Drawing.Color.Lime;
             this.txtBuscarPresentacion.Location = new System.Drawing.Point(48, 92);
             this.txtBuscarPresentacion.Name = "txtBuscarPresentacion";
@@ -362,7 +363,7 @@
             this.txtVender.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtVender.FlatAppearance.BorderSize = 0;
             this.txtVender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtVender.Location = new System.Drawing.Point(421, 336);
+            this.txtVender.Location = new System.Drawing.Point(408, 335);
             this.txtVender.Name = "txtVender";
             this.txtVender.Size = new System.Drawing.Size(47, 46);
             this.txtVender.TabIndex = 31;
@@ -396,7 +397,7 @@
             this.btnBuscarProVent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarProVent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarProVent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProVent.Location = new System.Drawing.Point(248, 56);
+            this.btnBuscarProVent.Location = new System.Drawing.Point(248, 53);
             this.btnBuscarProVent.Name = "btnBuscarProVent";
             this.btnBuscarProVent.Size = new System.Drawing.Size(28, 23);
             this.btnBuscarProVent.TabIndex = 1;

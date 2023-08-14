@@ -52,8 +52,9 @@ namespace Agrotics
             this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
-            this.btnProveedores.Location = new System.Drawing.Point(380, 98);
+            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Location = new System.Drawing.Point(119, 276);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(174, 125);
             this.btnProveedores.TabIndex = 0;
@@ -75,7 +76,8 @@ namespace Agrotics
             this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.Location = new System.Drawing.Point(358, 276);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(174, 125);
@@ -98,8 +100,9 @@ namespace Agrotics
             this.btnCultivos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCultivos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCultivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnCultivos.Location = new System.Drawing.Point(119, 264);
+            this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCultivos.ForeColor = System.Drawing.Color.White;
+            this.btnCultivos.Location = new System.Drawing.Point(358, 100);
             this.btnCultivos.Name = "btnCultivos";
             this.btnCultivos.Size = new System.Drawing.Size(174, 125);
             this.btnCultivos.TabIndex = 2;
@@ -127,8 +130,9 @@ namespace Agrotics
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(606, 276);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(120, 100);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 125);
             this.button3.TabIndex = 6;
@@ -148,8 +152,9 @@ namespace Agrotics
             this.btnventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
-            this.btnventas.Location = new System.Drawing.Point(119, 98);
+            this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventas.ForeColor = System.Drawing.Color.White;
+            this.btnventas.Location = new System.Drawing.Point(606, 112);
             this.btnventas.Name = "btnventas";
             this.btnventas.Size = new System.Drawing.Size(174, 125);
             this.btnventas.TabIndex = 3;
@@ -181,6 +186,8 @@ namespace Agrotics
             // 
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(633, 162);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
@@ -197,8 +204,9 @@ namespace Agrotics
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(606, 100);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(606, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 125);
             this.button2.TabIndex = 5;

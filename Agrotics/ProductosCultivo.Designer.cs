@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnAddFert = new System.Windows.Forms.Button();
             this.dgvFertilizantes = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnPesticidas = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.btnInsecticidas = new System.Windows.Forms.Button();
             this.dgvInsecticidas = new System.Windows.Forms.DataGridView();
-            this.btnAddFert = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFertilizantes)).BeginInit();
@@ -59,7 +59,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(-3, 0);
+            this.tabControl1.Location = new System.Drawing.Point(-1, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(805, 456);
@@ -77,6 +77,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "FERTILIZANTES";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnAddFert
+            // 
+            this.btnAddFert.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
+            this.btnAddFert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddFert.FlatAppearance.BorderSize = 0;
+            this.btnAddFert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFert.Location = new System.Drawing.Point(719, 6);
+            this.btnAddFert.Name = "btnAddFert";
+            this.btnAddFert.Size = new System.Drawing.Size(51, 44);
+            this.btnAddFert.TabIndex = 3;
+            this.btnAddFert.UseVisualStyleBackColor = true;
+            this.btnAddFert.Click += new System.EventHandler(this.btnAddFert_Click);
             // 
             // dgvFertilizantes
             // 
@@ -177,7 +190,7 @@
             this.btnInsecticidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInsecticidas.FlatAppearance.BorderSize = 0;
             this.btnInsecticidas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInsecticidas.Location = new System.Drawing.Point(719, 6);
+            this.btnInsecticidas.Location = new System.Drawing.Point(709, 6);
             this.btnInsecticidas.Name = "btnInsecticidas";
             this.btnInsecticidas.Size = new System.Drawing.Size(51, 44);
             this.btnInsecticidas.TabIndex = 1;
@@ -193,19 +206,6 @@
             this.dgvInsecticidas.TabIndex = 0;
             this.dgvInsecticidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellClick);
             this.dgvInsecticidas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInsecticidas_CellContentClick);
-            // 
-            // btnAddFert
-            // 
-            this.btnAddFert.BackgroundImage = global::Agrotics.Properties.Resources.add_buy;
-            this.btnAddFert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddFert.FlatAppearance.BorderSize = 0;
-            this.btnAddFert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFert.Location = new System.Drawing.Point(719, 6);
-            this.btnAddFert.Name = "btnAddFert";
-            this.btnAddFert.Size = new System.Drawing.Size(51, 44);
-            this.btnAddFert.TabIndex = 3;
-            this.btnAddFert.UseVisualStyleBackColor = true;
-            this.btnAddFert.Click += new System.EventHandler(this.btnAddFert_Click);
             // 
             // ProductosCultivo
             // 

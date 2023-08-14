@@ -102,12 +102,6 @@
       <DependentUpon>Asesoria.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion2.cs" />
-    <Compile Include="ConfigCultivos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfigCultivos.Designer.cs">
-      <DependentUpon>ConfigCultivos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cultivos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,9 +148,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Asesoria.resx">
       <DependentUpon>Asesoria.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfigCultivos.resx">
-      <DependentUpon>ConfigCultivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cultivos.resx">
       <DependentUpon>Cultivos.cs</DependentUpon>
