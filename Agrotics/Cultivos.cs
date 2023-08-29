@@ -59,15 +59,20 @@ namespace Agrotics
             get { return btnMaiz.Text; }
         }
         private void Cultivos_Load(object sender, EventArgs e)
+
+            
         {
             for (int i = 0; i < checkedListBox1.Items.Count; i++)
             {
                 checkedListBox1.SetItemChecked(i, true);
             }
-            
+
             //SE OBTIENE EL VALOR POR DEFECTO DEL BOTON Y SE ALMACENA EN EL TXT
-            txtCultivo1.Text = Properties.Settings.Default.Maiz1;
+            txtCultivo1.Text = Properties.Settings.Default.Piña;
+            txtCultivo2.Text = Properties.Settings.Default.Sandia;
             txtCultivo3.Text = Properties.Settings.Default.Caña;
+            txtCultivo4.Text = Properties.Settings.Default.Chile;
+            txtCultivo5.Text = Properties.Settings.Default.Maiz1;
             txtCultivo6.Text = Properties.Settings.Default.Frijol;
             //CON PROPERTIES.RESOURCES SE ACCEDE A LAS IMAGENES QUE ESTAN EN RESOURCES
 
@@ -203,7 +208,8 @@ namespace Agrotics
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             MostrarMessageBox(); //MENSAJE DE CONFIRMACION DE GUARDADO
-            btnMaiz.Text = Properties.Settings.Default.Maiz = txtCultivo1.Text;
+            btnPiña1.Text = Properties.Settings.Default.Piña = txtCultivo1.Text;
+            btnMaiz.Text = Properties.Settings.Default.Maiz = txtCultivo5.Text;
             btnCaña.Text = Properties.Settings.Default.Caña = txtCultivo3.Text;
             Properties.Settings.Default.Save();
 
@@ -214,6 +220,13 @@ namespace Agrotics
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPiña1_Click(object sender, EventArgs e)
+        {
+            ProductosCultivo mensajero = new ProductosCultivo();
+            mensajero.ValorEnviado = "Piña";
+            mensajero.Show();
         }
     }
 }

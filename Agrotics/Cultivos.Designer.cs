@@ -30,8 +30,6 @@ namespace Agrotics
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
-            System.Windows.Forms.Button btnPina;
-            this.btnSandia = new System.Windows.Forms.Button();
             this.Principal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -46,10 +44,10 @@ namespace Agrotics
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtCultivo6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCultivo5 = new System.Windows.Forms.TextBox();
+            this.txtCultivo4 = new System.Windows.Forms.TextBox();
             this.txtCultivo3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCultivo2 = new System.Windows.Forms.TextBox();
             this.txtCultivo1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -58,12 +56,13 @@ namespace Agrotics
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btnPiña1 = new System.Windows.Forms.Button();
             this.btnChile = new System.Windows.Forms.Button();
             this.btnFrijol = new System.Windows.Forms.Button();
             this.btnCaña = new System.Windows.Forms.Button();
+            this.btnSandia = new System.Windows.Forms.Button();
             this.btnMaiz = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
-            btnPina = new System.Windows.Forms.Button();
             this.Principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -86,51 +85,6 @@ namespace Agrotics
             label1.TabIndex = 6;
             label1.Text = "SELECCIONA EL TIPO DE CULTIVO";
             // 
-            // btnPina
-            // 
-            btnPina.BackColor = System.Drawing.Color.Transparent;
-            btnPina.BackgroundImage = global::Agrotics.Properties.Resources.piña;
-            btnPina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            btnPina.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnPina.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            btnPina.FlatAppearance.BorderSize = 0;
-            btnPina.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            btnPina.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            btnPina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnPina.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnPina.ForeColor = System.Drawing.Color.Black;
-            btnPina.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnPina.Location = new System.Drawing.Point(92, 91);
-            btnPina.Name = "btnPina";
-            btnPina.Size = new System.Drawing.Size(127, 89);
-            btnPina.TabIndex = 0;
-            btnPina.Text = "PIÑA";
-            btnPina.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnPina.UseVisualStyleBackColor = false;
-            btnPina.Click += new System.EventHandler(this.button1_Click);
-            btnPina.MouseHover += new System.EventHandler(this.button1_MouseHover);
-            // 
-            // btnSandia
-            // 
-            this.btnSandia.BackColor = System.Drawing.Color.Transparent;
-            this.btnSandia.BackgroundImage = global::Agrotics.Properties.Resources.sandia;
-            this.btnSandia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSandia.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSandia.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.btnSandia.FlatAppearance.BorderSize = 0;
-            this.btnSandia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnSandia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnSandia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSandia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSandia.Location = new System.Drawing.Point(338, 240);
-            this.btnSandia.Name = "btnSandia";
-            this.btnSandia.Size = new System.Drawing.Size(100, 89);
-            this.btnSandia.TabIndex = 3;
-            this.btnSandia.Text = "SANDIA";
-            this.btnSandia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSandia.UseVisualStyleBackColor = false;
-            this.btnSandia.Click += new System.EventHandler(this.button4_Click);
-            // 
             // Principal
             // 
             this.Principal.Controls.Add(this.tabPage1);
@@ -145,7 +99,7 @@ namespace Agrotics
             // 
             this.tabPage1.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_13_a_las_13_52_20;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage1.Controls.Add(btnPina);
+            this.tabPage1.Controls.Add(this.btnPiña1);
             this.tabPage1.Controls.Add(this.btnChile);
             this.tabPage1.Controls.Add(label1);
             this.tabPage1.Controls.Add(this.btnFrijol);
@@ -174,10 +128,10 @@ namespace Agrotics
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.pictureBox1);
             this.tabPage2.Controls.Add(this.txtCultivo6);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.txtCultivo5);
+            this.tabPage2.Controls.Add(this.txtCultivo4);
             this.tabPage2.Controls.Add(this.txtCultivo3);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.txtCultivo2);
             this.tabPage2.Controls.Add(this.txtCultivo1);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.label6);
@@ -197,7 +151,7 @@ namespace Agrotics
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(123, 417);
+            this.btnGuardar.Location = new System.Drawing.Point(121, 422);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 22;
@@ -313,19 +267,19 @@ namespace Agrotics
             this.txtCultivo6.Size = new System.Drawing.Size(100, 20);
             this.txtCultivo6.TabIndex = 12;
             // 
-            // textBox5
+            // txtCultivo5
             // 
-            this.textBox5.Location = new System.Drawing.Point(110, 354);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtCultivo5.Location = new System.Drawing.Point(110, 354);
+            this.txtCultivo5.Name = "txtCultivo5";
+            this.txtCultivo5.Size = new System.Drawing.Size(100, 20);
+            this.txtCultivo5.TabIndex = 11;
             // 
-            // textBox4
+            // txtCultivo4
             // 
-            this.textBox4.Location = new System.Drawing.Point(110, 310);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtCultivo4.Location = new System.Drawing.Point(110, 310);
+            this.txtCultivo4.Name = "txtCultivo4";
+            this.txtCultivo4.Size = new System.Drawing.Size(100, 20);
+            this.txtCultivo4.TabIndex = 10;
             // 
             // txtCultivo3
             // 
@@ -334,12 +288,12 @@ namespace Agrotics
             this.txtCultivo3.Size = new System.Drawing.Size(100, 20);
             this.txtCultivo3.TabIndex = 9;
             // 
-            // textBox2
+            // txtCultivo2
             // 
-            this.textBox2.Location = new System.Drawing.Point(110, 225);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtCultivo2.Location = new System.Drawing.Point(110, 225);
+            this.txtCultivo2.Name = "txtCultivo2";
+            this.txtCultivo2.Size = new System.Drawing.Size(100, 20);
+            this.txtCultivo2.TabIndex = 8;
             // 
             // txtCultivo1
             // 
@@ -418,6 +372,23 @@ namespace Agrotics
             this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox1.TabIndex = 0;
             // 
+            // btnPiña1
+            // 
+            this.btnPiña1.BackgroundImage = global::Agrotics.Properties.Resources.piña;
+            this.btnPiña1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPiña1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "Piña", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.btnPiña1.FlatAppearance.BorderSize = 0;
+            this.btnPiña1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPiña1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPiña1.Location = new System.Drawing.Point(102, 95);
+            this.btnPiña1.Name = "btnPiña1";
+            this.btnPiña1.Size = new System.Drawing.Size(127, 89);
+            this.btnPiña1.TabIndex = 7;
+            this.btnPiña1.Text = global::Agrotics.Properties.Settings.Default.Piña;
+            this.btnPiña1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnPiña1.UseVisualStyleBackColor = true;
+            this.btnPiña1.Click += new System.EventHandler(this.btnPiña1_Click);
+            // 
             // btnChile
             // 
             this.btnChile.BackColor = System.Drawing.Color.Transparent;
@@ -425,6 +396,7 @@ namespace Agrotics
             this.btnChile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnChile.DataBindings.Add(new System.Windows.Forms.Binding("Enabled", global::Agrotics.Properties.Settings.Default, "ActivarChile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.btnChile.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "Chile", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.btnChile.Enabled = global::Agrotics.Properties.Settings.Default.ActivarChile;
             this.btnChile.FlatAppearance.BorderSize = 0;
             this.btnChile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -435,7 +407,7 @@ namespace Agrotics
             this.btnChile.Name = "btnChile";
             this.btnChile.Size = new System.Drawing.Size(117, 89);
             this.btnChile.TabIndex = 5;
-            this.btnChile.Text = "CHILE";
+            this.btnChile.Text = global::Agrotics.Properties.Settings.Default.Chile;
             this.btnChile.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChile.UseVisualStyleBackColor = false;
             this.btnChile.Click += new System.EventHandler(this.button6_Click);
@@ -487,6 +459,28 @@ namespace Agrotics
             this.btnCaña.UseVisualStyleBackColor = false;
             this.btnCaña.Click += new System.EventHandler(this.button3_Click);
             this.btnCaña.MouseHover += new System.EventHandler(this.button3_MouseHover);
+            // 
+            // btnSandia
+            // 
+            this.btnSandia.BackColor = System.Drawing.Color.Transparent;
+            this.btnSandia.BackgroundImage = global::Agrotics.Properties.Resources.sandia;
+            this.btnSandia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSandia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSandia.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "Sandia", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.btnSandia.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.btnSandia.FlatAppearance.BorderSize = 0;
+            this.btnSandia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSandia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSandia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSandia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSandia.Location = new System.Drawing.Point(338, 240);
+            this.btnSandia.Name = "btnSandia";
+            this.btnSandia.Size = new System.Drawing.Size(100, 89);
+            this.btnSandia.TabIndex = 3;
+            this.btnSandia.Text = global::Agrotics.Properties.Settings.Default.Sandia;
+            this.btnSandia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSandia.UseVisualStyleBackColor = false;
+            this.btnSandia.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnMaiz
             // 
@@ -564,14 +558,15 @@ namespace Agrotics
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCultivo6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCultivo5;
+        private System.Windows.Forms.TextBox txtCultivo4;
         private System.Windows.Forms.TextBox txtCultivo3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCultivo2;
         private System.Windows.Forms.TextBox txtCultivo1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnList;
         public System.Windows.Forms.Button btnFrijol;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnPiña1;
     }
 }

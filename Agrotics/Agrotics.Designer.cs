@@ -54,7 +54,7 @@ namespace Agrotics
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.ForeColor = System.Drawing.Color.Black;
-            this.btnProveedores.Location = new System.Drawing.Point(119, 276);
+            this.btnProveedores.Location = new System.Drawing.Point(118, 274);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(174, 125);
             this.btnProveedores.TabIndex = 0;
@@ -78,7 +78,7 @@ namespace Agrotics
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ForeColor = System.Drawing.Color.Black;
-            this.btnProductos.Location = new System.Drawing.Point(358, 276);
+            this.btnProductos.Location = new System.Drawing.Point(357, 274);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(174, 125);
             this.btnProductos.TabIndex = 1;
@@ -102,7 +102,7 @@ namespace Agrotics
             this.btnCultivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCultivos.ForeColor = System.Drawing.Color.Black;
-            this.btnCultivos.Location = new System.Drawing.Point(358, 100);
+            this.btnCultivos.Location = new System.Drawing.Point(357, 98);
             this.btnCultivos.Name = "btnCultivos";
             this.btnCultivos.Size = new System.Drawing.Size(174, 125);
             this.btnCultivos.TabIndex = 2;
@@ -132,14 +132,14 @@ namespace Agrotics
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(120, 100);
+            this.button3.Location = new System.Drawing.Point(119, 98);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 125);
             this.button3.TabIndex = 6;
             this.button3.TabStop = false;
             this.button3.Text = "Asesoria";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.button3, "Aqui podras registrar la información de tus proveedores.");
+            this.toolTip1.SetToolTip(this.button3, "Obtienes asesoria a partir de problemas especificos");
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
@@ -154,7 +154,7 @@ namespace Agrotics
             this.btnventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnventas.ForeColor = System.Drawing.Color.Black;
-            this.btnventas.Location = new System.Drawing.Point(606, 112);
+            this.btnventas.Location = new System.Drawing.Point(605, 110);
             this.btnventas.Name = "btnventas";
             this.btnventas.Size = new System.Drawing.Size(174, 125);
             this.btnventas.TabIndex = 3;
@@ -188,7 +188,7 @@ namespace Agrotics
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(633, 162);
+            this.button1.Location = new System.Drawing.Point(632, 160);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 4;
@@ -200,18 +200,20 @@ namespace Agrotics
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = global::Agrotics.Properties.Resources.registros_ventas;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(606, 276);
+            this.button2.Location = new System.Drawing.Point(605, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 125);
             this.button2.TabIndex = 5;
             this.button2.Text = "Registro de Ventas";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.button2, "Obtienes un historial del todas las ventas");
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 

@@ -29,5 +29,14 @@
     <Setting Name="Maiz1" Type="System.String" Scope="User">
       <Value Profile="(Default)">MAIZ</Value>
     </Setting>
+    <Setting Name="Piña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PIÑA</Value>
+    </Setting>
+    <Setting Name="Sandia" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SANDIA</Value>
+    </Setting>
+    <Setting Name="Chile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CHILE</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

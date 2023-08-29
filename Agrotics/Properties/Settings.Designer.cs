@@ -130,5 +130,41 @@ namespace Agrotics.Properties {
                 this["Maiz1"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("PIÑA")]
+        public string Piña {
+            get {
+                return ((string)(this["Piña"]));
+            }
+            set {
+                this["Piña"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SANDIA")]
+        public string Sandia {
+            get {
+                return ((string)(this["Sandia"]));
+            }
+            set {
+                this["Sandia"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("CHILE")]
+        public string Chile {
+            get {
+                return ((string)(this["Chile"]));
+            }
+            set {
+                this["Chile"] = value;
+            }
+        }
     }
 }
