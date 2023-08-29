@@ -23,5 +23,11 @@
     <Setting Name="Caña" Type="System.String" Scope="User">
       <Value Profile="(Default)">CAÑA</Value>
     </Setting>
+    <Setting Name="Frijol" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FRIJOL</Value>
+    </Setting>
+    <Setting Name="Maiz1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MAIZ</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

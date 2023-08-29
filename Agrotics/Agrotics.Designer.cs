@@ -53,7 +53,7 @@ namespace Agrotics
             this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.ForeColor = System.Drawing.Color.Black;
             this.btnProveedores.Location = new System.Drawing.Point(119, 276);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(174, 125);
@@ -77,7 +77,7 @@ namespace Agrotics
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.ForeColor = System.Drawing.Color.Black;
             this.btnProductos.Location = new System.Drawing.Point(358, 276);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(174, 125);
@@ -101,7 +101,7 @@ namespace Agrotics
             this.btnCultivos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCultivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCultivos.ForeColor = System.Drawing.Color.White;
+            this.btnCultivos.ForeColor = System.Drawing.Color.Black;
             this.btnCultivos.Location = new System.Drawing.Point(358, 100);
             this.btnCultivos.Name = "btnCultivos";
             this.btnCultivos.Size = new System.Drawing.Size(174, 125);
@@ -131,7 +131,7 @@ namespace Agrotics
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(120, 100);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(174, 125);
@@ -153,7 +153,7 @@ namespace Agrotics
             this.btnventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventas.ForeColor = System.Drawing.Color.White;
+            this.btnventas.ForeColor = System.Drawing.Color.Black;
             this.btnventas.Location = new System.Drawing.Point(606, 112);
             this.btnventas.Name = "btnventas";
             this.btnventas.Size = new System.Drawing.Size(174, 125);
@@ -187,7 +187,7 @@ namespace Agrotics
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(633, 162);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
@@ -199,13 +199,13 @@ namespace Agrotics
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = global::Agrotics.Properties.Resources.registros_ventas;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(606, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(174, 125);
@@ -250,8 +250,8 @@ namespace Agrotics
         private System.Windows.Forms.Button btnventas;
         private System.Windows.Forms.ToolTip toolTip4;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
 

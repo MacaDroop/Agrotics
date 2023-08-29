@@ -106,5 +106,29 @@ namespace Agrotics.Properties {
                 this["Caña"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("FRIJOL")]
+        public string Frijol {
+            get {
+                return ((string)(this["Frijol"]));
+            }
+            set {
+                this["Frijol"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("MAIZ")]
+        public string Maiz1 {
+            get {
+                return ((string)(this["Maiz1"]));
+            }
+            set {
+                this["Maiz1"] = value;
+            }
+        }
     }
 }
