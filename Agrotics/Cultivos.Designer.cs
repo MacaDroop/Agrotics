@@ -97,7 +97,7 @@ namespace Agrotics
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_13_a_las_13_52_20;
+            this.tabPage1.BackColor = System.Drawing.Color.DodgerBlue;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.btnPiña1);
             this.tabPage1.Controls.Add(this.btnChile);
@@ -112,7 +112,6 @@ namespace Agrotics
             this.tabPage1.Size = new System.Drawing.Size(770, 451);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Principal";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // tabPage2
@@ -380,7 +379,7 @@ namespace Agrotics
             this.btnPiña1.FlatAppearance.BorderSize = 0;
             this.btnPiña1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPiña1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPiña1.Location = new System.Drawing.Point(102, 95);
+            this.btnPiña1.Location = new System.Drawing.Point(102, 121);
             this.btnPiña1.Name = "btnPiña1";
             this.btnPiña1.Size = new System.Drawing.Size(127, 89);
             this.btnPiña1.TabIndex = 7;
@@ -403,7 +402,7 @@ namespace Agrotics
             this.btnChile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnChile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChile.Location = new System.Drawing.Point(572, 239);
+            this.btnChile.Location = new System.Drawing.Point(572, 265);
             this.btnChile.Name = "btnChile";
             this.btnChile.Size = new System.Drawing.Size(117, 89);
             this.btnChile.TabIndex = 5;
@@ -426,7 +425,7 @@ namespace Agrotics
             this.btnFrijol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFrijol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrijol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFrijol.Location = new System.Drawing.Point(102, 239);
+            this.btnFrijol.Location = new System.Drawing.Point(102, 265);
             this.btnFrijol.Name = "btnFrijol";
             this.btnFrijol.Size = new System.Drawing.Size(117, 89);
             this.btnFrijol.TabIndex = 4;
@@ -450,7 +449,7 @@ namespace Agrotics
             this.btnCaña.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCaña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaña.Location = new System.Drawing.Point(559, 91);
+            this.btnCaña.Location = new System.Drawing.Point(559, 117);
             this.btnCaña.Name = "btnCaña";
             this.btnCaña.Size = new System.Drawing.Size(130, 89);
             this.btnCaña.TabIndex = 2;
@@ -473,7 +472,7 @@ namespace Agrotics
             this.btnSandia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSandia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSandia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSandia.Location = new System.Drawing.Point(338, 240);
+            this.btnSandia.Location = new System.Drawing.Point(338, 266);
             this.btnSandia.Name = "btnSandia";
             this.btnSandia.Size = new System.Drawing.Size(100, 89);
             this.btnSandia.TabIndex = 3;
@@ -497,7 +496,7 @@ namespace Agrotics
             this.btnMaiz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMaiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaiz.Location = new System.Drawing.Point(338, 95);
+            this.btnMaiz.Location = new System.Drawing.Point(338, 121);
             this.btnMaiz.Name = "btnMaiz";
             this.btnMaiz.Size = new System.Drawing.Size(117, 89);
             this.btnMaiz.TabIndex = 1;

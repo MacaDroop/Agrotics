@@ -134,21 +134,42 @@ namespace Agrotics
         }
         public void todosProductos()
         {
-            MySqlDataReader reader = null;
-
-            string Sql = "SELECT * from productos";
-            MySqlConnection conexionBD = Conexion2.conexion();
-            conexionBD.Open();
-            MySqlCommand comando = new MySqlCommand(Sql, conexionBD);
-            reader = comando.ExecuteReader();
-            if (reader.HasRows)
+            try
             {
-                DataTable datos = new DataTable();
-
-                datos.Load(reader);
-                dgvProductos.DataSource = datos;
+                string Sql = "SELECT * FROM productos";
+                using (MySqlConnection conexionBD = Conexion2.conexion())
+                {
+                    conexionBD.Open();
+                    using (MySqlCommand comando = new MySqlCommand(Sql, conexionBD))
+                    {
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                DataTable datos = new DataTable();
+                                datos.Load(reader);
+                                dgvProductos.DataSource = datos;
+                            }
+                            else
+                            {
+                                // No se encontraron resultados, puedes mostrar un mensaje o realizar otra acción.
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Manejo de excepciones de MySQL, por ejemplo, conexión fallida, consulta inválida, etc.
+                MessageBox.Show("Error de MySQL: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales, como problemas no relacionados con MySQL.
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void bttBuscar_Click(object sender, EventArgs e)
         {
             if (txtBuscarpro.Text.Length == 0)

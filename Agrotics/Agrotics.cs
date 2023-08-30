@@ -12,10 +12,15 @@ using System.Windows.Forms;
 namespace Agrotics
 {
     public partial class Form1 : Form
-    { 
+    {
+        //para la animacion del titulo
+        private string fullText = "AGROTICS";
+        private int currentIndex = 0;
         public Form1()
         {
             InitializeComponent();
+            timer1.Interval = 400; // Intervalo de 0.1 segundos
+            timer1.Tick += timer1_Tick;
         }
         public void manita()
         {
@@ -46,7 +51,7 @@ namespace Agrotics
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void btnventas_Click(object sender, EventArgs e)
@@ -131,6 +136,19 @@ namespace Agrotics
         {
            Asesoria mensajero = new Asesoria();
             mensajero.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (currentIndex < fullText.Length)
+            {
+                lblTitulo.Text += fullText[currentIndex];
+                currentIndex++;
+            }
+            else
+            {
+                timer1.Stop(); // Detener el temporizador cuando se ha mostrado todo el texto
+            }
         }
     }
 }
