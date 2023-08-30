@@ -19,7 +19,7 @@ namespace Agrotics
         public Form1()
         {
             InitializeComponent();
-            timer1.Interval = 400; // Intervalo de 0.1 segundos
+            timer1.Interval = 700; // Intervalo de 0.1 segundos
             timer1.Tick += timer1_Tick;
         }
         public void manita()
@@ -61,69 +61,9 @@ namespace Agrotics
         
         }
 
-        private void btnventas_MouseHover(object sender, EventArgs e)
-        {
-            btnventas.FlatAppearance.MouseOverBackColor = Color.Transparent;
-        }
-
-        private void btnProveedores_MouseHover(object sender, EventArgs e)
-        {
-            btnProveedores.FlatAppearance.MouseOverBackColor = Color.Transparent;
-        }
-
-        private void btnCultivos_MouseHover(object sender, EventArgs e)
-        {
-            btnCultivos.FlatAppearance.MouseOverBackColor = Color.Transparent;
-        }
-
-        private void btnProductos_MouseHover(object sender, EventArgs e)
-        {
-            btnProductos.FlatAppearance.MouseOverBackColor = Color.Transparent;
-        }
-
         private void toolTip3_Popup(object sender, PopupEventArgs e)
         {
 
-        }
-
-        private void btnventas_MouseEnter(object sender, EventArgs e)
-        {
-            manita();
-        }
-
-        private void btnventas_MouseLeave(object sender, EventArgs e)
-        {
-            cursorDefec();
-        }
-
-        private void btnProveedores_MouseEnter(object sender, EventArgs e)
-        {
-            manita();
-        }
-
-        private void btnProveedores_MouseLeave(object sender, EventArgs e)
-        {
-            cursorDefec();
-        }
-
-        private void btnCultivos_MouseEnter(object sender, EventArgs e)
-        {
-            manita();
-        }
-
-        private void btnCultivos_MouseLeave(object sender, EventArgs e)
-        {
-            cursorDefec();
-        }
-
-        private void btnProductos_MouseEnter(object sender, EventArgs e)
-        {
-            manita();
-        }
-
-        private void btnProductos_MouseLeave(object sender, EventArgs e)
-        {
-            cursorDefec();
         }
 
         private void button2_Click_1(object sender, EventArgs e)

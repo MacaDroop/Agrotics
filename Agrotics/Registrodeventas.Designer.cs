@@ -123,10 +123,10 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(529, 79);
+            this.button1.Location = new System.Drawing.Point(559, 92);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(113, 90);
+            this.button1.Size = new System.Drawing.Size(83, 71);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -217,10 +217,10 @@
             this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Location = new System.Drawing.Point(659, 222);
+            this.btnSalir.Location = new System.Drawing.Point(756, 4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSalir.Size = new System.Drawing.Size(53, 54);
+            this.btnSalir.Size = new System.Drawing.Size(41, 33);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -238,7 +238,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(101, 226);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(69, 50);
+            this.btnCancelar.Size = new System.Drawing.Size(41, 32);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -253,9 +253,9 @@
             this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(188, 226);
+            this.btnRegistrar.Location = new System.Drawing.Point(179, 226);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(69, 50);
+            this.btnRegistrar.Size = new System.Drawing.Size(47, 32);
             this.btnRegistrar.TabIndex = 7;
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);

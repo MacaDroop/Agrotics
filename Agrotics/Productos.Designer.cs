@@ -70,6 +70,7 @@ namespace Agrotics
             // 
             // dgvProductos
             // 
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Location = new System.Drawing.Point(335, 103);
             this.dgvProductos.Name = "dgvProductos";
@@ -345,9 +346,9 @@ namespace Agrotics
             this.btnBuscarPro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPro.Location = new System.Drawing.Point(294, 25);
+            this.btnBuscarPro.Location = new System.Drawing.Point(294, 28);
             this.btnBuscarPro.Name = "btnBuscarPro";
-            this.btnBuscarPro.Size = new System.Drawing.Size(39, 27);
+            this.btnBuscarPro.Size = new System.Drawing.Size(33, 27);
             this.btnBuscarPro.TabIndex = 1;
             this.btnBuscarPro.UseVisualStyleBackColor = true;
             this.btnBuscarPro.Click += new System.EventHandler(this.bttBuscar_Click);

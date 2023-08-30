@@ -56,6 +56,7 @@ namespace Agrotics
             this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
             this.btnProveedores.BackgroundImage = global::Agrotics.Properties.Resources.icon_proveedores;
             this.btnProveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProveedores.FlatAppearance.BorderSize = 0;
             this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -70,15 +71,13 @@ namespace Agrotics
             this.toolTip1.SetToolTip(this.btnProveedores, "Aqui podras registrar la información de tus proveedores.");
             this.btnProveedores.UseVisualStyleBackColor = false;
             this.btnProveedores.Click += new System.EventHandler(this.button1_Click);
-            this.btnProveedores.MouseEnter += new System.EventHandler(this.btnProveedores_MouseEnter);
-            this.btnProveedores.MouseLeave += new System.EventHandler(this.btnProveedores_MouseLeave);
-            this.btnProveedores.MouseHover += new System.EventHandler(this.btnProveedores_MouseHover);
             // 
             // btnProductos
             // 
             this.btnProductos.BackColor = System.Drawing.Color.Transparent;
             this.btnProductos.BackgroundImage = global::Agrotics.Properties.Resources.icon_productos;
             this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -93,15 +92,13 @@ namespace Agrotics
             this.toolTip2.SetToolTip(this.btnProductos, "Aquí podras podras registrar, editar y eliminar tus productos.");
             this.btnProductos.UseVisualStyleBackColor = false;
             this.btnProductos.Click += new System.EventHandler(this.button2_Click);
-            this.btnProductos.MouseEnter += new System.EventHandler(this.btnProductos_MouseEnter);
-            this.btnProductos.MouseLeave += new System.EventHandler(this.btnProductos_MouseLeave);
-            this.btnProductos.MouseHover += new System.EventHandler(this.btnProductos_MouseHover);
             // 
             // btnCultivos
             // 
             this.btnCultivos.BackColor = System.Drawing.Color.Transparent;
             this.btnCultivos.BackgroundImage = global::Agrotics.Properties.Resources.icon_cultivos;
             this.btnCultivos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCultivos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCultivos.FlatAppearance.BorderSize = 0;
             this.btnCultivos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCultivos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -116,9 +113,6 @@ namespace Agrotics
             this.toolTip3.SetToolTip(this.btnCultivos, "Encontraras productos relacionados al cultivo seleccionado.");
             this.btnCultivos.UseVisualStyleBackColor = false;
             this.btnCultivos.Click += new System.EventHandler(this.button3_Click);
-            this.btnCultivos.MouseEnter += new System.EventHandler(this.btnCultivos_MouseEnter);
-            this.btnCultivos.MouseLeave += new System.EventHandler(this.btnCultivos_MouseLeave);
-            this.btnCultivos.MouseHover += new System.EventHandler(this.btnCultivos_MouseHover);
             // 
             // toolTip1
             // 
@@ -173,6 +167,7 @@ namespace Agrotics
             this.btnventas.BackColor = System.Drawing.Color.Transparent;
             this.btnventas.BackgroundImage = global::Agrotics.Properties.Resources.cc_sinfondo;
             this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnventas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnventas.FlatAppearance.BorderSize = 0;
             this.btnventas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -187,9 +182,6 @@ namespace Agrotics
             this.toolTip2.SetToolTip(this.btnventas, "Podras realizar la venta de tus Productos\r\n");
             this.btnventas.UseVisualStyleBackColor = false;
             this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
-            this.btnventas.MouseEnter += new System.EventHandler(this.btnventas_MouseEnter);
-            this.btnventas.MouseLeave += new System.EventHandler(this.btnventas_MouseLeave);
-            this.btnventas.MouseHover += new System.EventHandler(this.btnventas_MouseHover);
             // 
             // toolTip2
             // 
@@ -209,6 +201,7 @@ namespace Agrotics
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,6 +217,7 @@ namespace Agrotics
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.Lime;
             this.lblTitulo.Location = new System.Drawing.Point(362, 25);
@@ -239,6 +233,7 @@ namespace Agrotics
             // 
             this.lblRV.AutoSize = true;
             this.lblRV.BackColor = System.Drawing.Color.Transparent;
+            this.lblRV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblRV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRV.Location = new System.Drawing.Point(601, 402);
             this.lblRV.Name = "lblRV";
@@ -250,6 +245,7 @@ namespace Agrotics
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(386, 402);
             this.label1.Name = "label1";
@@ -261,6 +257,7 @@ namespace Agrotics
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(667, 225);
             this.label2.Name = "label2";
@@ -272,6 +269,7 @@ namespace Agrotics
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(400, 225);
             this.label3.Name = "label3";
@@ -283,6 +281,7 @@ namespace Agrotics
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(156, 226);
             this.label4.Name = "label4";
@@ -294,6 +293,7 @@ namespace Agrotics
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(124, 402);
             this.label5.Name = "label5";
