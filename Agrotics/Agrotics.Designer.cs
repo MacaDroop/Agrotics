@@ -30,6 +30,7 @@ namespace Agrotics
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnCultivos = new System.Windows.Forms.Button();
@@ -49,6 +50,7 @@ namespace Agrotics
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.notify = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // btnProveedores
@@ -301,6 +303,12 @@ namespace Agrotics
             this.label5.TabIndex = 13;
             this.label5.Text = "PROVEEDORES";
             // 
+            // notify
+            // 
+            this.notify.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.notify.Icon = ((System.Drawing.Icon)(resources.GetObject("notify.Icon")));
+            this.notify.Visible = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,6 +361,7 @@ namespace Agrotics
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.NotifyIcon notify;
     }
 }
 

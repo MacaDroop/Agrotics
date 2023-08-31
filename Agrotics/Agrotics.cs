@@ -52,13 +52,14 @@ namespace Agrotics
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
-        }
+            notify.ShowBalloonTip(3000, "STOCK", "Algunos productos están por acabarse", ToolTipIcon.Info);
+            ;        }
 
         private void btnventas_Click(object sender, EventArgs e)
         {
             Ventas1 form = new Ventas1();
             form.Show();
-        
+
         }
 
         private void toolTip3_Popup(object sender, PopupEventArgs e)
@@ -89,6 +90,11 @@ namespace Agrotics
             {
                 timer1.Stop(); // Detener el temporizador cuando se ha mostrado todo el texto
             }
+        }
+
+        private void notifyIcon2_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

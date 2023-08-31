@@ -193,7 +193,7 @@ namespace Agrotics
                     {
                         while (reader.Read())
                         {
-
+                          
                            txtNombrePro.Text = reader.GetString(0);
                            txtDescripcionPro.Text = reader.GetString(1);
                            txtLaboratorio.Text = reader.GetString(2);
