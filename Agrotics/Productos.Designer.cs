@@ -63,6 +63,8 @@ namespace Agrotics
             // 
             // txtBuscarpro
             // 
+            this.txtBuscarpro.BackColor = System.Drawing.SystemColors.Highlight;
+            this.txtBuscarpro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscarpro.Location = new System.Drawing.Point(79, 29);
             this.txtBuscarpro.Name = "txtBuscarpro";
             this.txtBuscarpro.Size = new System.Drawing.Size(209, 20);
@@ -70,9 +72,9 @@ namespace Agrotics
             // 
             // dgvProductos
             // 
-            this.dgvProductos.BackgroundColor = System.Drawing.Color.FloralWhite;
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.PaleGreen;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProductos.Location = new System.Drawing.Point(335, 103);
+            this.dgvProductos.Location = new System.Drawing.Point(312, 103);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.Size = new System.Drawing.Size(477, 229);
             this.dgvProductos.TabIndex = 2;
@@ -81,50 +83,56 @@ namespace Agrotics
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(24, 87);
+            this.lblnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.Location = new System.Drawing.Point(35, 88);
             this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(106, 13);
+            this.lblnombre.Size = new System.Drawing.Size(59, 16);
             this.lblnombre.TabIndex = 6;
-            this.lblnombre.Text = "Nombre del producto";
+            this.lblnombre.Text = "Nombre:";
             // 
             // lbldosis
             // 
             this.lbldosis.AutoSize = true;
-            this.lbldosis.Location = new System.Drawing.Point(24, 125);
+            this.lbldosis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldosis.Location = new System.Drawing.Point(12, 129);
             this.lbldosis.Name = "lbldosis";
-            this.lbldosis.Size = new System.Drawing.Size(63, 13);
+            this.lbldosis.Size = new System.Drawing.Size(82, 16);
             this.lbldosis.TabIndex = 7;
-            this.lbldosis.Text = "Descripcion";
+            this.lbldosis.Text = "Descripción:";
             // 
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(24, 206);
+            this.lblprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblprecio.Location = new System.Drawing.Point(42, 207);
             this.lblprecio.Name = "lblprecio";
-            this.lblprecio.Size = new System.Drawing.Size(37, 13);
+            this.lblprecio.Size = new System.Drawing.Size(49, 16);
             this.lblprecio.TabIndex = 8;
-            this.lblprecio.Text = "Precio";
+            this.lblprecio.Text = "Precio:";
             // 
             // lblcaducidad
             // 
             this.lblcaducidad.AutoSize = true;
-            this.lblcaducidad.Location = new System.Drawing.Point(24, 240);
+            this.lblcaducidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcaducidad.Location = new System.Drawing.Point(18, 241);
             this.lblcaducidad.Name = "lblcaducidad";
-            this.lblcaducidad.Size = new System.Drawing.Size(58, 13);
+            this.lblcaducidad.Size = new System.Drawing.Size(76, 16);
             this.lblcaducidad.TabIndex = 9;
-            this.lblcaducidad.Text = "Caducidad";
+            this.lblcaducidad.Text = "Caducidad:";
             this.lblcaducidad.Click += new System.EventHandler(this.lblcaducidad_Click);
             // 
             // txtNombrePro
             // 
-            this.txtNombrePro.Location = new System.Drawing.Point(136, 84);
+            this.txtNombrePro.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNombrePro.Location = new System.Drawing.Point(120, 84);
             this.txtNombrePro.Name = "txtNombrePro";
             this.txtNombrePro.Size = new System.Drawing.Size(168, 20);
             this.txtNombrePro.TabIndex = 10;
             // 
             // txtDescripcionPro
             // 
-            this.txtDescripcionPro.Location = new System.Drawing.Point(136, 110);
+            this.txtDescripcionPro.BackColor = System.Drawing.Color.DarkGray;
+            this.txtDescripcionPro.Location = new System.Drawing.Point(120, 110);
             this.txtDescripcionPro.Multiline = true;
             this.txtDescripcionPro.Name = "txtDescripcionPro";
             this.txtDescripcionPro.Size = new System.Drawing.Size(168, 48);
@@ -132,7 +140,8 @@ namespace Agrotics
             // 
             // txtLaboratorio
             // 
-            this.txtLaboratorio.Location = new System.Drawing.Point(136, 174);
+            this.txtLaboratorio.BackColor = System.Drawing.Color.DarkGray;
+            this.txtLaboratorio.Location = new System.Drawing.Point(120, 174);
             this.txtLaboratorio.Name = "txtLaboratorio";
             this.txtLaboratorio.Size = new System.Drawing.Size(168, 20);
             this.txtLaboratorio.TabIndex = 12;
@@ -140,7 +149,8 @@ namespace Agrotics
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(136, 203);
+            this.txtPrecio.BackColor = System.Drawing.Color.DarkGray;
+            this.txtPrecio.Location = new System.Drawing.Point(120, 203);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(168, 20);
             this.txtPrecio.TabIndex = 13;
@@ -149,15 +159,17 @@ namespace Agrotics
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 177);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.Size = new System.Drawing.Size(79, 16);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Laboratorio";
+            this.label1.Text = "Laboratorio:";
             // 
             // txtCaducidad
             // 
-            this.txtCaducidad.Location = new System.Drawing.Point(136, 237);
+            this.txtCaducidad.BackColor = System.Drawing.Color.DarkGray;
+            this.txtCaducidad.Location = new System.Drawing.Point(120, 237);
             this.txtCaducidad.Name = "txtCaducidad";
             this.txtCaducidad.Size = new System.Drawing.Size(168, 20);
             this.txtCaducidad.TabIndex = 15;
@@ -165,7 +177,7 @@ namespace Agrotics
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 264);
+            this.label2.Location = new System.Drawing.Point(120, 264);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 19;
@@ -174,7 +186,7 @@ namespace Agrotics
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(200, 264);
+            this.label3.Location = new System.Drawing.Point(184, 264);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 20;
@@ -183,7 +195,7 @@ namespace Agrotics
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 264);
+            this.label4.Location = new System.Drawing.Point(246, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 13);
             this.label4.TabIndex = 21;
@@ -191,7 +203,8 @@ namespace Agrotics
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(136, 281);
+            this.txtStock.BackColor = System.Drawing.Color.DarkGray;
+            this.txtStock.Location = new System.Drawing.Point(120, 281);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(168, 20);
             this.txtStock.TabIndex = 22;
@@ -199,20 +212,22 @@ namespace Agrotics
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 288);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(47, 281);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(44, 16);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Stock";
+            this.label5.Text = "Stock:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 319);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(56, 316);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.Size = new System.Drawing.Size(38, 16);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Tipo";
+            this.label6.Text = "Tipo:";
             // 
             // txtTipo
             // 
@@ -223,7 +238,8 @@ namespace Agrotics
             "Fungicida"});
             this.txtTipo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.txtTipo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtTipo.Location = new System.Drawing.Point(136, 312);
+            this.txtTipo.BackColor = System.Drawing.Color.DarkGray;
+            this.txtTipo.Location = new System.Drawing.Point(120, 312);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(168, 20);
             this.txtTipo.TabIndex = 25;
@@ -237,7 +253,8 @@ namespace Agrotics
             "1KG",
             "500ML",
             "1L"});
-            this.txtPresentacion.Location = new System.Drawing.Point(136, 338);
+            this.txtPresentacion.BackColor = System.Drawing.Color.DarkGray;
+            this.txtPresentacion.Location = new System.Drawing.Point(120, 338);
             this.txtPresentacion.Name = "txtPresentacion";
             this.txtPresentacion.Size = new System.Drawing.Size(168, 20);
             this.txtPresentacion.TabIndex = 28;
@@ -245,20 +262,22 @@ namespace Agrotics
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(24, 345);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(2, 342);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 13);
+            this.label9.Size = new System.Drawing.Size(89, 16);
             this.label9.TabIndex = 29;
-            this.label9.Text = "Presentacion";
+            this.label9.Text = "Presentacion:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 370);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(34, 374);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.Size = new System.Drawing.Size(57, 16);
             this.label7.TabIndex = 30;
-            this.label7.Text = "Cultivos";
+            this.label7.Text = "Cultivos:";
             // 
             // txtCultivos
             // 
@@ -271,7 +290,8 @@ namespace Agrotics
             "Sandia"});
             this.txtCultivos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.txtCultivos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtCultivos.Location = new System.Drawing.Point(136, 370);
+            this.txtCultivos.BackColor = System.Drawing.Color.DarkGray;
+            this.txtCultivos.Location = new System.Drawing.Point(120, 370);
             this.txtCultivos.Name = "txtCultivos";
             this.txtCultivos.Size = new System.Drawing.Size(168, 20);
             this.txtCultivos.TabIndex = 31;
@@ -279,15 +299,17 @@ namespace Agrotics
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(27, 409);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 402);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 13);
+            this.label8.Size = new System.Drawing.Size(76, 16);
             this.label8.TabIndex = 32;
             this.label8.Text = "Referencia:";
             // 
             // txtReferencia
             // 
-            this.txtReferencia.Location = new System.Drawing.Point(136, 401);
+            this.txtReferencia.BackColor = System.Drawing.Color.DarkGray;
+            this.txtReferencia.Location = new System.Drawing.Point(120, 401);
             this.txtReferencia.Name = "txtReferencia";
             this.txtReferencia.Size = new System.Drawing.Size(168, 20);
             this.txtReferencia.TabIndex = 33;
@@ -346,7 +368,7 @@ namespace Agrotics
             this.btnBuscarPro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBuscarPro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPro.Location = new System.Drawing.Point(294, 28);
+            this.btnBuscarPro.Location = new System.Drawing.Point(294, 25);
             this.btnBuscarPro.Name = "btnBuscarPro";
             this.btnBuscarPro.Size = new System.Drawing.Size(33, 27);
             this.btnBuscarPro.TabIndex = 1;
@@ -357,7 +379,7 @@ namespace Agrotics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
+            this.BackColor = System.Drawing.Color.LawnGreen;
             this.ClientSize = new System.Drawing.Size(824, 434);
             this.Controls.Add(this.txtReferencia);
             this.Controls.Add(this.label8);
