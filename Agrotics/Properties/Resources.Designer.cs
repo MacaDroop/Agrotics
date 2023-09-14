@@ -83,6 +83,26 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backc {
+            get {
+                object obj = ResourceManager.GetObject("backc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backc1 {
+            get {
+                object obj = ResourceManager.GetObject("backc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -323,19 +343,9 @@ namespace Agrotics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LOGO_AGROTICS {
+        internal static System.Drawing.Bitmap loag1 {
             get {
-                object obj = ResourceManager.GetObject("LOGO AGROTICS", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LOGO_AGROTICS1 {
-            get {
-                object obj = ResourceManager.GetObject("LOGO AGROTICS1", resourceCulture);
+                object obj = ResourceManager.GetObject("loag1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +386,16 @@ namespace Agrotics.Properties {
         internal static System.Drawing.Bitmap PINAp {
             get {
                 object obj = ResourceManager.GetObject("PINAp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red12 {
+            get {
+                object obj = ResourceManager.GetObject("red12", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -79,7 +79,7 @@ namespace Agrotics
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(167, 21);
+            label1.Location = new System.Drawing.Point(231, 6);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(432, 29);
             label1.TabIndex = 6;
@@ -98,7 +98,8 @@ namespace Agrotics
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.BurlyWood;
-            this.tabPage1.BackgroundImage = global::Agrotics.Properties.Resources.tierra;
+            this.tabPage1.BackgroundImage = global::Agrotics.Properties.Resources.backc1;
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.btnPiña1);
             this.tabPage1.Controls.Add(this.btnChile);
             this.tabPage1.Controls.Add(label1);
@@ -123,7 +124,7 @@ namespace Agrotics
             this.btnPiña1.FlatAppearance.BorderSize = 0;
             this.btnPiña1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPiña1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPiña1.Location = new System.Drawing.Point(102, 121);
+            this.btnPiña1.Location = new System.Drawing.Point(7, 130);
             this.btnPiña1.Name = "btnPiña1";
             this.btnPiña1.Size = new System.Drawing.Size(127, 89);
             this.btnPiña1.TabIndex = 7;
@@ -146,7 +147,7 @@ namespace Agrotics
             this.btnChile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnChile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChile.Location = new System.Drawing.Point(572, 265);
+            this.btnChile.Location = new System.Drawing.Point(628, 266);
             this.btnChile.Name = "btnChile";
             this.btnChile.Size = new System.Drawing.Size(117, 89);
             this.btnChile.TabIndex = 5;
@@ -169,7 +170,7 @@ namespace Agrotics
             this.btnFrijol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFrijol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrijol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFrijol.Location = new System.Drawing.Point(102, 265);
+            this.btnFrijol.Location = new System.Drawing.Point(17, 266);
             this.btnFrijol.Name = "btnFrijol";
             this.btnFrijol.Size = new System.Drawing.Size(117, 89);
             this.btnFrijol.TabIndex = 4;
@@ -193,7 +194,7 @@ namespace Agrotics
             this.btnCaña.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnCaña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCaña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCaña.Location = new System.Drawing.Point(559, 117);
+            this.btnCaña.Location = new System.Drawing.Point(628, 121);
             this.btnCaña.Name = "btnCaña";
             this.btnCaña.Size = new System.Drawing.Size(130, 89);
             this.btnCaña.TabIndex = 2;
@@ -513,7 +514,6 @@ namespace Agrotics
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::Agrotics.Properties.Resources.Imagen_de_WhatsApp_2023_05_13_a_las_13_52_20;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 473);
             this.Controls.Add(this.Principal);

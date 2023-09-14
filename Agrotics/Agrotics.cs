@@ -92,9 +92,18 @@ namespace Agrotics
             }
         }
 
-        private void notifyIcon2_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Obtener el panel actual
+            Panel panel = sender as Panel;
+
+            // Crear un objeto Graphics para el panel
+            Graphics g = e.Graphics;
+
+            // Dibujar un círculo en el panel
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias; // Esto suavizará los bordes del círculo
+            g.FillEllipse(new SolidBrush(panel.BackColor), 0, 0, panel.Width, panel.Height);
         }
     }
 }

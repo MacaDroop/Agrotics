@@ -31,15 +31,15 @@ namespace Agrotics
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnProveedores = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnCultivos = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnventas = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnventas = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
             this.toolTip3 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnCultivos = new System.Windows.Forms.Button();
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -52,69 +52,6 @@ namespace Agrotics
             this.label5 = new System.Windows.Forms.Label();
             this.notify = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
-            // 
-            // btnProveedores
-            // 
-            this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
-            this.btnProveedores.BackgroundImage = global::Agrotics.Properties.Resources.icon_proveedores;
-            this.btnProveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProveedores.FlatAppearance.BorderSize = 0;
-            this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedores.ForeColor = System.Drawing.Color.Black;
-            this.btnProveedores.Location = new System.Drawing.Point(118, 274);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(174, 125);
-            this.btnProveedores.TabIndex = 0;
-            this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip1.SetToolTip(this.btnProveedores, "Aqui podras registrar la información de tus proveedores.");
-            this.btnProveedores.UseVisualStyleBackColor = false;
-            this.btnProveedores.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.BackColor = System.Drawing.Color.Transparent;
-            this.btnProductos.BackgroundImage = global::Agrotics.Properties.Resources.icon_productos;
-            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.ForeColor = System.Drawing.Color.Black;
-            this.btnProductos.Location = new System.Drawing.Point(357, 274);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(174, 125);
-            this.btnProductos.TabIndex = 1;
-            this.btnProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip2.SetToolTip(this.btnProductos, "Aquí podras podras registrar, editar y eliminar tus productos.");
-            this.btnProductos.UseVisualStyleBackColor = false;
-            this.btnProductos.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnCultivos
-            // 
-            this.btnCultivos.BackColor = System.Drawing.Color.Transparent;
-            this.btnCultivos.BackgroundImage = global::Agrotics.Properties.Resources.icon_cultivos;
-            this.btnCultivos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCultivos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCultivos.FlatAppearance.BorderSize = 0;
-            this.btnCultivos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnCultivos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnCultivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCultivos.ForeColor = System.Drawing.Color.Black;
-            this.btnCultivos.Location = new System.Drawing.Point(357, 98);
-            this.btnCultivos.Name = "btnCultivos";
-            this.btnCultivos.Size = new System.Drawing.Size(174, 125);
-            this.btnCultivos.TabIndex = 2;
-            this.btnCultivos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.toolTip3.SetToolTip(this.btnCultivos, "Encontraras productos relacionados al cultivo seleccionado.");
-            this.btnCultivos.UseVisualStyleBackColor = false;
-            this.btnCultivos.Click += new System.EventHandler(this.button3_Click);
             // 
             // toolTip1
             // 
@@ -164,6 +101,32 @@ namespace Agrotics
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.Transparent;
+            this.btnProveedores.BackgroundImage = global::Agrotics.Properties.Resources.icon_proveedores;
+            this.btnProveedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.FlatAppearance.BorderSize = 0;
+            this.btnProveedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProveedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.ForeColor = System.Drawing.Color.Black;
+            this.btnProveedores.Location = new System.Drawing.Point(118, 274);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(174, 125);
+            this.btnProveedores.TabIndex = 0;
+            this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip1.SetToolTip(this.btnProveedores, "Aqui podras registrar la información de tus proveedores.");
+            this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // toolTip2
+            // 
+            this.toolTip2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.toolTip2.IsBalloon = true;
+            // 
             // btnventas
             // 
             this.btnventas.BackColor = System.Drawing.Color.Transparent;
@@ -185,16 +148,53 @@ namespace Agrotics
             this.btnventas.UseVisualStyleBackColor = false;
             this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
             // 
-            // toolTip2
+            // btnProductos
             // 
-            this.toolTip2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.toolTip2.IsBalloon = true;
+            this.btnProductos.BackColor = System.Drawing.Color.Transparent;
+            this.btnProductos.BackgroundImage = global::Agrotics.Properties.Resources.icon_productos;
+            this.btnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.Black;
+            this.btnProductos.Location = new System.Drawing.Point(357, 274);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(174, 125);
+            this.btnProductos.TabIndex = 1;
+            this.btnProductos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip2.SetToolTip(this.btnProductos, "Aquí podras podras registrar, editar y eliminar tus productos.");
+            this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.button2_Click);
             // 
             // toolTip3
             // 
             this.toolTip3.BackColor = System.Drawing.SystemColors.Highlight;
             this.toolTip3.IsBalloon = true;
             this.toolTip3.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip3_Popup);
+            // 
+            // btnCultivos
+            // 
+            this.btnCultivos.BackColor = System.Drawing.Color.Transparent;
+            this.btnCultivos.BackgroundImage = global::Agrotics.Properties.Resources.icon_cultivos;
+            this.btnCultivos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCultivos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCultivos.FlatAppearance.BorderSize = 0;
+            this.btnCultivos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCultivos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCultivos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCultivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCultivos.ForeColor = System.Drawing.Color.Black;
+            this.btnCultivos.Location = new System.Drawing.Point(357, 98);
+            this.btnCultivos.Name = "btnCultivos";
+            this.btnCultivos.Size = new System.Drawing.Size(174, 125);
+            this.btnCultivos.TabIndex = 2;
+            this.btnCultivos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.toolTip3.SetToolTip(this.btnCultivos, "Encontraras productos relacionados al cultivo seleccionado.");
+            this.btnCultivos.UseVisualStyleBackColor = false;
+            this.btnCultivos.Click += new System.EventHandler(this.button3_Click);
             // 
             // toolTip4
             // 
@@ -285,7 +285,7 @@ namespace Agrotics
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(156, 226);
+            this.label4.Location = new System.Drawing.Point(139, 225);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 20);
             this.label4.TabIndex = 12;
@@ -330,6 +330,7 @@ namespace Agrotics
             this.Controls.Add(this.btnCultivos);
             this.Controls.Add(this.btnProductos);
             this.Controls.Add(this.btnProveedores);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
