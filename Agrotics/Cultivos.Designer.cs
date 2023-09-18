@@ -38,6 +38,7 @@ namespace Agrotics
             this.btnCaña = new System.Windows.Forms.Button();
             this.btnSandia = new System.Windows.Forms.Button();
             this.btnMaiz = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
@@ -65,6 +66,7 @@ namespace Agrotics
             label1 = new System.Windows.Forms.Label();
             this.Principal.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -107,6 +109,7 @@ namespace Agrotics
             this.tabPage1.Controls.Add(this.btnCaña);
             this.tabPage1.Controls.Add(this.btnSandia);
             this.tabPage1.Controls.Add(this.btnMaiz);
+            this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(6);
@@ -124,9 +127,9 @@ namespace Agrotics
             this.btnPiña1.FlatAppearance.BorderSize = 0;
             this.btnPiña1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPiña1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPiña1.Location = new System.Drawing.Point(7, 130);
+            this.btnPiña1.Location = new System.Drawing.Point(9, 121);
             this.btnPiña1.Name = "btnPiña1";
-            this.btnPiña1.Size = new System.Drawing.Size(127, 89);
+            this.btnPiña1.Size = new System.Drawing.Size(110, 77);
             this.btnPiña1.TabIndex = 7;
             this.btnPiña1.Text = global::Agrotics.Properties.Settings.Default.Piña;
             this.btnPiña1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -147,9 +150,9 @@ namespace Agrotics
             this.btnChile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnChile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChile.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChile.Location = new System.Drawing.Point(628, 266);
+            this.btnChile.Location = new System.Drawing.Point(624, 266);
             this.btnChile.Name = "btnChile";
-            this.btnChile.Size = new System.Drawing.Size(117, 89);
+            this.btnChile.Size = new System.Drawing.Size(110, 77);
             this.btnChile.TabIndex = 5;
             this.btnChile.Text = global::Agrotics.Properties.Settings.Default.Chile;
             this.btnChile.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -170,9 +173,9 @@ namespace Agrotics
             this.btnFrijol.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnFrijol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFrijol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFrijol.Location = new System.Drawing.Point(17, 266);
+            this.btnFrijol.Location = new System.Drawing.Point(27, 255);
             this.btnFrijol.Name = "btnFrijol";
-            this.btnFrijol.Size = new System.Drawing.Size(117, 89);
+            this.btnFrijol.Size = new System.Drawing.Size(110, 77);
             this.btnFrijol.TabIndex = 4;
             this.btnFrijol.Text = global::Agrotics.Properties.Settings.Default.Frijol;
             this.btnFrijol.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -196,7 +199,7 @@ namespace Agrotics
             this.btnCaña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaña.Location = new System.Drawing.Point(628, 121);
             this.btnCaña.Name = "btnCaña";
-            this.btnCaña.Size = new System.Drawing.Size(130, 89);
+            this.btnCaña.Size = new System.Drawing.Size(110, 77);
             this.btnCaña.TabIndex = 2;
             this.btnCaña.Text = global::Agrotics.Properties.Settings.Default.Caña;
             this.btnCaña.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -219,7 +222,7 @@ namespace Agrotics
             this.btnSandia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSandia.Location = new System.Drawing.Point(338, 266);
             this.btnSandia.Name = "btnSandia";
-            this.btnSandia.Size = new System.Drawing.Size(100, 89);
+            this.btnSandia.Size = new System.Drawing.Size(110, 77);
             this.btnSandia.TabIndex = 3;
             this.btnSandia.Text = global::Agrotics.Properties.Settings.Default.Sandia;
             this.btnSandia.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -243,7 +246,7 @@ namespace Agrotics
             this.btnMaiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaiz.Location = new System.Drawing.Point(338, 121);
             this.btnMaiz.Name = "btnMaiz";
-            this.btnMaiz.Size = new System.Drawing.Size(117, 89);
+            this.btnMaiz.Size = new System.Drawing.Size(110, 77);
             this.btnMaiz.TabIndex = 1;
             this.btnMaiz.Text = global::Agrotics.Properties.Settings.Default.Maiz1;
             this.btnMaiz.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -251,6 +254,17 @@ namespace Agrotics
             this.btnMaiz.Click += new System.EventHandler(this.button2_Click);
             this.btnMaiz.Paint += new System.Windows.Forms.PaintEventHandler(this.button2_Paint);
             this.btnMaiz.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = global::Agrotics.Properties.Resources.iconagro;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(500, 279);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(270, 176);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
             // 
             // tabPage2
             // 
@@ -523,6 +537,7 @@ namespace Agrotics
             this.Principal.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -568,5 +583,6 @@ namespace Agrotics
         public System.Windows.Forms.Button btnFrijol;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnPiña1;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
