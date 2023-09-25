@@ -30,6 +30,8 @@
         {
             this.TABCONTROL = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.tcSintomas = new System.Windows.Forms.TabControl();
             this.tpPiña = new System.Windows.Forms.TabPage();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
@@ -62,12 +64,13 @@
             this.cmbTipoCultivo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbDiagnostico = new System.Windows.Forms.TabPage();
-            this.btnAceptar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.dgvResultados = new System.Windows.Forms.DataGridView();
-            this.lbltxtP = new System.Windows.Forms.Label();
-            this.lblResult = new System.Windows.Forms.Label();
             this.txtRecomendacion = new System.Windows.Forms.TextBox();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.lbltxtP = new System.Windows.Forms.Label();
+            this.dgvResultados = new System.Windows.Forms.DataGridView();
+            this.sintomasClicked = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblEnfermedad = new System.Windows.Forms.Label();
             this.TABCONTROL.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tcSintomas.SuspendLayout();
@@ -88,7 +91,7 @@
             this.TABCONTROL.Location = new System.Drawing.Point(13, 1);
             this.TABCONTROL.Name = "TABCONTROL";
             this.TABCONTROL.SelectedIndex = 0;
-            this.TABCONTROL.Size = new System.Drawing.Size(775, 437);
+            this.TABCONTROL.Size = new System.Drawing.Size(775, 479);
             this.TABCONTROL.TabIndex = 0;
             // 
             // tabPage1
@@ -105,11 +108,31 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(767, 411);
+            this.tabPage1.Size = new System.Drawing.Size(767, 453);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EVALUACION";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(564, 76);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(91, 23);
+            this.btnCancelar.TabIndex = 9;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(564, 25);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(91, 23);
+            this.btnAceptar.TabIndex = 8;
+            this.btnAceptar.Text = "ACEPTAR";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // tcSintomas
             // 
@@ -148,7 +171,7 @@
             "Sintoma 2",
             "Sintoma 3",
             "Sintoma 4"});
-            this.checkedListBox3.Location = new System.Drawing.Point(351, 17);
+            this.checkedListBox3.Location = new System.Drawing.Point(268, 17);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
@@ -156,21 +179,25 @@
             // 
             // checkedListBox2
             // 
+            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
-            "Sintoma 1",
-            "Sintoma 2",
-            "Sintoma 3",
-            "Sintoma 4"});
-            this.checkedListBox2.Location = new System.Drawing.Point(6, 80);
+            "Perdida de color en tallo",
+            "Enanismo",
+            "Exudaciones gomosas (fruta)",
+            "Pudricion de la fruta",
+            "Decoloración de las hojas",
+            "Olor (pudrición)"});
+            this.checkedListBox2.Location = new System.Drawing.Point(6, 83);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox2.Size = new System.Drawing.Size(178, 94);
+            this.checkedListBox2.Size = new System.Drawing.Size(178, 90);
             this.checkedListBox2.TabIndex = 1;
             this.checkedListBox2.SelectedIndexChanged += new System.EventHandler(this.checkedListBox2_SelectedIndexChanged);
             // 
             // checkedListBox1
             // 
+            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Tallo Blando",
@@ -180,7 +207,7 @@
             this.checkedListBox1.Location = new System.Drawing.Point(6, 17);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.checkedListBox1.Size = new System.Drawing.Size(178, 64);
+            this.checkedListBox1.Size = new System.Drawing.Size(178, 60);
             this.checkedListBox1.TabIndex = 0;
             // 
             // tpMaiz
@@ -356,7 +383,7 @@
             this.tpSandia.Location = new System.Drawing.Point(4, 34);
             this.tpSandia.Name = "tpSandia";
             this.tpSandia.Padding = new System.Windows.Forms.Padding(3);
-            this.tpSandia.Size = new System.Drawing.Size(649, 162);
+            this.tpSandia.Size = new System.Drawing.Size(490, 189);
             this.tpSandia.TabIndex = 4;
             this.tpSandia.Text = "SANDIA";
             this.tpSandia.UseVisualStyleBackColor = true;
@@ -411,7 +438,7 @@
             this.tpChile.Location = new System.Drawing.Point(4, 34);
             this.tpChile.Name = "tpChile";
             this.tpChile.Padding = new System.Windows.Forms.Padding(3);
-            this.tpChile.Size = new System.Drawing.Size(649, 162);
+            this.tpChile.Size = new System.Drawing.Size(490, 189);
             this.tpChile.TabIndex = 5;
             this.tpChile.Text = "CHILE";
             this.tpChile.UseVisualStyleBackColor = true;
@@ -517,6 +544,9 @@
             // 
             // tbDiagnostico
             // 
+            this.tbDiagnostico.Controls.Add(this.lblEnfermedad);
+            this.tbDiagnostico.Controls.Add(this.label4);
+            this.tbDiagnostico.Controls.Add(this.sintomasClicked);
             this.tbDiagnostico.Controls.Add(this.txtRecomendacion);
             this.tbDiagnostico.Controls.Add(this.lblResult);
             this.tbDiagnostico.Controls.Add(this.lbltxtP);
@@ -524,46 +554,18 @@
             this.tbDiagnostico.Location = new System.Drawing.Point(4, 22);
             this.tbDiagnostico.Name = "tbDiagnostico";
             this.tbDiagnostico.Padding = new System.Windows.Forms.Padding(3);
-            this.tbDiagnostico.Size = new System.Drawing.Size(767, 411);
+            this.tbDiagnostico.Size = new System.Drawing.Size(767, 453);
             this.tbDiagnostico.TabIndex = 1;
             this.tbDiagnostico.Text = "DIAGNOSTICO";
             this.tbDiagnostico.UseVisualStyleBackColor = true;
             // 
-            // btnAceptar
+            // txtRecomendacion
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(564, 25);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(91, 23);
-            this.btnAceptar.TabIndex = 8;
-            this.btnAceptar.Text = "ACEPTAR";
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(564, 76);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(91, 23);
-            this.btnCancelar.TabIndex = 9;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // dgvResultados
-            // 
-            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResultados.Location = new System.Drawing.Point(39, 193);
-            this.dgvResultados.Name = "dgvResultados";
-            this.dgvResultados.Size = new System.Drawing.Size(665, 191);
-            this.dgvResultados.TabIndex = 0;
-            // 
-            // lbltxtP
-            // 
-            this.lbltxtP.AutoSize = true;
-            this.lbltxtP.Location = new System.Drawing.Point(36, 177);
-            this.lbltxtP.Name = "lbltxtP";
-            this.lbltxtP.Size = new System.Drawing.Size(145, 13);
-            this.lbltxtP.TabIndex = 1;
-            this.lbltxtP.Text = "PRODUCTOS APLICABLES:";
+            this.txtRecomendacion.Location = new System.Drawing.Point(39, 131);
+            this.txtRecomendacion.Multiline = true;
+            this.txtRecomendacion.Name = "txtRecomendacion";
+            this.txtRecomendacion.Size = new System.Drawing.Size(429, 79);
+            this.txtRecomendacion.TabIndex = 3;
             // 
             // lblResult
             // 
@@ -574,13 +576,48 @@
             this.lblResult.TabIndex = 2;
             this.lblResult.Text = "DE ACUERDO A LOS DATOS PROPORCIONADOS \r\nEL DIAGNOSTICO FUE: ";
             // 
-            // txtRecomendacion
+            // lbltxtP
             // 
-            this.txtRecomendacion.Location = new System.Drawing.Point(39, 95);
-            this.txtRecomendacion.Multiline = true;
-            this.txtRecomendacion.Name = "txtRecomendacion";
-            this.txtRecomendacion.Size = new System.Drawing.Size(665, 79);
-            this.txtRecomendacion.TabIndex = 3;
+            this.lbltxtP.AutoSize = true;
+            this.lbltxtP.Location = new System.Drawing.Point(36, 240);
+            this.lbltxtP.Name = "lbltxtP";
+            this.lbltxtP.Size = new System.Drawing.Size(145, 13);
+            this.lbltxtP.TabIndex = 1;
+            this.lbltxtP.Text = "PRODUCTOS APLICABLES:";
+            // 
+            // dgvResultados
+            // 
+            this.dgvResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultados.Location = new System.Drawing.Point(39, 256);
+            this.dgvResultados.Name = "dgvResultados";
+            this.dgvResultados.Size = new System.Drawing.Size(665, 191);
+            this.dgvResultados.TabIndex = 0;
+            // 
+            // sintomasClicked
+            // 
+            this.sintomasClicked.FormattingEnabled = true;
+            this.sintomasClicked.Location = new System.Drawing.Point(535, 115);
+            this.sintomasClicked.Name = "sintomasClicked";
+            this.sintomasClicked.Size = new System.Drawing.Size(150, 95);
+            this.sintomasClicked.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(532, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Sintomas correspondientes:";
+            // 
+            // lblEnfermedad
+            // 
+            this.lblEnfermedad.AutoSize = true;
+            this.lblEnfermedad.Location = new System.Drawing.Point(48, 98);
+            this.lblEnfermedad.Name = "lblEnfermedad";
+            this.lblEnfermedad.Size = new System.Drawing.Size(73, 13);
+            this.lblEnfermedad.TabIndex = 6;
+            this.lblEnfermedad.Text = "RESULTADO";
             // 
             // Asesoria
             // 
@@ -650,5 +687,8 @@
         private System.Windows.Forms.DataGridView dgvResultados;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.TextBox txtRecomendacion;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox sintomasClicked;
+        private System.Windows.Forms.Label lblEnfermedad;
     }
 }
