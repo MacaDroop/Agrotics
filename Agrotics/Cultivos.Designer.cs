@@ -125,6 +125,8 @@ namespace Agrotics
             this.btnPiña1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPiña1.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::Agrotics.Properties.Settings.Default, "Piña", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.btnPiña1.FlatAppearance.BorderSize = 0;
+            this.btnPiña1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPiña1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnPiña1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPiña1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPiña1.Location = new System.Drawing.Point(9, 121);

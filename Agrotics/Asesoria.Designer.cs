@@ -96,6 +96,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.GreenYellow;
             this.tabPage1.Controls.Add(this.btnCancelar);
             this.tabPage1.Controls.Add(this.btnAceptar);
             this.tabPage1.Controls.Add(this.tcSintomas);
@@ -111,7 +112,6 @@
             this.tabPage1.Size = new System.Drawing.Size(767, 453);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "EVALUACION";
-            this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // btnCancelar
@@ -151,6 +151,7 @@
             // 
             // tpPiña
             // 
+            this.tpPiña.BackColor = System.Drawing.Color.LightGray;
             this.tpPiña.Controls.Add(this.checkedListBox3);
             this.tpPiña.Controls.Add(this.checkedListBox2);
             this.tpPiña.Controls.Add(this.checkedListBox1);
@@ -161,7 +162,6 @@
             this.tpPiña.Size = new System.Drawing.Size(490, 189);
             this.tpPiña.TabIndex = 0;
             this.tpPiña.Text = "PIÑA";
-            this.tpPiña.UseVisualStyleBackColor = true;
             // 
             // checkedListBox3
             // 
@@ -543,6 +543,7 @@
             // 
             // tbDiagnostico
             // 
+            this.tbDiagnostico.BackColor = System.Drawing.Color.Aquamarine;
             this.tbDiagnostico.Controls.Add(this.lblEnfermedad);
             this.tbDiagnostico.Controls.Add(this.label4);
             this.tbDiagnostico.Controls.Add(this.sintomasClicked);
@@ -556,23 +557,25 @@
             this.tbDiagnostico.Size = new System.Drawing.Size(767, 453);
             this.tbDiagnostico.TabIndex = 1;
             this.tbDiagnostico.Text = "DIAGNOSTICO";
-            this.tbDiagnostico.UseVisualStyleBackColor = true;
             // 
             // lblEnfermedad
             // 
             this.lblEnfermedad.AutoSize = true;
-            this.lblEnfermedad.Location = new System.Drawing.Point(48, 98);
+            this.lblEnfermedad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnfermedad.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblEnfermedad.Location = new System.Drawing.Point(35, 99);
             this.lblEnfermedad.Name = "lblEnfermedad";
-            this.lblEnfermedad.Size = new System.Drawing.Size(73, 13);
+            this.lblEnfermedad.Size = new System.Drawing.Size(117, 20);
             this.lblEnfermedad.TabIndex = 6;
             this.lblEnfermedad.Text = "RESULTADO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(532, 99);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(504, 96);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.Size = new System.Drawing.Size(200, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Sintomas correspondientes:";
             // 
@@ -595,18 +598,20 @@
             // lblResult
             // 
             this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResult.Location = new System.Drawing.Point(36, 49);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(260, 26);
+            this.lblResult.Size = new System.Drawing.Size(359, 32);
             this.lblResult.TabIndex = 2;
             this.lblResult.Text = "DE ACUERDO A LOS DATOS PROPORCIONADOS \r\nEL DIAGNOSTICO FUE: ";
             // 
             // lbltxtP
             // 
             this.lbltxtP.AutoSize = true;
-            this.lbltxtP.Location = new System.Drawing.Point(36, 240);
+            this.lbltxtP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltxtP.Location = new System.Drawing.Point(36, 237);
             this.lbltxtP.Name = "lbltxtP";
-            this.lbltxtP.Size = new System.Drawing.Size(145, 13);
+            this.lbltxtP.Size = new System.Drawing.Size(200, 16);
             this.lbltxtP.TabIndex = 1;
             this.lbltxtP.Text = "PRODUCTOS APLICABLES:";
             // 

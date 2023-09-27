@@ -123,8 +123,7 @@ namespace Agrotics
                                 DataTable datos = new DataTable();
                                 datos.Load(reader);
                                 dgvResultados.DataSource = datos;
-                                Rec mensajero = new Rec();
-                                txtRecomendacion.Text = mensajero.Fusarium();
+                                txtRecomendacion.Text = mensajero.Phytophthora();
                             }
                             else
                             {
@@ -147,6 +146,87 @@ namespace Agrotics
             }
         }
 
+        private void Diuron()
+        {
+            try
+            {
+                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion FROM productos WHERE NombreProducto = 'Diuron'";
+                using (MySqlConnection conexionBD = Conexion2.conexion())
+                {
+                    conexionBD.Open();
+                    using (MySqlCommand comando = new MySqlCommand(Sql, conexionBD))
+                    {
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                DataTable datos = new DataTable();
+                                datos.Load(reader);
+                                dgvResultados.DataSource = datos;
+            
+                                txtRecomendacion.Text = "UTILIZAR A PARTIR DE 5 MESES EN ADELANTE";
+                            }
+                            else
+                            {
+                                MessageBox.Show("SE REQUIERE DE MÁS INFORMACIÓN...");
+                                // No se encontraron resultados, puedes mostrar un mensaje o realizar otra acción.
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Manejo de excepciones de MySQL, por ejemplo, conexión fallida, consulta inválida, etc.
+                MessageBox.Show("Error de MySQL: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales, como problemas no relacionados con MySQL.
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Ametrina()
+        {
+            try
+            {
+                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion FROM productos WHERE NombreProducto = 'Ametrina'";
+                using (MySqlConnection conexionBD = Conexion2.conexion())
+                {
+                    conexionBD.Open();
+                    using (MySqlCommand comando = new MySqlCommand(Sql, conexionBD))
+                    {
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                DataTable datos = new DataTable();
+                                datos.Load(reader);
+                                dgvResultados.DataSource = datos;
+
+                                txtRecomendacion.Text = "CAMBIAR DE PRODUCTO PARA NO GENERAR RESISTENCIA....";
+                            }
+                            else
+                            {
+                                MessageBox.Show("SE REQUIERE DE MÁS INFORMACIÓN...");
+                                // No se encontraron resultados, puedes mostrar un mensaje o realizar otra acción.
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Manejo de excepciones de MySQL, por ejemplo, conexión fallida, consulta inválida, etc.
+                MessageBox.Show("Error de MySQL: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales, como problemas no relacionados con MySQL.
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         //metodo para seleccion de sintomas
         private void pruebaChecked()
         {
@@ -161,6 +241,10 @@ namespace Agrotics
             bool s8 = checkedListBox2.GetItemChecked(3);
             bool s9 = checkedListBox2.GetItemChecked(4);
             bool s10 = checkedListBox2.GetItemChecked(5);
+
+            bool s11 = checkedListBox3.GetItemChecked(0);
+            bool s12 = checkedListBox3.GetItemChecked(1);
+            bool s13 = checkedListBox3.GetItemChecked(2);
             
             //CASO EW
             if(s1 && s2 && s3 && s4 == true)
@@ -203,6 +287,23 @@ namespace Agrotics
                 lblEnfermedad.Text = "[ERWINIA, FUSARIUM, PHYTOPHTHORA]";
                 txtRecomendacion.Text = mensajero.recomendacion();
                 TABCONTROL.SelectedTab = tbDiagnostico;
+            }
+
+            if(s13 == true)
+            {
+                ObtenerElementosSeleccionadosYAgregarAListBox();
+                lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                TABCONTROL.SelectedTab = tbDiagnostico;
+                Diuron();
+
+            }
+
+            if(s11 == true)
+            {
+                ObtenerElementosSeleccionadosYAgregarAListBox();
+                lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                TABCONTROL.SelectedTab = tbDiagnostico;
+                Ametrina();
             }
         }
 
