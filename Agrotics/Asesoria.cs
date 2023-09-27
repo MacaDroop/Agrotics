@@ -106,6 +106,47 @@ namespace Agrotics
             }
         }
 
+        private void QueryPhytophthotora()
+        {
+            try
+            {
+                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion,  FROM productos WHERE NombreProducto = 'Metalaxil'";
+                using (MySqlConnection conexionBD = Conexion2.conexion())
+                {
+                    conexionBD.Open();
+                    using (MySqlCommand comando = new MySqlCommand(Sql, conexionBD))
+                    {
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                DataTable datos = new DataTable();
+                                datos.Load(reader);
+                                dgvResultados.DataSource = datos;
+                                Rec mensajero = new Rec();
+                                txtRecomendacion.Text = mensajero.Fusarium();
+                            }
+                            else
+                            {
+                                MessageBox.Show("SE REQUIERE DE MÁS INFORMACIÓN...");
+                                // No se encontraron resultados, puedes mostrar un mensaje o realizar otra acción.
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Manejo de excepciones de MySQL, por ejemplo, conexión fallida, consulta inválida, etc.
+                MessageBox.Show("Error de MySQL: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales, como problemas no relacionados con MySQL.
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         //metodo para seleccion de sintomas
         private void pruebaChecked()
         {
@@ -138,7 +179,9 @@ namespace Agrotics
                 ObtenerElementosSeleccionadosYAgregarAListBox();
                 //QueryFusarium();
                 txtRecomendacion.Text = mensajero.Fusarium();
+                QueryFusarium();
                 TABCONTROL.SelectedTab = tbDiagnostico;
+               
                 lblEnfermedad.Text = "FUSARIOSIS (FUSARIUM)";
             }
 
@@ -289,14 +332,16 @@ namespace Agrotics
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             //sintomaList1();
-            Rec mensajero = new Rec();
-            txtRecomendacion.Text = mensajero.Erwinia();
-            TABCONTROL.SelectedTab = tbDiagnostico;
+            //Rec mensajero = new Rec();
+            //txtRecomendacion.Text = mensajero.Erwinia();
+            //TABCONTROL.SelectedTab = tbDiagnostico;
+            
+            pruebaChecked();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            pruebaChecked();
+            
         }
     }
 }
