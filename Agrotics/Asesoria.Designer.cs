@@ -64,13 +64,13 @@
             this.cmbTipoCultivo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbDiagnostico = new System.Windows.Forms.TabPage();
+            this.lblEnfermedad = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sintomasClicked = new System.Windows.Forms.ListBox();
             this.txtRecomendacion = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.lbltxtP = new System.Windows.Forms.Label();
             this.dgvResultados = new System.Windows.Forms.DataGridView();
-            this.sintomasClicked = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblEnfermedad = new System.Windows.Forms.Label();
             this.TABCONTROL.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tcSintomas.SuspendLayout();
@@ -167,11 +167,10 @@
             // 
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
-            "Sintoma 1",
-            "Sintoma 2",
-            "Sintoma 3",
-            "Sintoma 4"});
-            this.checkedListBox3.Location = new System.Drawing.Point(268, 17);
+            "Hoja ancha",
+            "Pasto",
+            "Maleza"});
+            this.checkedListBox3.Location = new System.Drawing.Point(231, 17);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
@@ -559,6 +558,32 @@
             this.tbDiagnostico.Text = "DIAGNOSTICO";
             this.tbDiagnostico.UseVisualStyleBackColor = true;
             // 
+            // lblEnfermedad
+            // 
+            this.lblEnfermedad.AutoSize = true;
+            this.lblEnfermedad.Location = new System.Drawing.Point(48, 98);
+            this.lblEnfermedad.Name = "lblEnfermedad";
+            this.lblEnfermedad.Size = new System.Drawing.Size(73, 13);
+            this.lblEnfermedad.TabIndex = 6;
+            this.lblEnfermedad.Text = "RESULTADO";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(532, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Sintomas correspondientes:";
+            // 
+            // sintomasClicked
+            // 
+            this.sintomasClicked.FormattingEnabled = true;
+            this.sintomasClicked.Location = new System.Drawing.Point(535, 115);
+            this.sintomasClicked.Name = "sintomasClicked";
+            this.sintomasClicked.Size = new System.Drawing.Size(150, 95);
+            this.sintomasClicked.TabIndex = 4;
+            // 
             // txtRecomendacion
             // 
             this.txtRecomendacion.Location = new System.Drawing.Point(39, 131);
@@ -592,32 +617,6 @@
             this.dgvResultados.Name = "dgvResultados";
             this.dgvResultados.Size = new System.Drawing.Size(665, 191);
             this.dgvResultados.TabIndex = 0;
-            // 
-            // sintomasClicked
-            // 
-            this.sintomasClicked.FormattingEnabled = true;
-            this.sintomasClicked.Location = new System.Drawing.Point(535, 115);
-            this.sintomasClicked.Name = "sintomasClicked";
-            this.sintomasClicked.Size = new System.Drawing.Size(150, 95);
-            this.sintomasClicked.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(532, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Sintomas correspondientes:";
-            // 
-            // lblEnfermedad
-            // 
-            this.lblEnfermedad.AutoSize = true;
-            this.lblEnfermedad.Location = new System.Drawing.Point(48, 98);
-            this.lblEnfermedad.Name = "lblEnfermedad";
-            this.lblEnfermedad.Size = new System.Drawing.Size(73, 13);
-            this.lblEnfermedad.TabIndex = 6;
-            this.lblEnfermedad.Text = "RESULTADO";
             // 
             // Asesoria
             // 

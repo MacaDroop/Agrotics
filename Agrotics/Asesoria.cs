@@ -29,7 +29,7 @@ namespace Agrotics
         {
             try
             {
-                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion,  FROM productos WHERE NombreProducto = 'Kasugamicina'";
+                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion FROM productos WHERE NombreProducto = 'Kasugamicina'";
                 using (MySqlConnection conexionBD = Conexion2.conexion())
                 {
                     conexionBD.Open();
@@ -190,6 +190,7 @@ namespace Agrotics
                 MessageBox.Show("PHYTOPHTHORA");
                 ObtenerElementosSeleccionadosYAgregarAListBox();
                 txtRecomendacion.Text = mensajero.Phytophthora();
+                QueryPhytophthotora();
                 lblEnfermedad.Text = "PHYTOPHTHORA";
                 TABCONTROL.SelectedTab = tbDiagnostico;
                
@@ -341,7 +342,7 @@ namespace Agrotics
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
+            checkedListBox1.SelectedItem = false;
         }
     }
 }
