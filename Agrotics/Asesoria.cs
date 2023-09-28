@@ -291,19 +291,41 @@ namespace Agrotics
 
             if(s13 == true)
             {
-                ObtenerElementosSeleccionadosYAgregarAListBox();
-                lblEnfermedad.Text = "APLICACION DE HERBICIDA";
-                TABCONTROL.SelectedTab = tbDiagnostico;
-                Diuron();
+                if(txtUltimoProducto.Text == "Ametrina")
+                {
+                    ObtenerElementosSeleccionadosYAgregarAListBox();
+                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    TABCONTROL.SelectedTab = tbDiagnostico;
+                    Diuron();
+                }
+                else
+                {
+                    ObtenerElementosSeleccionadosYAgregarAListBox();
+                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    TABCONTROL.SelectedTab = tbDiagnostico;
+                    Ametrina();
+                }
+                
 
             }
 
             if(s11 == true)
             {
-                ObtenerElementosSeleccionadosYAgregarAListBox();
-                lblEnfermedad.Text = "APLICACION DE HERBICIDA";
-                TABCONTROL.SelectedTab = tbDiagnostico;
-                Ametrina();
+                if (txtUltimoProducto.Text == "Diuron")
+                {
+                    ObtenerElementosSeleccionadosYAgregarAListBox();
+                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    TABCONTROL.SelectedTab = tbDiagnostico;
+                    Ametrina();
+                }
+                else
+                {
+                    ObtenerElementosSeleccionadosYAgregarAListBox();
+                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    TABCONTROL.SelectedTab = tbDiagnostico;
+                    Diuron();
+                }
+              
             }
         }
 

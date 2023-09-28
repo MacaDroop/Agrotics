@@ -57,7 +57,7 @@
             this.checkedListBox18 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox17 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox16 = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUltimoProducto = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -100,7 +100,7 @@
             this.tabPage1.Controls.Add(this.btnCancelar);
             this.tabPage1.Controls.Add(this.btnAceptar);
             this.tabPage1.Controls.Add(this.tcSintomas);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtUltimoProducto);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.txtEdad);
             this.tabPage1.Controls.Add(this.label2);
@@ -484,12 +484,12 @@
             this.checkedListBox16.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox16.TabIndex = 1;
             // 
-            // textBox1
+            // txtUltimoProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtUltimoProducto.Location = new System.Drawing.Point(165, 124);
+            this.txtUltimoProducto.Name = "txtUltimoProducto";
+            this.txtUltimoProducto.Size = new System.Drawing.Size(122, 20);
+            this.txtUltimoProducto.TabIndex = 6;
             // 
             // label3
             // 
@@ -662,7 +662,7 @@
         private System.Windows.Forms.TabControl tcSintomas;
         private System.Windows.Forms.TabPage tpPiña;
         private System.Windows.Forms.TabPage tpMaiz;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUltimoProducto;
         private System.Windows.Forms.TabPage tpFrijol;
         private System.Windows.Forms.TabPage tpCaña;
         private System.Windows.Forms.TabPage tpSandia;
