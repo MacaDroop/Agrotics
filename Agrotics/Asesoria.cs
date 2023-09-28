@@ -227,6 +227,49 @@ namespace Agrotics
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Haloxifort()
+        {
+            try
+            {
+                string Sql = "SELECT NombreProducto, DescripcionCultivos, Precio, Stock, Tipo, Presentacion FROM productos WHERE NombreProducto = Haloxifort'";
+                using (MySqlConnection conexionBD = Conexion2.conexion())
+                {
+                    conexionBD.Open();
+                    using (MySqlCommand comando = new MySqlCommand(Sql, conexionBD))
+                    {
+                        using (MySqlDataReader reader = comando.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                DataTable datos = new DataTable();
+                                datos.Load(reader);
+                                dgvResultados.DataSource = datos;
+
+                                txtRecomendacion.Text = "Herbicida del tipo selectivo para pasto, es más eficaz cuando se aplica sobre plantas jóvenes en crecimiento activo, siendo necesario utilizar dosis tanto más elevadas cuanto más desarrolladas se encuentren las plantas a controlar. No controla coquillo o juncia ni tiene efecto sobre especies de hoja ancha. Ha sido utilizado en mezcla en tanque con herbicidas para el control de especies de hoja ancha sin que se hayan observado problemas, pero se recomienda consultar y tener precauciones.";
+                            }
+                            else
+                            {
+                                MessageBox.Show("SE REQUIERE DE MÁS INFORMACIÓN...");
+                                // No se encontraron resultados, puedes mostrar un mensaje o realizar otra acción.
+                            }
+                        }
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                // Manejo de excepciones de MySQL, por ejemplo, conexión fallida, consulta inválida, etc.
+                MessageBox.Show("Error de MySQL: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones generales, como problemas no relacionados con MySQL.
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
         //metodo para seleccion de sintomas
         private void pruebaChecked()
         {
@@ -294,18 +337,26 @@ namespace Agrotics
                 if(txtUltimoProducto.Text == "Ametrina")
                 {
                     ObtenerElementosSeleccionadosYAgregarAListBox();
-                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    lblEnfermedad.Text = "MALEZA";
                     TABCONTROL.SelectedTab = tbDiagnostico;
                     Diuron();
                 }
                 else
                 {
                     ObtenerElementosSeleccionadosYAgregarAListBox();
-                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    lblEnfermedad.Text = "MALEZA";
                     TABCONTROL.SelectedTab = tbDiagnostico;
                     Ametrina();
                 }
                 
+                if(s12 == true)
+                {
+                    ObtenerElementosSeleccionadosYAgregarAListBox();
+                    lblEnfermedad.Text = "PASTO";
+                    TABCONTROL.SelectedTab = tbDiagnostico;
+                    Haloxifort();
+
+                }
 
             }
 
@@ -314,20 +365,21 @@ namespace Agrotics
                 if (txtUltimoProducto.Text == "Diuron")
                 {
                     ObtenerElementosSeleccionadosYAgregarAListBox();
-                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    lblEnfermedad.Text = "HOJA ANCHA";
                     TABCONTROL.SelectedTab = tbDiagnostico;
                     Ametrina();
                 }
                 else
                 {
                     ObtenerElementosSeleccionadosYAgregarAListBox();
-                    lblEnfermedad.Text = "APLICACION DE HERBICIDA";
+                    lblEnfermedad.Text = "HOJA ANCHA";
                     TABCONTROL.SelectedTab = tbDiagnostico;
                     Diuron();
                 }
               
             }
         }
+
 
         //obtener los valores clickeados
         private void ObtenerElementosSeleccionadosYAgregarAListBox()
