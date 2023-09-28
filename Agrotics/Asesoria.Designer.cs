@@ -187,7 +187,7 @@
             "Pudricion de la fruta",
             "Decoloración de las hojas",
             "Olor (pudrición)"});
-            this.checkedListBox2.Location = new System.Drawing.Point(6, 83);
+            this.checkedListBox2.Location = new System.Drawing.Point(6, 77);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.checkedListBox2.Size = new System.Drawing.Size(178, 90);
